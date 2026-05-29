@@ -313,6 +313,65 @@ function listLessonFiles(track) {
   return { dir, files };
 }
 
+/* Progress-safety guard: every live user's lesson completion and quiz score
+   is stored in localStorage under the key "<trackId>/<moduleId>". That id is
+   the lesson's filename (minus .md), so renaming/renumbering an existing file
+   silently orphans real users' progress. Compare the freshly-built curriculum
+   against the last committed one (= what's live on Pages) and hard-fail if any
+   previously-published module id disappeared. Intentional removals: re-run with
+   ALLOW_MODULE_REMOVAL=1. */
+function moduleGidsOf(curriculum) {
+  const set = new Set();
+  (curriculum.tracks || []).forEach((t) => {
+    (t.modules || []).forEach((m) => set.add(`${t.id}/${m.id}`));
+  });
+  return set;
+}
+
+function checkNoOrphanedProgress(newCurriculum) {
+  const { execSync } = require("child_process");
+  let baseline;
+  try {
+    const raw = execSync("git show HEAD:data/curriculum.json", {
+      cwd: SITE,
+      stdio: ["ignore", "pipe", "ignore"],
+    }).toString();
+    baseline = JSON.parse(raw);
+  } catch {
+    // No committed baseline yet (first run) or not in git — nothing live to protect.
+    return;
+  }
+
+  const before = moduleGidsOf(baseline);
+  const after = moduleGidsOf(newCurriculum);
+  const missing = [...before].filter((g) => !after.has(g));
+  if (!missing.length) return;
+
+  if (process.env.ALLOW_MODULE_REMOVAL === "1") {
+    console.warn(
+      `\n⚠️  ${missing.length} previously-published module id(s) removed (ALLOW_MODULE_REMOVAL=1 set):`
+    );
+    missing.forEach((g) => console.warn(`     - ${g}`));
+    console.warn(
+      "   Live users' completion + quiz score for these keys will be orphaned. Proceeding because override is set.\n"
+    );
+    return;
+  }
+
+  console.error(
+    "\n✖ PROGRESS SAFETY CHECK FAILED — these module ids were in the last commit but are gone now:"
+  );
+  missing.forEach((g) => console.error(`     - ${g}`));
+  console.error(
+    "\n  Each id is the localStorage key live users' progress is stored under. Removing or renaming it\n" +
+      "  silently wipes their completion + quiz score for that module (and detaches its quiz).\n\n" +
+      "  • Renamed/renumbered a file? Restore the original filename. To reorder, APPEND a new number\n" +
+      "    (e.g. 15-new.md) or insert with a letter suffix (e.g. 03b-new.md) — never rename neighbours.\n" +
+      "  • Genuinely retiring this lesson? Re-run with ALLOW_MODULE_REMOVAL=1 to override.\n"
+  );
+  process.exit(1);
+}
+
 function main() {
   let quizzes = {};
   const quizPath = path.join(SITE, "data", "quizzes.json");
@@ -367,6 +426,8 @@ function main() {
       `✓ ${track.id}: ${modules.length} modules${t.final ? " + final" : ""}`
     );
   }
+
+  checkNoOrphanedProgress(curriculum);
 
   fs.writeFileSync(
     path.join(SITE, "data", "curriculum.json"),
