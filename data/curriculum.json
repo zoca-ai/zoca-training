@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T11:17:34.469Z",
+  "generatedAt": "2026-05-29T12:49:21.378Z",
   "tracks": [
     {
       "id": "foundations",
@@ -2630,7 +2630,7 @@
           "id": "01-welcome-to-zoca",
           "title": "Welcome to Zoca & the dream",
           "sub": "",
-          "minutes": 14,
+          "minutes": 13,
           "file": "content/selling-zoca/01-welcome-to-zoca.html",
           "quiz": {
             "passScore": 70,

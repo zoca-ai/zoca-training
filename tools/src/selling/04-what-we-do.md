@@ -48,7 +48,7 @@ The phone — inbound, outbound, and the website chat widget, all the same brain
 - **Picks up in under one second. Every call. 24/7.** No IVR, no "press 1" — a conversation.
 - **Books confirmed appointments in under two minutes.** Knows the services, stylists, pricing, policies, and rebook windows by name.
 - **Handles reschedules, cancellations, deposits, directions, upsells** — without a human.
-- **Multilingual from day one — 12 languages**; same concierge, in the customer's language.
+- **English today; other languages are on the roadmap.** Zoe is set up for English-speaking callers right now. If a prospect needs another language, it's "coming soon" — never demo it as live or promise a date.
 - **Outbound rebook calls.** When a regular's rebook window opens and they haven't booked, it calls them.
 - **Black Box recovery.** When a customer drops mid-booking on the web, it reaches out within minutes — not 48 hours later — with the right time, the right stylist, the right next-best option.
 

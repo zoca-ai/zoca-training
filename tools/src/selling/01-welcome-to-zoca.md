@@ -75,7 +75,7 @@ The solo operator working from a spare room at $40K — no staff, one location �
 
 The packaging is deliberately simple.
 
-> [!KEY TERM] **Discovery Neo** — the current Zoca product. The **Discovery Agent** (the marketing brain — SEO, content, Google Business Profile, reviews, AI search, website) and the **Front Desk Agent** (the voice brain — inbound + outbound calls, multilingual, booking) bundled and sold together. It's what every new logo gets. Conversion, Booking & Payments, Loyalty, and Ads ride alongside as add-ons and upside — never pitched with launch dates.
+> [!KEY TERM] **Discovery Neo** — the current Zoca product. The **Discovery Agent** (the marketing brain — SEO, content, Google Business Profile, reviews, AI search, website) and the **Front Desk Agent** (the voice brain — inbound + outbound calls, booking) bundled and sold together. It's what every new logo gets. Conversion, Booking & Payments, Loyalty, and Ads ride alongside as add-ons and upside — never pitched with launch dates.
 
 **One product. One contract. Two prices:**
 
@@ -159,7 +159,7 @@ Best-fit isn't a wall, and "lower-fit" isn't a brush-off. When an owner is below
 
 - **Discovery Neo** — the current Zoca product: Discovery Agent + Front Desk Agent, bundled and sold together. What every new logo gets.
 - **Discovery Agent** — the marketing brain: SEO, content, Google Business Profile, reviews, AI search, website.
-- **Front Desk Agent** — the voice brain: inbound + outbound calls, multilingual, booking.
+- **Front Desk Agent** — the voice brain: inbound + outbound calls, booking.
 - **The four leaks** — new bookings/visibility, missed calls, mid-booking drop-off, first-timer churn.
 - **Fill the chair** — the single outcome every feature, call, and contract rolls up to.
 - **Best-fit (ICP)** — a beauty/wellness business with at least one of: multi-location, 1+ employee besides the owner, or $100K+ revenue. A targeting and expectation tool, **not a gate**.
