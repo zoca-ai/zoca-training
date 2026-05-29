@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T07:59:03.075Z",
+  "generatedAt": "2026-05-29T09:35:06.734Z",
   "tracks": [
     {
       "id": "foundations",
@@ -199,13 +199,13 @@
               {
                 "q": "Under the FTC's 2024 rule, what is the current maximum civil penalty per violation cited in the lesson?",
                 "options": [
-                  "Up to $51,744 per violation",
+                  "Up to $53,088 per violation",
                   "Up to $5,000 per violation",
                   "Up to $1 million per violation",
                   "Up to $10,000 per violation"
                 ],
                 "answer": 0,
-                "explain": "The lesson states the FTC can seek civil penalties currently up to $51,744 per violation."
+                "explain": "The lesson states the FTC can seek civil penalties currently up to $53,088 per violation (the 2025 level, held for 2026)."
               },
               {
                 "q": "What is the single most effective tactic the lesson recommends for ethically generating reviews?",
@@ -1332,15 +1332,15 @@
             "passScore": 70,
             "questions": [
               {
-                "q": "Which calendar engine is the Zoca Calendar built on?",
+                "q": "Which calendar views does the Zoca Calendar offer?",
                 "options": [
-                  "FullCalendar",
-                  "Google Calendar",
-                  "Outlook",
-                  "Square Calendar"
+                  "Day, 3-Day, Week, and Month",
+                  "Day and Week only",
+                  "Month only",
+                  "Agenda list only"
                 ],
                 "answer": 0,
-                "explain": "The lesson states the Calendar is built on a real calendar engine, FullCalendar."
+                "explain": "The Calendar offers Day, 3-Day, Week, and Month views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals and the waitlist."
               },
               {
                 "q": "When a client is completing checkout, how long is a slot temporarily held so it can't be double-booked?",
@@ -2090,7 +2090,7 @@
           "id": "01-overview-and-demo",
           "title": "Command Center — what it is & how to demo it",
           "sub": "",
-          "minutes": 8,
+          "minutes": 9,
           "file": "content/command-center/01-overview-and-demo.html",
           "quiz": {
             "passScore": 70,

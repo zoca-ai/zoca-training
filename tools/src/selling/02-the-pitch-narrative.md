@@ -55,7 +55,7 @@ Know the landscape so you can position the end-to-end story credibly.
 
 > [!WHY IT MATTERS] The wedge is the end-to-end journey: nobody does marketing **and** scheduling **and** front desk **and** is genuinely good at all of them. Zoca started at the top of the funnel (marketing) while others began at booking. Zenoti may be launching a voice AI — but will it ever move into marketing?
 
-> [!KEY TERM] **Not a marketplace** — Zoca is not a lead reseller. Marketplaces like Fresha can charge roughly a flat fee per lead-generated booking (training cited ~$2 per booking, ~10% on a $26 service). Zoca's model is different: Google is still where the customer search happens; Zoca makes the business findable rather than renting it leads.
+> [!KEY TERM] **Not a marketplace** — Zoca is not a lead reseller. Marketplaces like Fresha charge a new-client commission (Fresha publishes ~20% with a ~$6 minimum, one-time per new marketplace client — so a low-ticket service hits the floor). Zoca's model is different: Google is still where the customer search happens; Zoca makes the business findable rather than renting it leads.
 
 ---
 

@@ -70,7 +70,7 @@ This is the section AEs must get exactly right, because the easy-sounding shortc
 >
 > Google's content policies prohibit "discouraging or prohibiting negative reviews, or selectively soliciting positive reviews from customers." Detected gating can lead to reviews being removed, lost ranking power, or profile suspension.
 >
-> The FTC's Trade Regulation Rule on the Use of Consumer Reviews and Testimonials (final rule effective October 21, 2024) bans practices including buying or selling fake reviews, certain insider reviews without disclosure, and **review suppression** — for example, using unfounded legal or physical threats to remove negative reviews, or misrepresenting that the displayed reviews are all/most reviews when negative ones have been suppressed by rating or sentiment. The FTC can seek civil penalties (currently up to $51,744 per violation).
+> The FTC's Trade Regulation Rule on the Use of Consumer Reviews and Testimonials (final rule effective October 21, 2024) bans practices including buying or selling fake reviews, certain insider reviews without disclosure, and **review suppression** — for example, using unfounded legal or physical threats to remove negative reviews, or misrepresenting that the displayed reviews are all/most reviews when negative ones have been suppressed by rating or sentiment. The FTC can seek civil penalties (currently up to $53,088 per violation, the 2025 level held for 2026).
 >
 > The compliant alternative is simple: ask **everyone** for a public review, make it easy, and earn improvement by fixing the underlying service — never by filtering who's allowed to speak.
 

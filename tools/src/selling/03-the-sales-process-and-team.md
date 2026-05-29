@@ -45,7 +45,7 @@ Which onboarding journey a customer takes is triggered by the **booking platform
 | No-API platforms (e.g. Fresha) | Browser automation: can read their data and do the booking, but **not** action their platform; no past customer data |
 | Flagship path                  | Migrate the business to Zoca bookings & payments                                                                     |
 
-> [!SOURCE NOTE] The sales-process framing named five API platforms ("Vergado/Boulevard, Zenoti, MindBody, Acuity"). For **Front Desk** platform specifics, trust the Front Desk product training instead — the verified integration reality there is: true API = Square + Mindbody; browser automation = Booksy / Fresha / GlossGenius / Vagaro; a Boulevard adapter is not built. The A–E list is the sales-process story, not the engineering source of truth.
+> [!SOURCE NOTE] The sales-process framing named several platforms ("Vagaro/Boulevard, Zenoti, MindBody, Acuity"). For **Front Desk** platform specifics, trust the Front Desk product training instead — the verified integration reality there is: true API = Square + Mindbody; browser automation = Booksy / Fresha / GlossGenius / Vagaro; a Boulevard adapter is not built. The A–E list is the sales-process story, not the engineering source of truth.
 
 > [!RULE OF THUMB] **No price difference between journeys.** Whether a customer integrates, runs on browser automation, or migrates fully to Zoca, pricing is the same — so guide them toward the path that serves them best, not a cheaper tier.
 

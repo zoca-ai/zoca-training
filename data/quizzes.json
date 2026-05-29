@@ -53,12 +53,7 @@
     "questions": [
       {
         "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
-        "options": [
-          "Canvas",
-          "Validate",
-          "Preview",
-          "Memory History"
-        ],
+        "options": ["Canvas", "Validate", "Preview", "Memory History"],
         "answer": 0,
         "explain": "Canvas is the visual topic map of all confirmed facts and is opened first as the wow shot."
       },
@@ -211,12 +206,7 @@
       },
       {
         "q": "How many Zoca AIs does the Brain power?",
-        "options": [
-          "Three",
-          "Four",
-          "Five",
-          "Seven"
-        ],
+        "options": ["Three", "Four", "Five", "Seven"],
         "answer": 2,
         "explain": "The Brain powers five Zoca AIs: Front Desk, Website, Content, Google Profile, and Command Center."
       },
@@ -233,12 +223,7 @@
       },
       {
         "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
-        "options": [
-          "Canvas",
-          "Question Bank",
-          "Preview",
-          "Memory History"
-        ],
+        "options": ["Canvas", "Question Bank", "Preview", "Memory History"],
         "answer": 2,
         "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
       },
@@ -304,12 +289,7 @@
       },
       {
         "q": "Which keyboard shortcut opens Command Center from any page?",
-        "options": [
-          "Cmd+K",
-          "Cmd+J",
-          "Ctrl+Space",
-          "Cmd+Enter"
-        ],
+        "options": ["Cmd+K", "Cmd+J", "Ctrl+Space", "Cmd+Enter"],
         "answer": 0,
         "explain": "The lesson states Cmd+K is the shortcut to open Command Center instantly from anywhere."
       },
@@ -953,12 +933,7 @@
       },
       {
         "q": "Roughly what share of all Google searches does the lesson say have local intent?",
-        "options": [
-          "About 12%",
-          "About 25%",
-          "About 46%",
-          "About 75%"
-        ],
+        "options": ["About 12%", "About 25%", "About 46%", "About 75%"],
         "answer": 2,
         "explain": "The lesson states roughly 46% of all Google searches have local intent."
       }
@@ -991,12 +966,7 @@
       },
       {
         "q": "Per the Princeton-led GEO paper, adding specific statistics to content boosted AI visibility by up to what amount?",
-        "options": [
-          "Up to +10%",
-          "Up to +40%",
-          "Up to +115%",
-          "Up to +200%"
-        ],
+        "options": ["Up to +10%", "Up to +40%", "Up to +115%", "Up to +200%"],
         "answer": 1,
         "explain": "The lesson reports the GEO paper found adding specific statistics boosted visibility up to +40%."
       },
@@ -1029,12 +999,7 @@
       },
       {
         "q": "What latency window does the lesson cite as the benchmark most production voice agents aim for?",
-        "options": [
-          "50-100ms",
-          "300-800ms",
-          "1-2 seconds",
-          "2-3 seconds"
-        ],
+        "options": ["50-100ms", "300-800ms", "1-2 seconds", "2-3 seconds"],
         "answer": 1,
         "explain": "The lesson cites roughly 500ms as natural, with most production agents aiming for a 300-800ms window."
       },
@@ -1079,13 +1044,13 @@
       {
         "q": "Under the FTC's 2024 rule, what is the current maximum civil penalty per violation cited in the lesson?",
         "options": [
-          "Up to $51,744 per violation",
+          "Up to $53,088 per violation",
           "Up to $5,000 per violation",
           "Up to $1 million per violation",
           "Up to $10,000 per violation"
         ],
         "answer": 0,
-        "explain": "The lesson states the FTC can seek civil penalties currently up to $51,744 per violation."
+        "explain": "The lesson states the FTC can seek civil penalties currently up to $53,088 per violation (the 2025 level, held for 2026)."
       },
       {
         "q": "What is the single most effective tactic the lesson recommends for ethically generating reviews?",
@@ -1176,12 +1141,7 @@
       },
       {
         "q": "What does the 'extra E' in E-E-A-T stand for, added in 2022?",
-        "options": [
-          "Engagement",
-          "Efficiency",
-          "Experience",
-          "Endorsement"
-        ],
+        "options": ["Engagement", "Efficiency", "Experience", "Endorsement"],
         "answer": 2,
         "explain": "The lesson explains the extra E added in 2022 is Experience, rewarding content from someone who has actually done the thing."
       },
@@ -1198,12 +1158,7 @@
       },
       {
         "q": "What realistic timeline does the lesson give for meaningful SEO results?",
-        "options": [
-          "1-2 weeks",
-          "1-3 months",
-          "4-12 months",
-          "2-3 years"
-        ],
+        "options": ["1-2 weeks", "1-3 months", "4-12 months", "2-3 years"],
         "answer": 2,
         "explain": "The lesson cites a 4-12 month window for meaningful SEO results, describing it as slow then compounding."
       }
@@ -1503,12 +1458,7 @@
     "questions": [
       {
         "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
-        "options": [
-          "Overview",
-          "Bookings",
-          "Activity",
-          "Analytics"
-        ],
+        "options": ["Overview", "Bookings", "Activity", "Analytics"],
         "answer": 2,
         "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
       },
@@ -1623,12 +1573,7 @@
       },
       {
         "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
-        "options": [
-          "Square",
-          "Booksy",
-          "Boulevard",
-          "GlossGenius"
-        ],
+        "options": ["Square", "Booksy", "Boulevard", "GlossGenius"],
         "answer": 2,
         "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
       },
@@ -1667,12 +1612,7 @@
       },
       {
         "q": "Which competitor ships no voice receptionist at all?",
-        "options": [
-          "Rosie",
-          "Smith.ai",
-          "GlossGenius",
-          "Slang.ai"
-        ],
+        "options": ["Rosie", "Smith.ai", "GlossGenius", "Slang.ai"],
         "answer": 2,
         "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
       },
@@ -1933,15 +1873,15 @@
     "passScore": 70,
     "questions": [
       {
-        "q": "Which calendar engine is the Zoca Calendar built on?",
+        "q": "Which calendar views does the Zoca Calendar offer?",
         "options": [
-          "FullCalendar",
-          "Google Calendar",
-          "Outlook",
-          "Square Calendar"
+          "Day, 3-Day, Week, and Month",
+          "Day and Week only",
+          "Month only",
+          "Agenda list only"
         ],
         "answer": 0,
-        "explain": "The lesson states the Calendar is built on a real calendar engine, FullCalendar."
+        "explain": "The Calendar offers Day, 3-Day, Week, and Month views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals and the waitlist."
       },
       {
         "q": "When a client is completing checkout, how long is a slot temporarily held so it can't be double-booked?",
@@ -1967,12 +1907,7 @@
       },
       {
         "q": "Which client self-check-in method is supported today, per the lesson?",
-        "options": [
-          "QR code",
-          "SMS reply",
-          "Kiosk check-in",
-          "Email link"
-        ],
+        "options": ["QR code", "SMS reply", "Kiosk check-in", "Email link"],
         "answer": 0,
         "explain": "QR-code self-check-in is supported today; SMS-reply and kiosk are on the roadmap."
       }
@@ -2032,12 +1967,7 @@
     "questions": [
       {
         "q": "What is the default grace period before the system flags a no-show?",
-        "options": [
-          "5 minutes",
-          "10 minutes",
-          "15 minutes",
-          "30 minutes"
-        ],
+        "options": ["5 minutes", "10 minutes", "15 minutes", "30 minutes"],
         "answer": 2,
         "explain": "The system detects a no-show after a default 15-minute grace period, which the salon can change."
       },
@@ -2239,23 +2169,13 @@
       },
       {
         "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
-        "options": [
-          "Pending",
-          "Archived",
-          "Converted",
-          "Declined"
-        ],
+        "options": ["Pending", "Archived", "Converted", "Declined"],
         "answer": 2,
         "explain": "When the AI reaches out and books a lead, the lead is marked converted."
       },
       {
         "q": "What is the default grace period before a no-show is flagged?",
-        "options": [
-          "15 minutes",
-          "30 minutes",
-          "10 minutes",
-          "5 minutes"
-        ],
+        "options": ["15 minutes", "30 minutes", "10 minutes", "5 minutes"],
         "answer": 0,
         "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
       },
@@ -2272,12 +2192,7 @@
       },
       {
         "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
-        "options": [
-          "A ledger",
-          "A cart",
-          "A sale",
-          "A receipt"
-        ],
+        "options": ["A ledger", "A cart", "A sale", "A receipt"],
         "answer": 2,
         "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
       },
@@ -2294,12 +2209,7 @@
       },
       {
         "q": "For in-person card acceptance, which account must the salon connect?",
-        "options": [
-          "PayPal",
-          "Stripe",
-          "Square",
-          "Clover"
-        ],
+        "options": ["PayPal", "Stripe", "Square", "Clover"],
         "answer": 1,
         "explain": "Card readers and tap-to-pay run on the salon's connected Stripe account."
       },
@@ -2343,12 +2253,7 @@
       },
       {
         "q": "What average customer retention figure does the internal coaching cite across Zoca's users?",
-        "options": [
-          "~96%",
-          "~60%",
-          "~40%",
-          "~20%"
-        ],
+        "options": ["~96%", "~60%", "~40%", "~20%"],
         "answer": 2,
         "explain": "About 40% of customers repeat, which is the whole argument for constant acquisition and why marketing is a must-have."
       },
@@ -2370,12 +2275,7 @@
     "questions": [
       {
         "q": "According to the narrative, what is the real first step in a business's life-cycle?",
-        "options": [
-          "Booking",
-          "Payments",
-          "Acquisition",
-          "Taxation"
-        ],
+        "options": ["Booking", "Payments", "Acquisition", "Taxation"],
         "answer": 2,
         "explain": "Legacy platforms started from booking, but acquisition (getting found) comes first—if nobody finds the business, the booking tool has nothing to do."
       },
