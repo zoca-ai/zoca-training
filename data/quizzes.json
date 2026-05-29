@@ -53,7 +53,12 @@
     "questions": [
       {
         "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
-        "options": ["Canvas", "Validate", "Preview", "Memory History"],
+        "options": [
+          "Canvas",
+          "Validate",
+          "Preview",
+          "Memory History"
+        ],
         "answer": 0,
         "explain": "Canvas is the visual topic map of all confirmed facts and is opened first as the wow shot."
       },
@@ -206,7 +211,12 @@
       },
       {
         "q": "How many Zoca AIs does the Brain power?",
-        "options": ["Three", "Four", "Five", "Seven"],
+        "options": [
+          "Three",
+          "Four",
+          "Five",
+          "Seven"
+        ],
         "answer": 2,
         "explain": "The Brain powers five Zoca AIs: Front Desk, Website, Content, Google Profile, and Command Center."
       },
@@ -223,7 +233,12 @@
       },
       {
         "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
-        "options": ["Canvas", "Question Bank", "Preview", "Memory History"],
+        "options": [
+          "Canvas",
+          "Question Bank",
+          "Preview",
+          "Memory History"
+        ],
         "answer": 2,
         "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
       },
@@ -289,7 +304,12 @@
       },
       {
         "q": "Which keyboard shortcut opens Command Center from any page?",
-        "options": ["Cmd+K", "Cmd+J", "Ctrl+Space", "Cmd+Enter"],
+        "options": [
+          "Cmd+K",
+          "Cmd+J",
+          "Ctrl+Space",
+          "Cmd+Enter"
+        ],
         "answer": 0,
         "explain": "The lesson states Cmd+K is the shortcut to open Command Center instantly from anywhere."
       },
@@ -933,7 +953,12 @@
       },
       {
         "q": "Roughly what share of all Google searches does the lesson say have local intent?",
-        "options": ["About 12%", "About 25%", "About 46%", "About 75%"],
+        "options": [
+          "About 12%",
+          "About 25%",
+          "About 46%",
+          "About 75%"
+        ],
         "answer": 2,
         "explain": "The lesson states roughly 46% of all Google searches have local intent."
       }
@@ -966,7 +991,12 @@
       },
       {
         "q": "Per the Princeton-led GEO paper, adding specific statistics to content boosted AI visibility by up to what amount?",
-        "options": ["Up to +10%", "Up to +40%", "Up to +115%", "Up to +200%"],
+        "options": [
+          "Up to +10%",
+          "Up to +40%",
+          "Up to +115%",
+          "Up to +200%"
+        ],
         "answer": 1,
         "explain": "The lesson reports the GEO paper found adding specific statistics boosted visibility up to +40%."
       },
@@ -999,7 +1029,12 @@
       },
       {
         "q": "What latency window does the lesson cite as the benchmark most production voice agents aim for?",
-        "options": ["50-100ms", "300-800ms", "1-2 seconds", "2-3 seconds"],
+        "options": [
+          "50-100ms",
+          "300-800ms",
+          "1-2 seconds",
+          "2-3 seconds"
+        ],
         "answer": 1,
         "explain": "The lesson cites roughly 500ms as natural, with most production agents aiming for a 300-800ms window."
       },
@@ -1141,7 +1176,12 @@
       },
       {
         "q": "What does the 'extra E' in E-E-A-T stand for, added in 2022?",
-        "options": ["Engagement", "Efficiency", "Experience", "Endorsement"],
+        "options": [
+          "Engagement",
+          "Efficiency",
+          "Experience",
+          "Endorsement"
+        ],
         "answer": 2,
         "explain": "The lesson explains the extra E added in 2022 is Experience, rewarding content from someone who has actually done the thing."
       },
@@ -1158,7 +1198,12 @@
       },
       {
         "q": "What realistic timeline does the lesson give for meaningful SEO results?",
-        "options": ["1-2 weeks", "1-3 months", "4-12 months", "2-3 years"],
+        "options": [
+          "1-2 weeks",
+          "1-3 months",
+          "4-12 months",
+          "2-3 years"
+        ],
         "answer": 2,
         "explain": "The lesson cites a 4-12 month window for meaningful SEO results, describing it as slow then compounding."
       }
@@ -1458,7 +1503,12 @@
     "questions": [
       {
         "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
-        "options": ["Overview", "Bookings", "Activity", "Analytics"],
+        "options": [
+          "Overview",
+          "Bookings",
+          "Activity",
+          "Analytics"
+        ],
         "answer": 2,
         "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
       },
@@ -1573,7 +1623,12 @@
       },
       {
         "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
-        "options": ["Square", "Booksy", "Boulevard", "GlossGenius"],
+        "options": [
+          "Square",
+          "Booksy",
+          "Boulevard",
+          "GlossGenius"
+        ],
         "answer": 2,
         "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
       },
@@ -1612,7 +1667,12 @@
       },
       {
         "q": "Which competitor ships no voice receptionist at all?",
-        "options": ["Rosie", "Smith.ai", "GlossGenius", "Slang.ai"],
+        "options": [
+          "Rosie",
+          "Smith.ai",
+          "GlossGenius",
+          "Slang.ai"
+        ],
         "answer": 2,
         "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
       },
@@ -1907,7 +1967,12 @@
       },
       {
         "q": "Which client self-check-in method is supported today, per the lesson?",
-        "options": ["QR code", "SMS reply", "Kiosk check-in", "Email link"],
+        "options": [
+          "QR code",
+          "SMS reply",
+          "Kiosk check-in",
+          "Email link"
+        ],
         "answer": 0,
         "explain": "QR-code self-check-in is supported today; SMS-reply and kiosk are on the roadmap."
       }
@@ -1967,7 +2032,12 @@
     "questions": [
       {
         "q": "What is the default grace period before the system flags a no-show?",
-        "options": ["5 minutes", "10 minutes", "15 minutes", "30 minutes"],
+        "options": [
+          "5 minutes",
+          "10 minutes",
+          "15 minutes",
+          "30 minutes"
+        ],
         "answer": 2,
         "explain": "The system detects a no-show after a default 15-minute grace period, which the salon can change."
       },
@@ -2169,13 +2239,23 @@
       },
       {
         "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
-        "options": ["Pending", "Archived", "Converted", "Declined"],
+        "options": [
+          "Pending",
+          "Archived",
+          "Converted",
+          "Declined"
+        ],
         "answer": 2,
         "explain": "When the AI reaches out and books a lead, the lead is marked converted."
       },
       {
         "q": "What is the default grace period before a no-show is flagged?",
-        "options": ["15 minutes", "30 minutes", "10 minutes", "5 minutes"],
+        "options": [
+          "15 minutes",
+          "30 minutes",
+          "10 minutes",
+          "5 minutes"
+        ],
         "answer": 0,
         "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
       },
@@ -2192,7 +2272,12 @@
       },
       {
         "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
-        "options": ["A ledger", "A cart", "A sale", "A receipt"],
+        "options": [
+          "A ledger",
+          "A cart",
+          "A sale",
+          "A receipt"
+        ],
         "answer": 2,
         "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
       },
@@ -2209,7 +2294,12 @@
       },
       {
         "q": "For in-person card acceptance, which account must the salon connect?",
-        "options": ["PayPal", "Stripe", "Square", "Clover"],
+        "options": [
+          "PayPal",
+          "Stripe",
+          "Square",
+          "Clover"
+        ],
         "answer": 1,
         "explain": "Card readers and tap-to-pay run on the salon's connected Stripe account."
       },
@@ -2226,282 +2316,782 @@
       }
     ]
   },
-  "selling-zoca/01-know-your-buyer": {
+  "selling-zoca/01-welcome-to-zoca": {
     "passScore": 70,
     "questions": [
       {
-        "q": "What is the recommended entry tactic for a Type B (skeptical) buyer?",
+        "q": "What is the one-line definition of Zoca a rep should lead with?",
         "options": [
-          "Give a wake-up call that the digital shift is real",
-          "Open with one hard-hitting fact they don't already know",
-          "Show the cost and chaos of juggling 5+ tools",
-          "Walk them through a full feature demo immediately"
+          "An AI agency for small businesses",
+          "The marketing + voice platform for hyperlocal beauty and wellness businesses",
+          "The future of beauty SaaS",
+          "A voice tool with bolt-on SEO"
         ],
         "answer": 1,
-        "explain": "Type B knows marketing exists, so you have ~30 seconds and must open with a fact they cannot already know to spark curiosity."
+        "explain": "The lesson says every word of \"the marketing + voice platform for hyperlocal beauty and wellness businesses\" is load-bearing, and rejects \"an AI agency\" or \"the future of beauty.\""
       },
       {
-        "q": "According to the module, why does Google search produce higher-quality leads than social media?",
+        "q": "A prospect has no laptop or iPad anywhere in the shop. What is the correct move?",
         "options": [
-          "Google search carries predefined intent while social is discovery-first",
-          "Social media is more expensive to advertise on",
-          "Google leads are always cheaper per click",
-          "Social media users never book beauty services"
+          "Tell them they don't qualify and end the call",
+          "Onboard anyway over the phone",
+          "Get a laptop or iPad to the front desk first, then onboard",
+          "Refer them to a competitor"
         ],
-        "answer": 0,
-        "explain": "Someone searching 'Botox near me' already wants the service (predefined intent), whereas social-media intent is created later and can evaporate."
-      },
-      {
-        "q": "What average customer retention figure does the internal coaching cite across Zoca's users?",
-        "options": ["~96%", "~60%", "~40%", "~20%"],
         "answer": 2,
-        "explain": "About 40% of customers repeat, which is the whole argument for constant acquisition and why marketing is a must-have."
+        "explain": "A laptop or iPad in the shop is the only hard rule; the move is to get a device first, then onboard, not to turn the prospect away."
       },
       {
-        "q": "What does the 'map pack' refer to?",
+        "q": "A solo operator at $40K with one location and no staff is best described as:",
         "options": [
-          "The sponsored ads labelled above local results",
-          "The top-3 local listings shown beside a map in Google results",
-          "All organic results on a Google search page",
-          "The set of AI assistants that answer queries"
+          "Lower-fit, not a no",
+          "Disqualified from buying",
+          "Best-fit, move fast",
+          "Outside the vertical entirely"
         ],
-        "answer": 1,
-        "explain": "The map pack is the top-3 local listings beside a Google map; sponsored ads can appear above it and are labelled as ads."
+        "answer": 0,
+        "explain": "The lesson frames this owner as lower-fit, not a no; the wins are smaller and slower, but they're still sellable with honest expectation-setting."
+      },
+      {
+        "q": "A prospect cites $249/month from an old product doc. What should the rep do?",
+        "options": [
+          "Honor the $249 since it's documented",
+          "Treat it as the official price",
+          "Quote $290 instead",
+          "Reject it as stale, flag it to RevOps, and quote the placeholder of record"
+        ],
+        "answer": 3,
+        "explain": "$179/$249/$269/$279/$290 are all stale; reps reject any stale number, flag it, and quote the placeholder since pricing is pending final confirmation."
       }
     ]
   },
-  "selling-zoca/02-the-pitch-narrative": {
+  "selling-zoca/02-the-four-leaks": {
     "passScore": 70,
     "questions": [
       {
-        "q": "According to the narrative, what is the real first step in a business's life-cycle?",
-        "options": ["Booking", "Payments", "Acquisition", "Taxation"],
+        "q": "Which leak does the lesson call the single most leveraged, because the customer already chose the business?",
+        "options": [
+          "New bookings / visibility gap",
+          "Missed inbound calls",
+          "Mid-booking drop-off (the Black Box)",
+          "First-timer churn"
+        ],
         "answer": 2,
-        "explain": "Legacy platforms started from booking, but acquisition (getting found) comes first—if nobody finds the business, the booking tool has nothing to do."
+        "explain": "Mid-booking drop-off (the Black Box) is the single most leveraged leak because the intent already happened; the customer just didn't finish."
       },
       {
-        "q": "When a prospect says 'I can write my own content with AI,' what should the AE do?",
+        "q": "What are the four leak benchmark numbers a rep should memorize?",
         "options": [
-          "Argue that AI cannot write a good blog",
-          "Ask the cornering questions so they reach the conclusion themselves",
-          "Immediately offer a discount",
-          "Show them the pricing page"
+          "22%, 31%, 37%, 41%",
+          "37%, 22%, 31%, 52%",
+          "31%, 48%, 52%, 70%",
+          "3%, 22%, 41%, 52%"
         ],
         "answer": 1,
-        "explain": "Don't argue—ask the cornering questions that expose how much they'd actually have to own, letting them arrive at the conclusion."
+        "explain": "The spine of every discovery call is 37 (visibility), 22 (missed calls), 31 (mid-booking drop), 52 (first-timer churn)."
       },
       {
-        "q": "Which messaging discipline does the module insist on regarding who does the work?",
+        "q": "An owner says they don't have a marketing problem. The lesson's framing is that the owner:",
         "options": [
-          "Say a team of humans does it to add credibility",
-          "Always say an agent does it, not a team",
-          "Avoid mentioning who does the work at all",
-          "Say a mix of humans and software does it"
+          "Has a demand problem the rep must fix first",
+          "Should be told they're wrong about marketing",
+          "Has a capture problem, not a demand problem",
+          "Is not a fit for Zoca"
         ],
-        "answer": 1,
-        "explain": "Saying 'a team does it' lowers the perceived intelligence of the product; always say the agent does the work."
+        "answer": 2,
+        "explain": "Demand already exists; owners have a capture problem (short on time and skill to capture demand), not a demand problem."
       },
       {
-        "q": "How does the module frame an organic lead?",
+        "q": "When an owner mentions the agency they currently pay, what should the rep do?",
         "options": [
-          "It is the core product Zoca sells",
-          "It is the outcome of doing marketing, profile, content and reviews well",
-          "It is something Zoca resells like a marketplace",
-          "It is generated by $20-CPC ad agencies"
+          "Bash the agency to win the deal",
+          "Reframe why an agency can't work in real time across locations, without attacking the owner's judgment",
+          "Refuse to discuss the agency",
+          "Promise to beat the agency's price with a stale number"
         ],
         "answer": 1,
-        "explain": "A lead is what falls out when everything is done well; Zoca builds the durable asset and the leads follow, rather than being a lead-gen machine."
+        "explain": "The lesson bans bashing the agency since the owner chose it; reframe why a good past decision no longer fits, without insulting their judgment."
       }
     ]
   },
-  "selling-zoca/03-the-sales-process-and-team": {
+  "selling-zoca/03-our-icp-best-fit": {
     "passScore": 70,
     "questions": [
       {
-        "q": "What is the rule about payment relative to the demo?",
+        "q": "How does the lesson define \"ICP\" for Zoca?",
         "options": [
-          "Payment is collected before the discovery call",
-          "No payment before the demo—the prospect sees the product first",
-          "Payment is optional and never required",
-          "Payment is collected only after 7 days regardless of demo"
+          "A gate that turns away customers who don't meet the bar",
+          "A best-fit, targeting and expectation-setting tool, not a gate",
+          "A list of businesses we refuse to serve",
+          "A hard revenue floor every customer must clear"
         ],
         "answer": 1,
-        "explain": "The pipeline mandates a fully-loaded discovery call with no payment before the demo."
+        "explain": "ICP is the best-fit picture, a targeting and expectation-setting tool, explicitly not a gate that turns paying customers away."
       },
       {
-        "q": "Who owns qualification in the sales model?",
+        "q": "Where do tattoo, piercing, and permanent makeup studios fall?",
         "options": [
-          "The full-cycle AE re-qualifies every deal",
-          "The SDR owns qualification and the AE does not re-qualify",
-          "The CX pod handles qualification",
-          "The customer self-qualifies online"
+          "Outside the vertical, refuse them",
+          "Low-ticket, excluded categories",
+          "In-vertical, best-fit beauty categories",
+          "Verify with Sales Ops before selling"
         ],
-        "answer": 1,
-        "explain": "The SDR owns qualification; the AE closes and does not re-qualify, the main reason not to close being product rejection."
+        "answer": 2,
+        "explain": "Tattoo, piercing, and permanent makeup are in-vertical, best-fit beauty categories, sold like any other beauty shop."
       },
       {
-        "q": "What triggers which of the five onboarding journeys (A–E) a customer takes?",
+        "q": "What is the decided lead-prediction signal for a best-fit shop?",
         "options": [
-          "The booking platform they already use",
-          "The price tier they select",
-          "Their geographic location",
-          "The number of staff they employ"
+          "At least ~60 new leads over the next six months",
+          "At least 100 leads per month",
+          "Pending a Sales Ops decision",
+          "At least $100K in revenue"
         ],
         "answer": 0,
-        "explain": "The onboarding journey is determined by the prospect's current booking platform (API, no-API/browser automation, or full migration)."
+        "explain": "Best-fit shops are projected to generate at least ~60 new leads over the next six months; this is decided, not pending Sales Ops."
       },
       {
-        "q": "What are the trial and billing mechanics described?",
+        "q": "A dentist with budget wants to buy Zoca. The correct approach is to:",
         "options": [
-          "30-day trial, no card required, billed via Stripe",
-          "7-day trial, card on file required, auto-charge after 7 days via Chargebee",
-          "14-day trial, manual invoicing each month",
-          "No trial; pay in full up front via Chargebee"
+          "Decline because they're outside beauty",
+          "Sell as if the product is fully tuned for dental",
+          "Tell them they don't qualify",
+          "Be honest that the product is tuned for beauty so some category intelligence won't apply, name what still works, and let them decide"
         ],
-        "answer": 1,
-        "explain": "A 7-day trial requires a card on file and auto-charges after 7 days, billed through Chargebee, with a one-per-business contract e-signed first."
+        "answer": 3,
+        "explain": "Beauty & wellness is the sharpest fit but not a wall; out-of-vertical owners are still sellable with honest expectation-setting, never refused."
       }
     ]
   },
-  "selling-zoca/04-master-objection-bank": {
+  "selling-zoca/04-what-we-do": {
     "passScore": 70,
     "questions": [
       {
-        "q": "For objection #5, 'How do you rank on AI SEO?', what is the correct response?",
+        "q": "What two agents make up Discovery Neo, the product every new logo gets?",
         "options": [
-          "Explain the exact ranking algorithm step by step",
-          "There is no ranking in AI search—GEO/AEO is about being recommended and cited",
-          "Promise a top-3 position within a week",
-          "Admit Zoca cannot influence AI search at all"
-        ],
-        "answer": 1,
-        "explain": "It's a trick: AI search recommends and cites rather than ranking, so you optimize for mentions, citations and trust signals."
-      },
-      {
-        "q": "How should objection #10, 'I don't want AI to answer my calls,' be reframed?",
-        "options": [
-          "Around 'never miss a call'—it catches calls you'd otherwise lose",
-          "By offering a discount on Front Desk",
-          "By replacing the human receptionist entirely",
-          "By saying AI is required and cannot be turned off"
+          "Discovery Agent and Front Desk Agent",
+          "Booking Agent and Loyalty Agent",
+          "Conversion Agent and Ads Agent",
+          "Front Desk Agent and Booking Agent"
         ],
         "answer": 0,
-        "explain": "Reframe to 'never miss a call'—it catches after-hours, simultaneous and busy-time calls and transfers to you during your hours, so you stay in control."
+        "explain": "Discovery Neo bundles the Discovery Agent (marketing brain) and Front Desk Agent (voice brain), sold together as one product."
       },
       {
-        "q": "In the audit for AI SEO (#4), which engines' mentions and citations are measured?",
+        "q": "What is the default operating mode for the agents?",
         "options": [
-          "Only Google and Bing",
-          "ChatGPT, Gemini, Google AI Overview, and Perplexity",
-          "Only ChatGPT and Siri",
-          "Facebook, Instagram, and TikTok"
+          "Approve",
+          "Auto",
+          "Supervised",
+          "Manual"
         ],
-        "answer": 1,
-        "explain": "The audit measures mentions and citations across ChatGPT, Gemini, Google AI Overview, and Perplexity."
+        "answer": 2,
+        "explain": "Supervised is the default: the agent acts on its own and surfaces the important decisions in the Content Queue; most customers stay there."
       },
       {
-        "q": "What is the cure for objection #15, 'The content doesn't sound like me, it's generic'?",
+        "q": "How are the Loyalty and Conversion add-ons priced?",
         "options": [
-          "Switch to a human copywriter",
-          "Feed the Brain relevant context so the output becomes differentiated",
-          "Lower the publishing frequency",
-          "Turn off AI content generation"
+          "Both free with 2.7% per transaction",
+          "Loyalty $49/mo (500 SMS + 100 AI calls); Conversion $49/mo + 10% of recovered booking value",
+          "Loyalty $179/mo; Conversion $249/mo",
+          "Both bundled into the base plan at no cost"
         ],
         "answer": 1,
-        "explain": "Feeding the Brain real context turns generic output into differentiated content, converting the complaint into a Brain-building conversation."
+        "explain": "Loyalty is $49/mo including 500 SMS + 100 AI calls; Conversion is $49/mo + 10% of recovered booking value and requires B&P connected."
+      },
+      {
+        "q": "When a prospect asks who provides the voice AI under the hood, the rep should say:",
+        "options": [
+          "Name the third-party voice vendor",
+          "It's all built in house",
+          "We license it from a partner",
+          "We can't discuss it at all"
+        ],
+        "answer": 1,
+        "explain": "The answer is \"it's all built in house\"; reps never name third-party voice vendors on customer calls."
+      }
+    ]
+  },
+  "selling-zoca/05-why-we-win": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What does the lesson say is the most common alternative an owner is actually weighing?",
+        "options": [
+          "A marketing/SEO agency",
+          "A deal platform like Groupon",
+          "A legacy booking platform with an AI plugin",
+          "Doing nothing and living with the leak"
+        ],
+        "answer": 3,
+        "explain": "Doing nothing (living with the leak) is the most common alternative; selling against it means selling against inertia."
+      },
+      {
+        "q": "The core reason Zoca leads cannot be Groupon leads is rooted in:",
+        "options": [
+          "Search intent, branded vs. non-branded search",
+          "Zoca offering a bigger discount",
+          "Groupon's higher platform fees alone",
+          "Zoca being listed on Groupon too"
+        ],
+        "answer": 0,
+        "explain": "Search intent decides everything: Groupon customers used a branded search, while Zoca leads searched non-branded service terms and pay full price."
+      },
+      {
+        "q": "An owner says \"We already pay GlossGenius, they have an AI thing now.\" The best move is to:",
+        "options": [
+          "Tell them to rip out GlossGenius and replace it",
+          "Ask whether GlossGenius is doing their SEO and content, and clarify Zoca connects rather than replaces booking",
+          "Bash GlossGenius as a legacy tool",
+          "Concede they're already covered"
+        ],
+        "answer": 1,
+        "explain": "The existing-vendor objection is usually partial coverage (booking) masquerading as full; find the gap and note Zoca connects to booking, not a rip-and-replace."
+      },
+      {
+        "q": "According to the lesson, what is Zoca's moat?",
+        "options": [
+          "Lowest price in the market",
+          "The largest sales team",
+          "Building only for beauty and wellness, vertical depth a horizontal platform can't match",
+          "Owning the customer relationship like a deal platform"
+        ],
+        "answer": 2,
+        "explain": "\"Zoca only builds for beauty and wellness, that's the moat\"; vertical depth is product depth a horizontal platform can't match."
+      }
+    ]
+  },
+  "selling-zoca/06-the-zoca-values": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the correct public-facing contract phrasing per Value 04?",
+        "options": [
+          "\"No contracts\"",
+          "\"No long-term contracts\"",
+          "\"Zero-commitment\"",
+          "\"Cancel anytime, no agreement\""
+        ],
+        "answer": 1,
+        "explain": "Say \"no long-term contracts,\" never \"no contracts\" — we do sign service agreements at trial start."
+      },
+      {
+        "q": "What was the root failure behind the April 2026 SDR incident in which 34 sales SMS reached paid customers?",
+        "options": [
+          "An SDR was deliberately targeting paid accounts",
+          "A misapplied export filter that wasn't applied at send time, plus banned phrasing in the copy",
+          "The CRM crashed and resent old messages",
+          "Paid customers opted into the sales list by mistake"
+        ],
+        "answer": 1,
+        "explain": "The exclusion filter was applied at list-prep rather than send time; the copy also carried Zoca branding and performance-shaming language."
+      },
+      {
+        "q": "When running the six-value filter on a decision no policy covers, which two questions catch most bad decisions?",
+        "options": [
+          "#5 (dreaming big) and #6",
+          "#3 (figure it out) and #4 (boring vs. bold)",
+          "#1 (does this serve the customer winning?) and #2 (am I being completely honest?)",
+          "#4 (the bold move) and #5 (betting on people)"
+        ],
+        "answer": 2,
+        "explain": "Bad decisions almost always fail at #1 (customer winning) or #2 (honesty); most decisions resolve in the first two."
+      },
+      {
+        "q": "Per the honesty rules, how should an AE describe Booking, Loyalty, and Ads Agents on a discovery call?",
+        "options": [
+          "As live features included in the base bundle today",
+          "As Coming Soon upside, sold without a launch date",
+          "As features that ship next week if the prospect signs today",
+          "As permanently unavailable and not worth mentioning"
+        ],
+        "answer": 1,
+        "explain": "Coming-Soon agents are sold as upside so owners see the roadmap, but never with a launch date."
+      }
+    ]
+  },
+  "selling-zoca/07-integrations": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "As of May 2026, which booking platforms are the confirmed live integrations?",
+        "options": [
+          "Booksy and Vagaro",
+          "GlossGenius and Fresha",
+          "Square and Acuity",
+          "MindBody and Schedulicity"
+        ],
+        "answer": 1,
+        "explain": "GlossGenius and Fresha are the confirmed integrations today, with roughly four more near-live; confirm current status before promising a platform."
+      },
+      {
+        "q": "How does Zoca handle payments relative to the booking platform?",
+        "options": [
+          "Zoca processes all payments directly through its own rail",
+          "Zoca orchestrates — it triggers the booking platform's payment/deposit flow but never processes payments itself",
+          "Zoca replaces the booking platform's payment system entirely",
+          "Zoca routes payments through a generic CRM"
+        ],
+        "answer": 1,
+        "explain": "Zoca orchestrates rather than processes: Front Desk Agent calls back into the booking platform's payment flow and confirms when paid."
+      },
+      {
+        "q": "A prospect's booking platform isn't a live Zoca integration yet. What is the correct move?",
+        "options": [
+          "Tell them the deal is dead and move on",
+          "Treat it as a migration/integration conversation — still a real deal, scope the setup honestly",
+          "Promise the integration ships next week",
+          "Refuse them unless they switch immediately"
+        ],
+        "answer": 1,
+        "explain": "A not-yet-live platform is never a hard no — it becomes a migration conversation where you scope the setup honestly and let them decide."
+      },
+      {
+        "q": "Across the integration landscape, what is the only true hard prerequisite for onboarding?",
+        "options": [
+          "The prospect must already be on GlossGenius or Fresha",
+          "A laptop or iPad must be in the shop",
+          "The prospect must connect QuickBooks",
+          "The prospect must be a multi-location business"
+        ],
+        "answer": 1,
+        "explain": "The only true hard prerequisite anywhere in onboarding is a laptop or iPad in the shop; everything else flexes."
+      }
+    ]
+  },
+  "selling-zoca/08-the-qualifying-call": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Why does the qualifying call save the revenue question for later rather than opening with it?",
+        "options": [
+          "Revenue is irrelevant to fit",
+          "Owners get defensive when a stranger leads with revenue; by then location and staff answers have already revealed size",
+          "Reps aren't allowed to ask revenue at all",
+          "Revenue must be the last question of the call"
+        ],
+        "answer": 1,
+        "explain": "Opening with revenue makes owners defensive; by the time you ask, the location and staff answers make the range question feel like normal scoping."
+      },
+      {
+        "q": "What is the decided lead-prediction signal for healthy demand?",
+        "options": [
+          "At least 100 leads per month",
+          "At least 60 leads over the next six months",
+          "At least 60 leads per month",
+          "Pending Sales Ops decision"
+        ],
+        "answer": 1,
+        "explain": "The lead signal is decided: at least 60 leads over the next six months; thinner demand means slower, smaller wins, not a no."
+      },
+      {
+        "q": "A single-location solo shop owner doing under $100K is on the call. How does the AE handle fit?",
+        "options": [
+          "Disqualify them — they don't meet the revenue floor",
+          "Workable, lower-fit — still sellable with modest, honest expectations",
+          "Refuse and tell them to come back at $500K",
+          "Quote a discounted price to win them"
+        ],
+        "answer": 1,
+        "explain": "Fit is best-fit not a hard no: a sub-$100K solo shop is workable lower-fit, still sellable with honest expectation-setting."
+      },
+      {
+        "q": "When a prospect asks about add-on pricing, which statement is correct?",
+        "options": [
+          "Loyalty Agent is free; Conversion Agent has no prerequisite",
+          "Conversion Agent is $49/mo + 10% of recovered value and requires Bookings & Payments connected",
+          "Ads Agent is $49/mo flat",
+          "Bookings & Payments costs $49/mo"
+        ],
+        "answer": 1,
+        "explain": "Conversion is $49/mo + 10% of recovered value and requires B&P connected; B&P is free + 2.7%/txn, Loyalty is $49/mo, Ads pricing is TBD."
+      }
+    ]
+  },
+  "selling-zoca/09-the-demo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the purpose of the Day 0 to Wk 3 toggle reveal in the demo?",
+        "options": [
+          "To show the prospect a discount tier",
+          "To set honest expectations — the empty Day 0 dashboard first, then the populated Wk 3 destination",
+          "To demonstrate the billing cycle",
+          "To compare Zoca against an agency"
+        ],
+        "answer": 1,
+        "explain": "Showing the empty Day 0 first then toggling to Wk 3 makes the slow start feel honest, preventing churn from customers expecting Wk 3 numbers on day one."
+      },
+      {
+        "q": "If a prospect asks during the Test Call whether it's really AI, how should the AE answer?",
+        "options": [
+          "Name the third-party voice vendor that powers it",
+          "Be honest that it's the Front Desk Agent, built in-house, without naming any vendor",
+          "Deny it's AI to keep the magic",
+          "Refuse to answer and move on"
+        ],
+        "answer": 1,
+        "explain": "The AE says it's the Front Desk Agent built in-house and never names a third-party vendor."
+      },
+      {
+        "q": "At roughly which point should the pricing reveal happen in the canonical 20-minute demo?",
+        "options": [
+          "Minute 4, right after the opening",
+          "Minute 12, during the four promises",
+          "Near the very end (minute 17-18) after the gap and fixes are loaded",
+          "Before screen-sharing begins"
+        ],
+        "answer": 2,
+        "explain": "Pricing is held to the end on purpose so the prospect has felt the gap and seen the fix before the number lands."
+      },
+      {
+        "q": "What is the Dev panel and where does it exist?",
+        "options": [
+          "A real customer-facing settings page in production",
+          "A sales-only toggle panel in the preview that renders any state on one link; it does not exist in production",
+          "The prospect's actual Google Business Profile editor",
+          "A billing console for managing subscriptions"
+        ],
+        "answer": 1,
+        "explain": "The Dev panel is a sales tool that renders every dashboard state on one shared link; it is not a real-customer surface and isn't in production."
+      }
+    ]
+  },
+  "selling-zoca/10-pricing-packaging-closing": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How does the Zoca billing model handle a customer adding agents like Loyalty or Conversion later?",
+        "options": [
+          "Each agent gets its own separate subscription and billing date",
+          "They join the same single subscription on the same billing cycle; renewals consolidate all active agents",
+          "A new subscription is created and the old one is cancelled",
+          "Adding an agent requires re-signing the contract"
+        ],
+        "answer": 1,
+        "explain": "One subscription, one cycle: added agents join the same subscription, renewals consolidate them, and there are no per-agent subscriptions."
+      },
+      {
+        "q": "When a customer upgrades from monthly to yearly, when does the upgrade take effect?",
+        "options": [
+          "Only at the end of the current cycle, no other option",
+          "Only immediately, no other option",
+          "The customer chooses — at the end of the current cycle OR immediately — and lands on the subscription page",
+          "It always waits until the next calendar year"
+        ],
+        "answer": 2,
+        "explain": "The upgrade is one-click and the customer chooses whether it applies at the end of the cycle or immediately, then lands on the subscription page."
+      },
+      {
+        "q": "What happens financially when a customer downgrades by turning an agent off mid-cycle?",
+        "options": [
+          "They get a prorated refund for the remainder of the cycle",
+          "There is no mid-cycle refund; the structure is unchanged and no new subscription is created",
+          "A new subscription is created at a lower rate",
+          "Cancellation is triggered automatically"
+        ],
+        "answer": 1,
+        "explain": "Downgrade is right-sizing: no mid-cycle refund, structure unchanged, no new subscription — they stop paying for that agent at the next cycle."
+      },
+      {
+        "q": "What is the correct stance on discounts and the setup fee?",
+        "options": [
+          "AEs have a pricing floor they can discount down to",
+          "There is no AE discount floor; the annual rate is the discount, and the setup fee is waived only on annual",
+          "There is no setup fee at all",
+          "The setup fee is waived on monthly but charged on annual"
+        ],
+        "answer": 1,
+        "explain": "There are no discounts beyond annual pricing — the annual rate is the discount — and the setup fee is waived only on the annual plan."
+      }
+    ]
+  },
+  "selling-zoca/11-objection-handling": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Per Cole's rule, what is the correct first move when a prospect raises an objection?",
+        "options": [
+          "Defend Zoca's position with data immediately",
+          "Concede the real point first, then redirect",
+          "Bulldoze past the legitimate part to keep momentum",
+          "Restate the price and go silent"
+        ],
+        "answer": 1,
+        "explain": "Cole's rule is to concede the legitimate part of the objection first, then reframe — don't defend, don't bulldoze."
+      },
+      {
+        "q": "When handling 'It's too expensive,' the leak-math reframe moves the conversation from the price of Zoca to what?",
+        "options": [
+          "A competitor's lower price",
+          "A guaranteed ROI promise",
+          "The dollar cost of the prospect's own leaks (e.g., missed calls)",
+          "A discount you can offer"
+        ],
+        "answer": 2,
+        "explain": "The leak-math reframe translates the monthly price into the cost of the prospect's missed calls/drop-offs using their own numbers; price stays firm."
+      },
+      {
+        "q": "A prospect asks 'How do you rank on AI search?' What is the correct handling?",
+        "options": [
+          "Quote a target ranking position you can hit in 30 days",
+          "Explain there is no ranking in AI search — it's about being recommended and cited",
+          "Promise top placement on ChatGPT and Gemini",
+          "Defer the question to engineering"
+        ],
+        "answer": 1,
+        "explain": "It's a trick question: AI search recommends and cites, it doesn't rank. Recognizing this signals real understanding of GEO/AEO."
+      },
+      {
+        "q": "Against 'What if the AI makes a mistake?', the recommended posture is to:",
+        "options": [
+          "Promise the agent never makes mistakes",
+          "Concede it will make mistakes, then explain how they're contained (recorded, correctable, human fallback)",
+          "Argue every human receptionist is worse",
+          "Avoid the topic and pivot to pricing"
+        ],
+        "answer": 1,
+        "explain": "Don't promise perfection — concede mistakes happen, then contain: every call recorded, correctable in 30 seconds, and human-routing fallback."
+      }
+    ]
+  },
+  "selling-zoca/12-pipeline-systems-logs": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How many deal stages does Zoca's pipeline use, and how many can a deal occupy at once?",
+        "options": [
+          "5 stages; a deal can span two",
+          "6 stages; a deal lives in exactly one at a time",
+          "7 stages; a deal lives in exactly one",
+          "6 stages; a deal can span two adjacent stages"
+        ],
+        "answer": 1,
+        "explain": "Zoca runs 6 deal stages, and a deal sits in exactly one stage at a time."
+      },
+      {
+        "q": "What does the 14-day stale-deal rule require?",
+        "options": [
+          "Automatically close any deal older than 14 days",
+          "Give any deal untouched for 14 days a decision: re-engage with a concrete next step or move to Closed Lost with a reason",
+          "Move stale deals forward a stage to keep the forecast warm",
+          "Wait 14 more days before deciding"
+        ],
+        "answer": 1,
+        "explain": "Any open deal with no movement for 14 days gets a decision — a concrete next step or Closed Lost with a logged reason — never a shrug."
+      },
+      {
+        "q": "What must a Demo Completed deal's recap email contain, sent within 4 hours?",
+        "options": [
+          "A second pitch and Coming Soon feature promises",
+          "The exact pricing the prospect agreed to verbally, plus pain, next step, and a missing-info ask",
+          "Marketing copy and 'no contracts' wording",
+          "Whatever pricing makes the deal easier to close"
+        ],
+        "answer": 1,
+        "explain": "The 4-line recap is a record, not a pitch; it must carry the exact agreed pricing or you get disputes at month 2."
+      },
+      {
+        "q": "A prospect asks for a lower price because 'every dollar counts.' The correct move is to:",
+        "options": [
+          "Offer a small discount to close faster",
+          "Hold the price, reframe to leak math, and note the setup fee is waived on annual",
+          "Quote the monthly number as if it were a discount",
+          "Escalate to a manager for discount approval"
+        ],
+        "answer": 1,
+        "explain": "Don't discount — hold price, reframe to leak math, and use the annual setup-fee waiver; discounting trains the prospect that price is negotiable."
+      }
+    ]
+  },
+  "selling-zoca/13-coming-soon-agents": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the correct pricing for the Conversion Agent?",
+        "options": [
+          "$49/mo flat, no transaction fee",
+          "$49/mo + 10% of recovered booking value, requires Bookings & Payments connected",
+          "Free monthly + 2.7% per transaction",
+          "Pricing TBD — never quote"
+        ],
+        "answer": 1,
+        "explain": "Conversion Agent is $49/mo plus 10% of recovered booking value and requires B&P connected; you only pay when it saves a booking."
+      },
+      {
+        "q": "How should you position the Booking, Loyalty, and Ads agents?",
+        "options": [
+          "As shipping in Q3 with firm dates",
+          "As upside / 'on the roadmap,' never with launch dates",
+          "As fully live and included in the value math",
+          "As reasons to delay signing until they ship"
+        ],
+        "answer": 1,
+        "explain": "Coming-soon agents are sold as upside, named because the prospect sees them in the sidebar, but never with a launch date."
+      },
+      {
+        "q": "Which statement about Ashley is correct?",
+        "options": [
+          "Ashley is a chatbot that answers questions",
+          "Ashley is an AI assistant search bar",
+          "Ashley is an AI account manager who reads the account and acts on it",
+          "Ashley is the human dedicated AM for $5K+ accounts"
+        ],
+        "answer": 2,
+        "explain": "Ashley is an AI account manager — never a chatbot; she's trained on the account, acts, and replies in under 30 seconds."
+      },
+      {
+        "q": "When a prospect asks the price of the Ads Agent, you should:",
+        "options": [
+          "Quote a rough monthly fee to look prepared",
+          "Say pricing is still landing and will be published before launch — never improvise a number",
+          "Tell them it's free",
+          "Bundle it into the Conversion Agent price"
+        ],
+        "answer": 1,
+        "explain": "Ads Agent pricing is TBD; never quote a number — say it's still landing and bundled annual customers get the launch deal automatically."
+      }
+    ]
+  },
+  "selling-zoca/14-am-lifecycle": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "At what Annual Contract Value does account ownership split, and what are the two lanes?",
+        "options": [
+          "$3K split: pod vs. self-serve",
+          "$5K split: under $5K = Customer Success Pod, $5K+ = dedicated named AM",
+          "$10K split: shared inbox vs. AM",
+          "$5K split: under $5K = dedicated AM, $5K+ = pod"
+        ],
+        "answer": 1,
+        "explain": "The $5K ACV split is fixed: under $5K goes to the Customer Success Pod, $5K and above gets a dedicated named AM with proactive MBR outreach."
+      },
+      {
+        "q": "What are the 4-hour and 24-hour clocks on Day 1 of the handoff?",
+        "options": [
+          "First content posts in 4 hrs; first review in 24 hrs",
+          "Customer hears from us within 4 hrs of signing; the 8-item confirmation list is clean within 24 hrs",
+          "Refund window 4 hrs; cancellation window 24 hrs",
+          "Orientation in 4 hrs; MBR in 24 hrs"
+        ],
+        "answer": 1,
+        "explain": "The customer must hear from us within 4 hours of signing; the 8-item confirmation list must be locked within 24 hours."
+      },
+      {
+        "q": "In a churn-prevention call, what is the rule about discounts?",
+        "options": [
+          "Offer a one-time discount to save the relationship",
+          "Never discount to save churn — use the honest 'pause and come back' path instead",
+          "Discount only for $5K+ accounts",
+          "Match any competitor's price"
+        ],
+        "answer": 1,
+        "explain": "Never discount to save churn; it trains both sides badly and they churn at renewal anyway. The preserve-and-re-subscribe path works better."
+      },
+      {
+        "q": "When a wrong-fit solo owner asks to cancel and the volume for real lift was never there, what is the correct reframe?",
+        "options": [
+          "Fix-it: demonstrate a config fix on the call",
+          "Value: open the MBR panel and show six months of numbers",
+          "Let-them-go: honestly recommend they cancel and leave the door open",
+          "Cash flow: offer to revisit in 30 days"
+        ],
+        "answer": 2,
+        "explain": "The let-them-go reframe applies to a wrong-fit ICP — recommend cancellation honestly and note the file; these customers most often return later."
       }
     ]
   },
   "selling-zoca/__final__": {
-    "passScore": 80,
+    "passScore": 70,
     "questions": [
       {
-        "q": "What is the entry tactic for a Type C (overwhelmed) buyer?",
+        "q": "What is the ONLY hard rule in the entire Zoca curriculum?",
         "options": [
-          "A wake-up call that the digital shift is real",
-          "One hard-hitting fact they don't already know",
-          "Show the cost and chaos of juggling 5+ tools and sell simplicity",
-          "A full feature-by-feature product demo"
-        ],
-        "answer": 2,
-        "explain": "Type C feels covered because they pay for many tools, so show the cost and chaos and sell simplicity, cohesiveness and context."
-      },
-      {
-        "q": "Which principle governs how a pitch should open?",
-        "options": [
-          "Lead with features (the 'what')",
-          "Lead with the why—the buyer's world and pain—before any feature",
-          "Lead with pricing to filter prospects",
-          "Lead with competitor comparisons"
+          "The prospect must be in beauty & wellness",
+          "A laptop or iPad must be in the shop (onboarding/demo can't run without it)",
+          "The prospect must have 60+ leads per month",
+          "The prospect cannot be using Vagaro"
         ],
         "answer": 1,
-        "explain": "Why-before-what: anchor the conversation in the buyer's reality first so the product lands harder once they feel understood."
+        "explain": "A laptop or iPad in the shop is the single hard rule — onboarding can't run without it. Everything else flexes under best-fit framing."
       },
       {
-        "q": "What is the one-sentence marketing story when a prospect asks what the marketing does?",
+        "q": "How should a rep treat an out-of-vertical prospect (e.g., a dental office or gym)?",
         "options": [
-          "Leads and conversions",
-          "Content + context",
-          "Ads and retargeting",
-          "Bookings and payments"
-        ],
-        "answer": 1,
-        "explain": "The story compresses to content plus context, where context is the business-specific nuance that makes content non-generic."
-      },
-      {
-        "q": "How is Zoca distinguished from a marketplace like Fresha?",
-        "options": [
-          "Zoca charges a flat fee per lead-generated booking",
-          "Zoca is a lead reseller that rents leads",
-          "Zoca makes a business findable rather than reselling it leads",
-          "Zoca takes ~10% of every service price"
+          "Disqualify them — they're not ICP",
+          "Refuse the sale and refer them elsewhere",
+          "Be honest the product is tuned for beauty and some category intelligence won't apply, then let them decide — still sellable",
+          "Tell them they don't qualify"
         ],
         "answer": 2,
-        "explain": "Zoca is not a marketplace or lead reseller; Google is where the search happens and Zoca makes the business findable."
+        "explain": "ICP is best-fit, not a hard no. Beauty & wellness is the sharpest fit, but out-of-vertical prospects are still sellable with honest expectation-setting."
       },
       {
-        "q": "What is the nature of the discovery call in the sales pipeline?",
+        "q": "What are the four leaks Zoca closes?",
         "options": [
-          "An optional intro call before qualification",
-          "A mandatory, fully-loaded product demo with all agents active",
-          "A pure conversion call focused only on closing",
-          "A post-payment onboarding session"
+          "Pricing, payroll, payments, taxes",
+          "New bookings/visibility, missed calls, mid-booking drop-off, first-timer churn",
+          "Reviews, refunds, no-shows, deposits",
+          "SEO, ads, social, email"
         ],
         "answer": 1,
-        "explain": "The discovery call is mandatory, shows the product fully loaded with all agents active, and is not a conversion call."
+        "explain": "The four leaks are new bookings/visibility, missed calls, mid-booking drop-off, and first-timer churn — consistent across the curriculum."
       },
       {
-        "q": "What is true about pricing across the five onboarding journeys?",
+        "q": "What does every new logo buy, and how is it framed?",
         "options": [
-          "Browser-automation journeys cost less than full migration",
-          "API integrations are the most expensive tier",
-          "There is no price difference between journeys",
-          "Migration to Zoca bookings is discounted"
-        ],
-        "answer": 2,
-        "explain": "Pricing is the same whether a customer integrates, runs on browser automation or migrates fully, so guide them to the best-fit path."
-      },
-      {
-        "q": "In the support/CX model, who gets a dedicated pod?",
-        "options": [
-          "Every paying customer",
-          "Customers paying under $5k",
-          "Customers over $5k or on the full suite",
-          "Only multi-location accounts"
-        ],
-        "answer": 2,
-        "explain": "A dedicated pod is reserved for customers over $5k or on the full suite; others rely on Command Center plus the AI account manager."
-      },
-      {
-        "q": "For objection #12, how is Front Desk positioned versus a human receptionist?",
-        "options": [
-          "As a full replacement that fires the receptionist",
-          "As coverage, not replacement—24/7, simultaneous calls, after-hours",
-          "As a cheaper but less capable alternative",
-          "As identical in capability to a human"
+          "All five agents on separate subscriptions",
+          "Discovery Agent + Front Desk Agent bundled as 'Discovery Neo'",
+          "Only the Front Desk Agent",
+          "Discovery Neo plus a mandatory Conversion Agent"
         ],
         "answer": 1,
-        "explain": "It's coverage not replacement—24/7, simultaneous calls, after-hours, spam filtering and outbound recovery at ~$99/mo versus a few thousand for a human."
+        "explain": "Discovery Agent + Front Desk Agent ship together as Discovery Neo; Conversion, Booking, Loyalty, and Ads are add-ons/coming-soon."
+      },
+      {
+        "q": "Which add-on pricing statement is correct?",
+        "options": [
+          "Bookings & Payments is $49/mo flat",
+          "Loyalty Agent is $49/mo and includes 500 SMS + 100 AI calls",
+          "Conversion Agent is free with B&P",
+          "Ads Agent is $49/mo + 10%"
+        ],
+        "answer": 1,
+        "explain": "Loyalty Agent is $49/mo including 500 SMS + 100 AI calls. B&P is free + 2.7%/txn; Conversion is $49/mo + 10% (needs B&P); Ads pricing is TBD."
+      },
+      {
+        "q": "How does Zoca's subscription and billing model work?",
+        "options": [
+          "A separate subscription per agent, each on its own cycle",
+          "One subscription on one billing cycle; adding agents joins the same subscription and renewals consolidate",
+          "Monthly only, with no annual option",
+          "A long-term contract with early-termination penalties"
+        ],
+        "answer": 1,
+        "explain": "One subscription, one billing cycle — adding an agent joins the same subscription, renewals consolidate, and there are no long-term contracts."
+      },
+      {
+        "q": "What is true about the setup fee?",
+        "options": [
+          "There is no setup fee",
+          "There is a setup fee, waived only on the yearly (annual) plan — use it as a reason to go annual",
+          "The setup fee is always $290",
+          "The setup fee applies only to annual plans"
+        ],
+        "answer": 1,
+        "explain": "There is a real setup fee, waived only on the yearly plan. Never say 'no setup fee' and never state the amount — frame the waiver as a reason to go annual."
+      },
+      {
+        "q": "Which lead-prediction signal indicates a strong best-fit prospect?",
+        "options": [
+          "At least 60 leads in 6 months",
+          "At least 100 leads per month",
+          "Any prospect in beauty regardless of leads",
+          "Pending Sales Ops review"
+        ],
+        "answer": 0,
+        "explain": "The decided lead-prediction signal is at least 60 leads per 6 months — settled, not pending Sales Ops."
       }
     ]
   }
