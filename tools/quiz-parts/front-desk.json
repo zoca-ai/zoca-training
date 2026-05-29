@@ -1,0 +1,374 @@
+{
+  "front-desk/01-what-zoe-does": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is one of the things Zoe will explicitly NOT do?",
+        "options": [
+          "Answer inbound calls 24/7",
+          "Collect a payment or take a deposit / card",
+          "Recognize returning clients by phone",
+          "Detect and filter spam"
+        ],
+        "answer": 1,
+        "explain": "Zoe never collects payment or takes a deposit/card; the salon takes payment its normal way."
+      },
+      {
+        "q": "How does Zoe recognize a returning client?",
+        "options": [
+          "By asking the caller to state their name",
+          "By a downloaded client app",
+          "By the phone number they're calling from, matched to the client list",
+          "By voice recognition of the caller"
+        ],
+        "answer": 2,
+        "explain": "Returning callers are matched on the phone number they're calling from, pulled from the salon's client list and booking history."
+      },
+      {
+        "q": "How does Zoe's spam shield actually work?",
+        "options": [
+          "It blocks junk calls before they ring, using a caller-reputation database",
+          "It answers, then tags very short calls and obvious robocalls as spam after the call",
+          "It forwards all suspicious calls to a human",
+          "It requires callers to pass a verification challenge first"
+        ],
+        "answer": 1,
+        "explain": "The spam shield is post-call tagging of very short calls and obvious robocalls, not a pre-answer wall or third-party reputation database."
+      },
+      {
+        "q": "About how long does a standard booking call with Zoe typically run?",
+        "options": [
+          "60-120 seconds",
+          "10-20 seconds",
+          "4-5 minutes",
+          "15-30 minutes"
+        ],
+        "answer": 0,
+        "explain": "A standard booking call runs about 60-120 seconds; a quick hours question is 30-60 seconds and a messy reschedule can take 4-5 minutes."
+      }
+    ]
+  },
+  "front-desk/02-booking-and-platforms": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the core differentiator of how Zoe handles bookings?",
+        "options": [
+          "She texts the caller a booking link to complete later",
+          "She only works with Calendly",
+          "She writes the appointment into the salon's existing scheduler, live on the call",
+          "She emails the salon to enter the booking manually"
+        ],
+        "answer": 2,
+        "explain": "Zoe writes the appointment end-to-end into the scheduler the salon already runs on, live on the call."
+      },
+      {
+        "q": "Which two platforms are described as TRUE integrations through the salon's own account?",
+        "options": [
+          "Booksy and Vagaro",
+          "Square and Mindbody",
+          "Fresha and GlossGenius",
+          "Zoca Scheduling and Boulevard"
+        ],
+        "answer": 1,
+        "explain": "Square and Mindbody are true integrations via the salon's own account; Booksy, Vagaro, Fresha, and GlossGenius use the secure-assistant approach."
+      },
+      {
+        "q": "Why does Zoe book without collecting a deposit or card on the call?",
+        "options": [
+          "Because the schedulers don't support deposits",
+          "It's a deliberate feature so most bookings land confirmed instead of stuck awaiting payment",
+          "Because deposits are illegal over the phone",
+          "Because she can't access the salon's deposit settings"
+        ],
+        "answer": 1,
+        "explain": "Deposits-off is deliberate; with no payment step to stall on, most Zoe bookings land confirmed and the salon's deposit settings stay untouched."
+      },
+      {
+        "q": "What is the correct, customer-safe way to describe how Zoe connects to Booksy, Vagaro, Fresha, and GlossGenius?",
+        "options": [
+          "An official API partnership",
+          "A reverse-engineered workaround",
+          "A secure automated assistant set up on the account using the salon's login",
+          "A manual data export each morning"
+        ],
+        "answer": 2,
+        "explain": "The honest framing is a secure automated assistant on the account using the login; never say official API partnership, hacky, or workaround."
+      }
+    ]
+  },
+  "front-desk/03-telephony-and-setup": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Who provides and pays for Zoe's dedicated phone number?",
+        "options": [
+          "The salon, as a monthly add-on",
+          "Zoca provides and pays for it, and the owner can pick the area code",
+          "The salon's existing carrier",
+          "Google, via the Business Profile"
+        ],
+        "answer": 1,
+        "explain": "Zoca provisions and pays for a US/Canada number, and the owner can choose the area code so it feels local."
+      },
+      {
+        "q": "How does the salon keep its existing number while using Zoe?",
+        "options": [
+          "By forwarding its existing line to Zoe's number",
+          "By instant self-serve porting of the number to Zoca",
+          "By replacing all signage with the new number",
+          "By using two separate phones at the front desk"
+        ],
+        "answer": 0,
+        "explain": "The salon forwards its existing line to Zoe's number via a guided wizard; a true self-serve port-in is only on the roadmap."
+      },
+      {
+        "q": "What does Zoe's transfer/handoff capability look like today?",
+        "options": [
+          "A warm transfer to multiple destinations",
+          "A cold transfer to one destination during transfer hours",
+          "No transfer is possible at all",
+          "An automatic transfer to a call center"
+        ],
+        "answer": 1,
+        "explain": "Today it's a cold transfer to one destination per salon during transfer hours; warm transfer and multiple destinations are on the roadmap."
+      },
+      {
+        "q": "How long does Zoe's guided onboarding take, and how many steps does it have?",
+        "options": [
+          "A multi-day IT project across 20 steps",
+          "About 5 minutes, fully self-serve, 3 steps",
+          "About 45 minutes (rarely over an hour), 10 steps",
+          "About 2 hours, 7 steps"
+        ],
+        "answer": 2,
+        "explain": "Setup is a guided ~45-minute, 10-step onboarding ending with a free test call and go-live."
+      }
+    ]
+  },
+  "front-desk/04-training-and-memory": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which two Training tab sections are REQUIRED to go live?",
+        "options": [
+          "QnAs and Policies",
+          "Business Profile and Services",
+          "Custom Instructions and QnAs",
+          "Services and Policies"
+        ],
+        "answer": 1,
+        "explain": "Business Profile and Services are the two required-to-go-live sections; QnAs, Policies, and Custom Instructions fine-tune her."
+      },
+      {
+        "q": "How many voices can the owner choose from for Zoe?",
+        "options": [
+          "Four (Eryn, Vexa, Mark, Jessica)",
+          "Two (male and female)",
+          "Unlimited via voice cloning",
+          "Six, one per salon type"
+        ],
+        "answer": 0,
+        "explain": "The owner picks one of four voices (Eryn, Vexa, Mark, Jessica); there is no voice cloning."
+      },
+      {
+        "q": "How does the 'Questions from calls' Brain loop work?",
+        "options": [
+          "Zoe mines transcripts and invents memories automatically",
+          "Zoe surfaces questions she couldn't answer, and the owner's answer becomes knowledge",
+          "An AI auto-answers every gap without owner input",
+          "The owner must re-record the whole Training tab weekly"
+        ],
+        "answer": 1,
+        "explain": "Zoe surfaces questions she couldn't fully answer; the owner answers, and that answer becomes permanent knowledge, keeping the owner in control."
+      },
+      {
+        "q": "What is Configs, the flagship upcoming feature?",
+        "options": [
+          "A live feature today for warm transfers",
+          "A way to clone the owner's voice",
+          "Rules so Zoe acts more like the owner, e.g. offering an on-the-spot discount (not live yet)",
+          "A second calendar for Zoe to manage"
+        ],
+        "answer": 2,
+        "explain": "Configs (~1-2 months, flagship) will let Zoe act like the owner, headlined by on-the-spot discounting, but it isn't live and shouldn't be demoed as such."
+      }
+    ]
+  },
+  "front-desk/05-dashboard-and-l2b": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
+        "options": ["Overview", "Bookings", "Activity", "Analytics"],
+        "answer": 2,
+        "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
+      },
+      {
+        "q": "What does L2B (Lead-to-Booking) do?",
+        "options": [
+          "It calls every abandoned lead by voice immediately",
+          "When someone abandons a web booking, Zoe texts them back and re-books in the thread",
+          "It exports leads to a spreadsheet for manual follow-up",
+          "It blocks repeat callers from booking twice"
+        ],
+        "answer": 1,
+        "explain": "L2B recovers abandoned web bookings by SMS today, with booking tools inside the text thread so the customer can confirm right there."
+      },
+      {
+        "q": "How should the 'revenue saved' Impact number be presented?",
+        "options": [
+          "As an audited accounting figure",
+          "As a guaranteed result",
+          "As an estimate showing the scale of value, used directionally",
+          "As the salon's actual measured profit"
+        ],
+        "answer": 2,
+        "explain": "The Impact figure is an estimate the system calculates to show the kind of value Zoe drives, never a guarantee or audited number."
+      },
+      {
+        "q": "What can the owner NOT do with the Activity feed in v1?",
+        "options": [
+          "Read a full SMS thread",
+          "Play an inline recording",
+          "Jump in and reply as themselves from the feed",
+          "See the AI summary of a call"
+        ],
+        "answer": 2,
+        "explain": "The v1 feed is read-only; the owner can read threads but can't reply as themselves, and human SMS take-over is on the roadmap."
+      }
+    ]
+  },
+  "front-desk/06-pricing-and-competitive": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the Front Desk standalone monthly price and what's the included voice minute pool?",
+        "options": [
+          "$99/mo with 100 voice minutes included",
+          "$349/mo with unlimited minutes",
+          "$239.20/mo with 500 voice minutes",
+          "$49/mo with 50 voice minutes"
+        ],
+        "answer": 0,
+        "explain": "Front Desk standalone is $99/mo with 100 voice minutes included; year-2 renewal is $149/mo."
+      },
+      {
+        "q": "How does the free trial work?",
+        "options": [
+          "30 days free, no card required",
+          "7 days free, card on file required, first $99 auto-charges unless cancelled",
+          "14 days free, billed in advance",
+          "No trial is offered"
+        ],
+        "answer": 1,
+        "explain": "There's a 7-day free trial with a card on file; the clock starts at onboarding completion and the first $99 auto-charges unless cancelled."
+      },
+      {
+        "q": "Roughly what does a human receptionist cost, per the comparison that closes deals?",
+        "options": [
+          "About $5/hour",
+          "About $99/month total",
+          "About $25/hour, easily a few thousand dollars a month",
+          "About $1/minute"
+        ],
+        "answer": 2,
+        "explain": "A human receptionist runs roughly $25/hour, easily a few thousand a month, and still goes home, takes lunch, and handles one call at a time."
+      },
+      {
+        "q": "What is 'the core win' against competitors repeated throughout the docs?",
+        "options": [
+          "Zoe is the cheapest tool available",
+          "Zoe offers unlimited voice minutes",
+          "Zoe books into the salon's existing calendar end-to-end on the call, while rivals send a link or only do Calendly",
+          "Zoe ships a mobile app for clients"
+        ],
+        "answer": 2,
+        "explain": "The core win is that Zoe writes the booking into the salon's existing calendar end-to-end on the call, unlike rivals that send a link or only support Calendly/Google Calendar."
+      }
+    ]
+  },
+  "front-desk/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "Which of these is something Zoe will NOT do?",
+        "options": [
+          "Transfer to a human during forwarding hours",
+          "Impersonate a human (she discloses she's AI if asked)",
+          "Send SMS confirmations and reminders",
+          "Follow up on abandoned web bookings"
+        ],
+        "answer": 1,
+        "explain": "Zoe never impersonates a human and discloses she's AI if asked; that's a deliberate trust and compliance choice."
+      },
+      {
+        "q": "If a prospect is on no scheduler at all, what's the move?",
+        "options": [
+          "Run Zoe in info-only, no-booking mode",
+          "Put them on Zoca Scheduling",
+          "Decline the deal entirely",
+          "Have Zoe email bookings to the salon"
+        ],
+        "answer": 1,
+        "explain": "A connected platform is required with no booking-less mode, so a prospect with no scheduler should go on Zoca Scheduling."
+      },
+      {
+        "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
+        "options": ["Square", "Booksy", "Boulevard", "GlossGenius"],
+        "answer": 2,
+        "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
+      },
+      {
+        "q": "What is the universal carrier fallback for turning call forwarding on and off?",
+        "options": [
+          "Dial *72 to turn forwarding on, *73 to turn it off",
+          "Dial #1 to forward, #0 to stop",
+          "Press 9 then the destination number",
+          "Forwarding can't be toggled manually"
+        ],
+        "answer": 0,
+        "explain": "The forwarding wizard supports 28+ carriers with a universal fallback: dial *72 to turn forwarding on and *73 to turn it off."
+      },
+      {
+        "q": "Which statement about Zoe's memory today is TRUE?",
+        "options": [
+          "She recalls what a client got last visit",
+          "She carries preferences like 'always book me with Sarah' across calls",
+          "She recognizes returning callers by phone and sees upcoming appointments",
+          "She reads and writes client notes for allergies and VIP status"
+        ],
+        "answer": 2,
+        "explain": "Today Zoe recognizes callers by phone and sees upcoming appointments; past-visit recall, cross-call preferences, and client notes are all roadmap."
+      },
+      {
+        "q": "What is the correct customer-safe framing of the 'revenue saved' Impact number?",
+        "options": [
+          "An audited accounting figure",
+          "An estimate showing the scale of value, used directionally not as a guarantee",
+          "A guaranteed minimum return",
+          "The salon's verified added profit"
+        ],
+        "answer": 1,
+        "explain": "The Impact number is an estimate to show the scale of value, used directionally and never presented as audited or guaranteed."
+      },
+      {
+        "q": "Which competitor ships no voice receptionist at all?",
+        "options": ["Rosie", "Smith.ai", "GlossGenius", "Slang.ai"],
+        "answer": 2,
+        "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
+      },
+      {
+        "q": "How should an AE handle a salon that insists Zoe must enforce deposits / collect a card on the call?",
+        "options": [
+          "Promise it and turn on the deposit toggle",
+          "Improvise a workaround on the spot",
+          "Escalate to Ashish, Robin, Chintan, Kushagra, or Piyush; don't promise it",
+          "Tell the salon it's impossible and end the call"
+        ],
+        "answer": 2,
+        "explain": "The deposit-enforcement toggles are intentionally off; building it on is a product decision, so the AE should escalate to the named people, not promise or improvise."
+      }
+    ]
+  }
+}

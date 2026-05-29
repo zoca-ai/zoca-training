@@ -1,0 +1,389 @@
+{
+  "discovery/01-what-discovery-is": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "According to the lesson, what is the real starting point of Discovery?",
+        "options": [
+          "Google Business Profile management",
+          "Keyword analysis — what people search and the demand behind it",
+          "Building the website",
+          "Replying to reviews"
+        ],
+        "answer": 1,
+        "explain": "The 'UNLEARN THIS' callout says GBP is downstream of keywords; Discovery starts from keyword analysis and demand."
+      },
+      {
+        "q": "How does Discovery fit into Zoca's three-agent model and packaging?",
+        "options": [
+          "It is optional and only included in the full suite",
+          "It is sold only as a standalone product",
+          "It is mandatory and part of every combination — the wedge",
+          "It can be skipped if the customer buys Bookings"
+        ],
+        "answer": 2,
+        "explain": "Discovery is in every combination — it's mandatory and is the wedge; there is no standalone Front Desk or Bookings."
+      },
+      {
+        "q": "What are Discovery's three SEO pillars?",
+        "options": [
+          "Local SEO, Website SEO, and AI search",
+          "Reviews, Photos, and Posts",
+          "Email, SMS, and Social",
+          "Paid ads, Organic, and Referral"
+        ],
+        "answer": 0,
+        "explain": "The lesson defines the three pillars as Local SEO, Website SEO, and AI search."
+      },
+      {
+        "q": "When a customer buys more than one agent, in what fixed order are they onboarded?",
+        "options": [
+          "Front Desk → Bookings → Discovery",
+          "Bookings → Discovery → Front Desk",
+          "Discovery → Front Desk → Bookings",
+          "Discovery → Bookings → Front Desk"
+        ],
+        "answer": 3,
+        "explain": "The 'GOOD TO KNOW' callout states the fixed order is Discovery → Bookings → Front Desk, because Front Desk needs scheduling context."
+      }
+    ]
+  },
+  "discovery/02-local-seo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "In the correct order, what are the five steps of the keyword pipeline?",
+        "options": [
+          "Demand → Searches → Relevance → Selection → Competitor",
+          "Searches → Demand → Relevance → Competitor → Selection",
+          "Relevance → Searches → Demand → Competitor → Selection",
+          "Searches → Competitor → Demand → Relevance → Selection"
+        ],
+        "answer": 1,
+        "explain": "The lesson lists the pipeline as Searches, Demand, Relevance, Competitor, Selection — in that order."
+      },
+      {
+        "q": "How should a salon's primary Google category be chosen?",
+        "options": [
+          "By a gut guess about what the business 'is'",
+          "By whichever service has the highest price",
+          "From impressions, demand, and competition data",
+          "Always 'hair salon' for any hair-and-nails salon"
+        ],
+        "answer": 2,
+        "explain": "The 'DON'T ASSUME' callout says pick the primary category from impressions, demand, and competition — never from a gut guess."
+      },
+      {
+        "q": "What is the difference between branded and non-branded keywords?",
+        "options": [
+          "Branded contain the business or chain name; non-branded describe the service",
+          "Branded describe the service; non-branded contain the business name",
+          "Branded are paid ads; non-branded are organic",
+          "Branded are local; non-branded are hyperlocal"
+        ],
+        "answer": 0,
+        "explain": "Branded keywords contain the business/chain name (e.g. 'VLCC near me'); non-branded describe the service (e.g. 'hair salon near me')."
+      },
+      {
+        "q": "On the Map View, how is rank shown and why are dense scans limited to about 3 per day?",
+        "options": [
+          "A 5×5 grid; limited because of monthly billing caps",
+          "A 7×7 geo-grid over ~3 miles; each scan is 49 live Google queries",
+          "A single citywide pin; limited by Google account suspension risk",
+          "A 10×10 grid; limited because each scan emails the owner"
+        ],
+        "answer": 1,
+        "explain": "The 'ON THE SCREEN' callout describes a 7×7 geo-grid over ~3 miles, with dense scans limited to ~3/day because each is 49 live Google queries."
+      }
+    ]
+  },
+  "discovery/03-website-and-content": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the two calls to action that every Discovery-generated site carries?",
+        "options": [
+          "Email and Directions",
+          "Subscribe and Share",
+          "Call and Book",
+          "Quote and Chat"
+        ],
+        "answer": 2,
+        "explain": "The lesson states every site carries two CTAs: Call and Book."
+      },
+      {
+        "q": "When does the generated website actually go live?",
+        "options": [
+          "The instant it is generated in the demo",
+          "When the trial starts",
+          "After the first blog publishes",
+          "Only once the owner buys a custom domain"
+        ],
+        "answer": 1,
+        "explain": "The 'HONESTY NOTE' clarifies the site goes live when the trial starts, not the moment it's generated."
+      },
+      {
+        "q": "Why are Discovery's blogs formatted as questions and answers?",
+        "options": [
+          "It is purely a stylistic preference",
+          "It makes blogs shorter and cheaper to produce",
+          "Q&A is the format Google and AI engines pull from for specific questions",
+          "It avoids any AI-content penalties"
+        ],
+        "answer": 2,
+        "explain": "The 'GOOD TO KNOW' callout says the Q&A/FAQ format is strategic — it's what Google and AI engines pull from when someone asks a specific question."
+      },
+      {
+        "q": "What happens to a Discovery website when the salon's services change?",
+        "options": [
+          "The owner must manually rebuild each page",
+          "The site rebuilds itself to match (a 'website flip')",
+          "Nothing — the site is static once published",
+          "The whole site is taken offline until re-approved"
+        ],
+        "answer": 1,
+        "explain": "The auto-rebuild section says the site rebuilds to match when services change — a 'website flip' — so the owner never updates pages manually."
+      }
+    ]
+  },
+  "discovery/04-ai-search-aeo-geo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the most important distinction to get right about AI search?",
+        "options": [
+          "You hold a numbered position like 'position 3'",
+          "There is no ranking — only whether you're recommended and cited",
+          "Rankings matter more than mentions",
+          "Only paid placement gets you recommended"
+        ],
+        "answer": 1,
+        "explain": "The lesson stresses there is no 'ranking' in AI search — it's about mentions and citations, not a position number."
+      },
+      {
+        "q": "Which four AI engines are active in the Run Audit today?",
+        "options": [
+          "ChatGPT, Gemini, Google AI Overview, and Perplexity",
+          "ChatGPT, Claude, Bing, and Siri",
+          "Gemini, Perplexity, Alexa, and Copilot",
+          "ChatGPT, Grok, Google AI Overview, and Yelp"
+        ],
+        "answer": 0,
+        "explain": "The lesson lists the four active engines as ChatGPT, Gemini, Google AI Overview, and Perplexity."
+      },
+      {
+        "q": "What does the AEO score measure, and on what scale?",
+        "options": [
+          "Number of leads, scored 0–100",
+          "Profile completeness, scored high/medium/low",
+          "How strongly the business shows up in AI answers, scored 0–10",
+          "Competitor count, scored 1–5 stars"
+        ],
+        "answer": 2,
+        "explain": "The AEO score measures how strongly the business shows up in AI answers, scored 0 to 10."
+      },
+      {
+        "q": "How is Zoca positioned relative to the enterprise tool Profound?",
+        "options": [
+          "Zoca resells Profound to small businesses",
+          "Zoca does for small businesses what Profound does for enterprise",
+          "Profound is a generic SEO agency to avoid comparing to",
+          "Zoca is built on Profound's API"
+        ],
+        "answer": 1,
+        "explain": "The lesson frames Zoca as doing for small businesses what Profound does for enterprise companies like Salesforce and Ramp."
+      }
+    ]
+  },
+  "discovery/05-google-business-profile": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Why must GBP verification be qualified early in the conversation?",
+        "options": [
+          "Verification costs the owner extra money",
+          "An unverified profile breaks the overview screen and disables features",
+          "Google bans unverified businesses from search",
+          "Verification is only needed for the website, not the listing"
+        ],
+        "answer": 1,
+        "explain": "The objection callout states an unverified profile breaks the overview screen and disables features, so it's a hard dependency to qualify early."
+      },
+      {
+        "q": "How are collected reviews gated before going public?",
+        "options": [
+          "All reviews auto-publish immediately",
+          "Reviews under 4 stars are held internally; 5-star/strong ones publish to the website and GBP",
+          "Only reviews left via QR code are published",
+          "The owner must manually publish every review"
+        ],
+        "answer": 1,
+        "explain": "The 'HOW REVIEWS ARE GATED' callout: anything under 4 stars is held internally, while 5-star/strong reviews publish to the website and GBP."
+      },
+      {
+        "q": "On the Photos screen, which three slots does Google score the profile on?",
+        "options": [
+          "Logo, Cover, and Exterior",
+          "Logo, Interior, and Staff",
+          "Cover, Menu, and Products",
+          "Exterior, Interior, and Team"
+        ],
+        "answer": 0,
+        "explain": "The 'ON THE SCREEN' callout names three photo slots Google scores you on: Logo, Cover, and Exterior."
+      },
+      {
+        "q": "What is described as the single biggest ranking signal on the profile?",
+        "options": [
+          "The number of photos uploaded",
+          "Hours accuracy",
+          "The primary category",
+          "The website link"
+        ],
+        "answer": 2,
+        "explain": "The lesson states the primary category is the single biggest ranking signal (with hours accuracy as the top trust signal)."
+      }
+    ]
+  },
+  "discovery/06-leads-and-reporting": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the four statuses an enquiry can carry in the leads surface?",
+        "options": [
+          "New, Contacted, Won, Lost",
+          "Booked, Not booked, Unresponsive, Duplicate",
+          "Hot, Warm, Cold, Dead",
+          "Open, Pending, Closed, Spam"
+        ],
+        "answer": 1,
+        "explain": "The lesson lists the four lead statuses as Booked, Not booked, Unresponsive, and Duplicate."
+      },
+      {
+        "q": "What is the central reframe of this lesson?",
+        "options": [
+          "Promise a guaranteed monthly lead count",
+          "Sell the visible marketing work that produces leads, not a lead-prediction number",
+          "Focus the demo entirely on the leads list",
+          "Only sell the audit, never the dashboards"
+        ],
+        "answer": 1,
+        "explain": "The big reframe is to sell the visible marketing work that produces leads, never a lead-prediction number."
+      },
+      {
+        "q": "Where do abandoned booking leads from the Front Desk product appear?",
+        "options": [
+          "Only inside the Front Desk product",
+          "They are discarded if not completed",
+          "In the Discovery leads surface",
+          "In a separate billing report"
+        ],
+        "answer": 2,
+        "explain": "The lesson explains abandoned leads captured by Front Desk surface in the Discovery leads view."
+      },
+      {
+        "q": "On the Overview tab, why does 'Reviews consistency' measure the percent of weeks with a new review rather than a lifetime total?",
+        "options": [
+          "Because lifetime totals are hard to compute",
+          "Because Google rewards velocity, not a lifetime total",
+          "Because owners prefer weekly numbers",
+          "Because it limits Google API calls"
+        ],
+        "answer": 1,
+        "explain": "The 'ON THE SCREEN' callout says Reviews consistency is the % of weeks with at least one new review because Google rewards velocity, not a lifetime total."
+      }
+    ]
+  },
+  "discovery/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "Discovery is best described as Zoca's 'wedge.' What does that mean?",
+        "options": [
+          "The most expensive, highest-commitment product",
+          "An optional add-on for existing customers",
+          "The lowest-commitment entry product that leads customers toward the rest of Zoca",
+          "A product that requires switching booking platforms"
+        ],
+        "answer": 2,
+        "explain": "Discovery is the wedge: the lowest-commitment entry product (no booking switch) and the on-ramp to everything else."
+      },
+      {
+        "q": "Which statement about AI search is correct?",
+        "options": [
+          "Businesses are ranked at numbered positions",
+          "It's about being recommended and cited, not a position number",
+          "Only ChatGPT is measured",
+          "Citations never reveal competitors"
+        ],
+        "answer": 1,
+        "explain": "AI search has no ranking — it's about mentions and citations, including which competitors got cited."
+      },
+      {
+        "q": "How does Discovery select keywords?",
+        "options": [
+          "A fixed flat list of a few keywords",
+          "By the full service catalog, measuring demand and qualifying by opportunity",
+          "Only branded keywords",
+          "Whatever the owner types in manually"
+        ],
+        "answer": 1,
+        "explain": "Discovery looks at the full service catalog, measures demand, and qualifies services by opportunity — not a fixed flat list."
+      },
+      {
+        "q": "What two CTAs appear on every Discovery website?",
+        "options": [
+          "Call and Book",
+          "Map and Menu",
+          "Email and Subscribe",
+          "Review and Share"
+        ],
+        "answer": 0,
+        "explain": "Every generated site carries both a Call and a Book button."
+      },
+      {
+        "q": "What is E-E-A-T?",
+        "options": [
+          "A pricing tier for Discovery plans",
+          "Experience, Expertise, Authoritativeness, Trustworthiness — a content-quality framework",
+          "The four AI engines audited",
+          "The four lead statuses"
+        ],
+        "answer": 1,
+        "explain": "E-E-A-T is Google's content-quality framework — Experience, Expertise, Authoritativeness, Trustworthiness — influencing both SEO and AI recommendations."
+      },
+      {
+        "q": "Why is the Brain described as the 'moat' for AI recommendations?",
+        "options": [
+          "It stores billing and payment data",
+          "It is a fixed keyword list",
+          "It holds genuinely unique business facts that keep content unique and grounded",
+          "It blocks competitors from being cited"
+        ],
+        "answer": 2,
+        "explain": "The Brain stores genuinely unique business facts that keep content unique and grounded — exactly what gets a business recommended."
+      },
+      {
+        "q": "Roughly how many blogs does the content engine publish by default, and how is it framed?",
+        "options": [
+          "5 per week, fixed",
+          "1 per day, fixed",
+          "~2 per week, configurable",
+          "10 per month, fixed"
+        ],
+        "answer": 2,
+        "explain": "The default is ~2 blogs per week, presented as configurable — don't quote a fixed '5/week'."
+      },
+      {
+        "q": "When a prospect asks 'how many leads will I get?', what is the recommended response?",
+        "options": [
+          "Promise a specific monthly number",
+          "Refuse to give a number and redirect to the visible work and where they stand today",
+          "Quote the competitor's lead count",
+          "Estimate based on their review count"
+        ],
+        "answer": 1,
+        "explain": "The lesson advises not to promise a number and to redirect to the visible work on the dashboard and where they stand today."
+      }
+    ]
+  }
+}

@@ -1,0 +1,2608 @@
+{
+  "brain/01-what-it-is": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the Brain, in one line?",
+        "options": [
+          "A shared industry database every Zoca business contributes facts to",
+          "A per-business memory layer storing owner-approved facts that grounds every Zoca AI",
+          "A standalone chatbot that replaces the front-desk phone line",
+          "A generic AI writing tool like ChatGPT for marketing copy"
+        ],
+        "answer": 1,
+        "explain": "The Brain is a per-business memory layer that stores facts the owner has approved and serves them to every Zoca AI."
+      },
+      {
+        "q": "Why does fixing one fact in the Brain improve every Zoca tool at once?",
+        "options": [
+          "Because each tool keeps its own copy that syncs nightly",
+          "Because the owner manually pushes updates to each AI",
+          "Because all five Zoca AIs read from the same Brain",
+          "Because only the website and Front Desk share facts"
+        ],
+        "answer": 2,
+        "explain": "All five Zoca AIs read from the same Brain, so correcting one fact makes every tool better at once."
+      },
+      {
+        "q": "Which is one of the three foundation principles of how the Brain works?",
+        "options": [
+          "Facts are pooled and shared to train other owners' AIs",
+          "Per-business ownership — a Brain belongs to one business and is never shared",
+          "Facts are auto-confirmed without owner review to save time",
+          "The Brain stays fixed and never changes after setup"
+        ],
+        "answer": 1,
+        "explain": "Per-business ownership means a Brain belongs to one business and is never pooled or shared."
+      },
+      {
+        "q": "According to the lesson, can owners control whether a fact is used per-tool today (e.g., on calls but not the blog)?",
+        "options": [
+          "Yes, per-surface control is fully available now",
+          "No — per-tool control isn't possible yet; a fact is available to all tools",
+          "Yes, but only for pricing facts",
+          "Only staff accounts can set per-tool rules"
+        ],
+        "answer": 1,
+        "explain": "Per-tool control is a known gap; today a confirmed fact is available to all tools, so don't promise per-surface control."
+      }
+    ]
+  },
+  "brain/02-the-five-tabs": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
+        "options": [
+          "Canvas",
+          "Validate",
+          "Preview",
+          "Memory History"
+        ],
+        "answer": 0,
+        "explain": "Canvas is the visual topic map of all confirmed facts and is opened first as the wow shot."
+      },
+      {
+        "q": "What are the four actions an owner can take on a card in the Validate tab?",
+        "options": [
+          "Approve, Pause, Archive, Delete",
+          "Confirm, Refine, Edit, Reject",
+          "Accept, Flag, Merge, Restore",
+          "Confirm, Share, Edit, Export"
+        ],
+        "answer": 1,
+        "explain": "The four Validate actions are Confirm, Refine, Edit, and Reject."
+      },
+      {
+        "q": "What does the Preview tab let an owner do?",
+        "options": [
+          "Schedule when facts go live",
+          "Type a customer question and see the exact grounded answer with citations to the facts used",
+          "Bulk-import an FAQ list",
+          "Compare their Brain to a competitor's"
+        ],
+        "answer": 1,
+        "explain": "Preview lets you type any customer question and see the exact grounded answer with citations to the Brain facts it used."
+      },
+      {
+        "q": "Why do compliance-minded buyers care about Memory History?",
+        "options": [
+          "It hides facts from staff members",
+          "It auto-deletes old facts after 30 days",
+          "It's a complete, dated, attributed, exportable audit trail of every fact with one-click restore",
+          "It blocks the AI from answering until reviewed"
+        ],
+        "answer": 2,
+        "explain": "Memory History is a complete, dated, attributed audit trail that is exportable, with one-click restore — exactly what compliance asks for."
+      }
+    ]
+  },
+  "brain/03-how-it-learns": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the Brain's two learning paths?",
+        "options": [
+          "Path A KNOWN (AI confirms an answer it has) and Path B UNKNOWN (it becomes a question to answer)",
+          "Automatic scraping and manual entry",
+          "Owner path and staff path",
+          "Daily crawl and weekly crawl"
+        ],
+        "answer": 0,
+        "explain": "Path A (KNOWN) drops a confirmation into Validate; Path B (UNKNOWN) becomes a question in the Question Bank to answer."
+      },
+      {
+        "q": "Which sources are read ONCE at onboarding to seed the Brain?",
+        "options": [
+          "Command Center chats and the nightly gap-scan",
+          "Your website, Google Business Profile, past call transcripts, and existing Zoca data",
+          "Generated blog and social posts",
+          "Competitor websites and Yelp reviews only"
+        ],
+        "answer": 1,
+        "explain": "Website, Google profile, past calls, and existing Zoca data are read once at onboarding to seed the Brain — there is no nightly re-crawl."
+      },
+      {
+        "q": "When a new candidate fact contradicts an existing fact, what does the Brain do?",
+        "options": [
+          "Silently overwrites with the newer fact",
+          "Keeps the older fact and ignores the new one",
+          "Flags the conflict and offers a three-way choice: replace, keep both, or cancel",
+          "Deletes both facts to avoid errors"
+        ],
+        "answer": 2,
+        "explain": "The Brain never silently overwrites; it flags the conflict and offers replace, keep both, or cancel."
+      },
+      {
+        "q": "What is the cap on the AI work behind the Brain?",
+        "options": [
+          "$50 per month per location",
+          "$50 per month per business",
+          "$100 per month per location",
+          "There is no cap"
+        ],
+        "answer": 0,
+        "explain": "AI costs are capped at $50 per month per location, a safety ceiling so an owner can't run up a bill."
+      }
+    ]
+  },
+  "brain/04-objections-and-demo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the strict 5-minute demo path through the tabs?",
+        "options": [
+          "Question Bank → Canvas → Preview → Validate",
+          "Canvas → Validate → Preview → Memory History",
+          "Validate → Memory History → Canvas → Preview",
+          "Canvas → Question Bank → Preview → Validate"
+        ],
+        "answer": 1,
+        "explain": "The strict path is Canvas (wow shot) → Validate (confirm live) → Preview (cited answer) → Memory History (audit close)."
+      },
+      {
+        "q": "Which is the single most powerful demo moment?",
+        "options": [
+          "Touring all five tabs thoroughly",
+          "Explaining how the engine works under the hood",
+          "Steps 3 and 4 back-to-back: the owner confirms a fact, then watches it come out of the AI cited",
+          "Showing the $50 cost cap first"
+        ],
+        "answer": 2,
+        "explain": "Handing them the mouse to confirm a fact, then immediately seeing it cited in Preview, is 'the click' the demo is built around."
+      },
+      {
+        "q": "Which is one of the three NEVER-SAY over-promises?",
+        "options": [
+          "\"You're in control of every fact\"",
+          "\"The AI will never hallucinate\"",
+          "\"Each card takes about 30 seconds\"",
+          "\"Your Brain is private to your business\""
+        ],
+        "answer": 1,
+        "explain": "'The AI will never hallucinate' is a NEVER-SAY; say instead it grounds against approved facts and is scored to catch drift."
+      },
+      {
+        "q": "If an owner asks about time-bound offers, per-surface control, or other languages, how should you handle it?",
+        "options": [
+          "Demo it as live to impress them",
+          "Promise a specific delivery date",
+          "Say 'coming soon' but don't demo it as live or commit a date",
+          "Tell them it will never be built"
+        ],
+        "answer": 2,
+        "explain": "These are roadmap items: it's fine to say 'coming soon,' but do not demo them as live or promise a date."
+      }
+    ]
+  },
+  "brain/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "How should you pitch the Brain at the highest level?",
+        "options": [
+          "\"It's a free AI chatbot for your website\"",
+          "\"Train your AI once, the way you'd train a great new receptionist\"",
+          "\"It shares your best facts with the Zoca network\"",
+          "\"Set it and forget it forever\""
+        ],
+        "answer": 1,
+        "explain": "The core pitch is to train your AI once the way you'd train a great new receptionist."
+      },
+      {
+        "q": "How many Zoca AIs does the Brain power?",
+        "options": [
+          "Three",
+          "Four",
+          "Five",
+          "Seven"
+        ],
+        "answer": 2,
+        "explain": "The Brain powers five Zoca AIs: Front Desk, Website, Content, Google Profile, and Command Center."
+      },
+      {
+        "q": "What is the 'source pill' on a Validate card?",
+        "options": [
+          "A confidence score for the fact",
+          "A chip showing where the candidate fact came from (call, website, Google, chat, staff save)",
+          "A button that confirms the fact",
+          "A timer showing when the fact expires"
+        ],
+        "answer": 1,
+        "explain": "The source pill is the chip on each candidate showing where the fact came from so the owner can judge whether to trust it."
+      },
+      {
+        "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
+        "options": [
+          "Canvas",
+          "Question Bank",
+          "Preview",
+          "Memory History"
+        ],
+        "answer": 2,
+        "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
+      },
+      {
+        "q": "What does NOT feed back into the Brain as new facts?",
+        "options": [
+          "Command Center chats",
+          "Content the AI generates, like its own blog and social posts",
+          "Past call transcripts at onboarding",
+          "Questions the owner answers"
+        ],
+        "answer": 1,
+        "explain": "Content the AI generates is deliberately not fed back in; the Brain is built on the owner's confirmed facts, not the AI's own output."
+      },
+      {
+        "q": "Roughly how much time does keeping the Brain current take?",
+        "options": [
+          "About 30 seconds per card and about five minutes a week",
+          "About an hour a day",
+          "A full afternoon at onboarding, then nothing",
+          "Several hours a week"
+        ],
+        "answer": 0,
+        "explain": "Each fact takes roughly 30 seconds to review and most owners spend about five minutes a week."
+      },
+      {
+        "q": "Who can confirm a fact into the Brain today?",
+        "options": [
+          "Any staff member",
+          "Only the owner; staff can save candidates but not approve",
+          "Anyone with the link",
+          "Zoca support, on the owner's behalf"
+        ],
+        "answer": 1,
+        "explain": "Today only the owner confirms a fact, by design for a consistent voice; staff can save candidates with one click."
+      },
+      {
+        "q": "How should you answer 'My business changes all the time — won't this get stale?'",
+        "options": [
+          "\"We re-crawl your website every night to stay fresh\"",
+          "\"It stays current through how you use Zoca — Command Center chats, answered questions, and a nightly gap-scan\"",
+          "\"You'll need to re-import everything monthly\"",
+          "\"It can't stay current; that's a known limitation\""
+        ],
+        "answer": 1,
+        "explain": "Freshness is usage-driven via Command Center chats, answered questions, saves, and a nightly gap-scan — not a nightly re-crawl."
+      }
+    ]
+  },
+  "command-center/01-overview-and-demo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the core distinction the lesson uses to define Command Center?",
+        "options": [
+          "It only answers questions about the salon's data",
+          "It performs actions on the salon's behalf, not just answers questions",
+          "It replaces the Front Desk AI entirely",
+          "It is a separate mobile-only app"
+        ],
+        "answer": 1,
+        "explain": "Command Center performs actions in plain language rather than merely giving advice, which the lesson calls the whole point."
+      },
+      {
+        "q": "Which keyboard shortcut opens Command Center from any page?",
+        "options": [
+          "Cmd+K",
+          "Cmd+J",
+          "Ctrl+Space",
+          "Cmd+Enter"
+        ],
+        "answer": 0,
+        "explain": "The lesson states Cmd+K is the shortcut to open Command Center instantly from anywhere."
+      },
+      {
+        "q": "What are the three things behind every Command Center reply?",
+        "options": [
+          "Calendar, billing, and reviews",
+          "Voice, text, and email",
+          "Knowledge base, action toolkit, and memory/Brain",
+          "Read, write, and confirm"
+        ],
+        "answer": 2,
+        "explain": "Every request draws on the knowledge base, the action toolkit, and memory/Brain."
+      },
+      {
+        "q": "What happens before Command Center applies an impactful change like new business hours?",
+        "options": [
+          "It applies the change and emails a receipt",
+          "It previews the change in a confirmation card and waits for approval",
+          "It requires a manager password",
+          "It schedules the change for the next business day"
+        ],
+        "answer": 1,
+        "explain": "Impactful writes are previewed in a confirmation card and the owner must approve before they land."
+      }
+    ]
+  },
+  "command-center/02-what-it-can-do": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the headline figure to use externally for Command Center's breadth?",
+        "options": [
+          "About 50 actions across 10 areas",
+          "1000+ actions across 100 areas",
+          "230+ actions across ~26 areas",
+          "26 actions across 230 areas"
+        ],
+        "answer": 2,
+        "explain": "The lesson says to say '230+ actions across ~26 areas' externally."
+      },
+      {
+        "q": "How does Command Center decide which part of the product a request belongs to?",
+        "options": [
+          "The owner must pick the area first",
+          "It routes the request to the right specialist behind the scenes",
+          "It guesses randomly and corrects later",
+          "It asks support staff to triage it"
+        ],
+        "answer": 1,
+        "explain": "Command Center decides the area itself and hands the request to the right specialist; the owner never picks."
+      },
+      {
+        "q": "Which is an example of a WRITE action from the lesson?",
+        "options": [
+          "\"How many website clicks have I gotten?\"",
+          "\"How are my reviews trending?\"",
+          "\"What's my active subscription and when's my next bill?\"",
+          "\"Reschedule Friday's 2pm to 10am and text the customer.\""
+        ],
+        "answer": 3,
+        "explain": "Rescheduling and texting the customer changes data, making it a write action."
+      },
+      {
+        "q": "When you tell Command Center to change your business hours, what helpful follow-up can it do?",
+        "options": [
+          "Push the change to your Google Business Profile so Google stays in sync",
+          "Automatically refund recent customers",
+          "Delete past appointments outside the new hours",
+          "Disable the Front Desk agent"
+        ],
+        "answer": 0,
+        "explain": "It can push the hours change to the Google Business Profile so the listing stays in sync."
+      }
+    ]
+  },
+  "command-center/03-trust-safety-and-memory": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the team's internal rule about confirmations?",
+        "options": [
+          "Confirmation is optional for trusted owners",
+          "If it's not asking for confirmation before a change, something is off",
+          "Confirmation only applies to deletions",
+          "Confirmation is shown only on the first change each day"
+        ],
+        "answer": 1,
+        "explain": "The team's rule is that Command Center always takes confirmation; if it isn't asking, something is off."
+      },
+      {
+        "q": "What is the design target for data sharing between businesses?",
+        "options": [
+          "Limited sharing for benchmarking",
+          "Sharing only with owner consent",
+          "Zero data shared across business owners",
+          "Sharing aggregated anonymous data"
+        ],
+        "answer": 2,
+        "explain": "Cross-business isolation targets zero data shared across business owners and is specifically tested."
+      },
+      {
+        "q": "How does Command Center handle payment-card data?",
+        "options": [
+          "It stores it securely for faster checkout",
+          "It will not handle or expose card data (PCI refusal)",
+          "It encrypts and forwards it to Stripe",
+          "It handles it only with manager approval"
+        ],
+        "answer": 1,
+        "explain": "It refuses payment-card data outright as a deliberate PCI safety feature."
+      },
+      {
+        "q": "When you save a fact through Command Center that conflicts with an existing value, what happens today?",
+        "options": [
+          "It silently overwrites the old value",
+          "It ignores the new value entirely",
+          "It shows the existing value and asks which one to keep",
+          "It auto-catches contradictions from calls and your website too"
+        ],
+        "answer": 2,
+        "explain": "Saving a conflicting fact surfaces the existing value and asks which to keep, via save-structured-memory returning conflict: true."
+      }
+    ]
+  },
+  "command-center/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "The internal framing for Command Center is best described as:",
+        "options": [
+          "\"Claude Code for salon owners\"",
+          "\"A smarter FAQ bot\"",
+          "\"The Zoca settings menu\"",
+          "\"A voice-only assistant\""
+        ],
+        "answer": 0,
+        "explain": "The product team frames it as 'Claude Code for salon owners' because it does the action rather than just advising."
+      },
+      {
+        "q": "Where does Command Center live in the dashboard?",
+        "options": [
+          "Only on the calendar page",
+          "On every page, via a top-right button plus Cmd+K",
+          "Only inside the billing settings",
+          "Only on the mobile app"
+        ],
+        "answer": 1,
+        "explain": "It lives on every page with a top-right button and a Cmd+K shortcut."
+      },
+      {
+        "q": "Which scope description matches the knowledge base?",
+        "options": [
+          "Per business and unique to each owner",
+          "Depends on which products are enabled",
+          "Global, the same for every business",
+          "Only available on full-screen mode"
+        ],
+        "answer": 2,
+        "explain": "The knowledge base is global static know-how that is the same for every business."
+      },
+      {
+        "q": "Which four broad domains do the specialists cover?",
+        "options": [
+          "Calendar, Email, SMS, and Voice",
+          "Scheduling, Discovery/marketing, Front Desk, and Support",
+          "Read, Write, Confirm, and Memory",
+          "Sales, HR, Legal, and Finance"
+        ],
+        "answer": 1,
+        "explain": "The specialists cover Scheduling, Discovery/marketing, Front Desk, and Support."
+      },
+      {
+        "q": "Which of these is a READ action?",
+        "options": [
+          "\"Reply to my latest review.\"",
+          "\"Post an update about my new summer color package.\"",
+          "\"Pull up everyone who hasn't booked in 90 days.\"",
+          "\"Add a pedicure to this booking and send a deposit link.\""
+        ],
+        "answer": 2,
+        "explain": "Pulling up clients who haven't booked fetches data without changing anything, so it is a read."
+      },
+      {
+        "q": "How does Command Center's memory operate?",
+        "options": [
+          "Per user and reset each session",
+          "Per business and shared across the business",
+          "Global across all Zoca businesses",
+          "Only retained for 24 hours"
+        ],
+        "answer": 1,
+        "explain": "Memory is per business and shared across the business so it stays consistent regardless of who uses it."
+      },
+      {
+        "q": "How are a business's multiple locations handled in Command Center?",
+        "options": [
+          "Each location needs a separate login and chat",
+          "One conversation handles all locations without switching and starting over",
+          "Only the primary location is supported",
+          "Locations must be merged into one before use"
+        ],
+        "answer": 1,
+        "explain": "One conversation handles all locations; the owner can ask about one then another in the same chat."
+      },
+      {
+        "q": "What is the relationship between Command Center and Zoca's Brain?",
+        "options": [
+          "Command Center can only read from the Brain",
+          "The Brain is a separate product Command Center cannot access",
+          "It is a two-way link: Command Center reads from and writes to the Brain",
+          "Command Center replaces the Brain entirely"
+        ],
+        "answer": 2,
+        "explain": "The connection is two-way: it reads Brain facts to ground answers and writes new facts other tools can use."
+      }
+    ]
+  },
+  "discovery/01-what-discovery-is": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "According to the lesson, what is the real starting point of Discovery?",
+        "options": [
+          "Google Business Profile management",
+          "Keyword analysis — what people search and the demand behind it",
+          "Building the website",
+          "Replying to reviews"
+        ],
+        "answer": 1,
+        "explain": "The 'UNLEARN THIS' callout says GBP is downstream of keywords; Discovery starts from keyword analysis and demand."
+      },
+      {
+        "q": "How does Discovery fit into Zoca's three-agent model and packaging?",
+        "options": [
+          "It is optional and only included in the full suite",
+          "It is sold only as a standalone product",
+          "It is mandatory and part of every combination — the wedge",
+          "It can be skipped if the customer buys Bookings"
+        ],
+        "answer": 2,
+        "explain": "Discovery is in every combination — it's mandatory and is the wedge; there is no standalone Front Desk or Bookings."
+      },
+      {
+        "q": "What are Discovery's three SEO pillars?",
+        "options": [
+          "Local SEO, Website SEO, and AI search",
+          "Reviews, Photos, and Posts",
+          "Email, SMS, and Social",
+          "Paid ads, Organic, and Referral"
+        ],
+        "answer": 0,
+        "explain": "The lesson defines the three pillars as Local SEO, Website SEO, and AI search."
+      },
+      {
+        "q": "When a customer buys more than one agent, in what fixed order are they onboarded?",
+        "options": [
+          "Front Desk → Bookings → Discovery",
+          "Bookings → Discovery → Front Desk",
+          "Discovery → Front Desk → Bookings",
+          "Discovery → Bookings → Front Desk"
+        ],
+        "answer": 3,
+        "explain": "The 'GOOD TO KNOW' callout states the fixed order is Discovery → Bookings → Front Desk, because Front Desk needs scheduling context."
+      }
+    ]
+  },
+  "discovery/02-local-seo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "In the correct order, what are the five steps of the keyword pipeline?",
+        "options": [
+          "Demand → Searches → Relevance → Selection → Competitor",
+          "Searches → Demand → Relevance → Competitor → Selection",
+          "Relevance → Searches → Demand → Competitor → Selection",
+          "Searches → Competitor → Demand → Relevance → Selection"
+        ],
+        "answer": 1,
+        "explain": "The lesson lists the pipeline as Searches, Demand, Relevance, Competitor, Selection — in that order."
+      },
+      {
+        "q": "How should a salon's primary Google category be chosen?",
+        "options": [
+          "By a gut guess about what the business 'is'",
+          "By whichever service has the highest price",
+          "From impressions, demand, and competition data",
+          "Always 'hair salon' for any hair-and-nails salon"
+        ],
+        "answer": 2,
+        "explain": "The 'DON'T ASSUME' callout says pick the primary category from impressions, demand, and competition — never from a gut guess."
+      },
+      {
+        "q": "What is the difference between branded and non-branded keywords?",
+        "options": [
+          "Branded contain the business or chain name; non-branded describe the service",
+          "Branded describe the service; non-branded contain the business name",
+          "Branded are paid ads; non-branded are organic",
+          "Branded are local; non-branded are hyperlocal"
+        ],
+        "answer": 0,
+        "explain": "Branded keywords contain the business/chain name (e.g. 'VLCC near me'); non-branded describe the service (e.g. 'hair salon near me')."
+      },
+      {
+        "q": "On the Map View, how is rank shown and why are dense scans limited to about 3 per day?",
+        "options": [
+          "A 5×5 grid; limited because of monthly billing caps",
+          "A 7×7 geo-grid over ~3 miles; each scan is 49 live Google queries",
+          "A single citywide pin; limited by Google account suspension risk",
+          "A 10×10 grid; limited because each scan emails the owner"
+        ],
+        "answer": 1,
+        "explain": "The 'ON THE SCREEN' callout describes a 7×7 geo-grid over ~3 miles, with dense scans limited to ~3/day because each is 49 live Google queries."
+      }
+    ]
+  },
+  "discovery/03-website-and-content": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the two calls to action that every Discovery-generated site carries?",
+        "options": [
+          "Email and Directions",
+          "Subscribe and Share",
+          "Call and Book",
+          "Quote and Chat"
+        ],
+        "answer": 2,
+        "explain": "The lesson states every site carries two CTAs: Call and Book."
+      },
+      {
+        "q": "When does the generated website actually go live?",
+        "options": [
+          "The instant it is generated in the demo",
+          "When the trial starts",
+          "After the first blog publishes",
+          "Only once the owner buys a custom domain"
+        ],
+        "answer": 1,
+        "explain": "The 'HONESTY NOTE' clarifies the site goes live when the trial starts, not the moment it's generated."
+      },
+      {
+        "q": "Why are Discovery's blogs formatted as questions and answers?",
+        "options": [
+          "It is purely a stylistic preference",
+          "It makes blogs shorter and cheaper to produce",
+          "Q&A is the format Google and AI engines pull from for specific questions",
+          "It avoids any AI-content penalties"
+        ],
+        "answer": 2,
+        "explain": "The 'GOOD TO KNOW' callout says the Q&A/FAQ format is strategic — it's what Google and AI engines pull from when someone asks a specific question."
+      },
+      {
+        "q": "What happens to a Discovery website when the salon's services change?",
+        "options": [
+          "The owner must manually rebuild each page",
+          "The site rebuilds itself to match (a 'website flip')",
+          "Nothing — the site is static once published",
+          "The whole site is taken offline until re-approved"
+        ],
+        "answer": 1,
+        "explain": "The auto-rebuild section says the site rebuilds to match when services change — a 'website flip' — so the owner never updates pages manually."
+      }
+    ]
+  },
+  "discovery/04-ai-search-aeo-geo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the most important distinction to get right about AI search?",
+        "options": [
+          "You hold a numbered position like 'position 3'",
+          "There is no ranking — only whether you're recommended and cited",
+          "Rankings matter more than mentions",
+          "Only paid placement gets you recommended"
+        ],
+        "answer": 1,
+        "explain": "The lesson stresses there is no 'ranking' in AI search — it's about mentions and citations, not a position number."
+      },
+      {
+        "q": "Which four AI engines are active in the Run Audit today?",
+        "options": [
+          "ChatGPT, Gemini, Google AI Overview, and Perplexity",
+          "ChatGPT, Claude, Bing, and Siri",
+          "Gemini, Perplexity, Alexa, and Copilot",
+          "ChatGPT, Grok, Google AI Overview, and Yelp"
+        ],
+        "answer": 0,
+        "explain": "The lesson lists the four active engines as ChatGPT, Gemini, Google AI Overview, and Perplexity."
+      },
+      {
+        "q": "What does the AEO score measure, and on what scale?",
+        "options": [
+          "Number of leads, scored 0–100",
+          "Profile completeness, scored high/medium/low",
+          "How strongly the business shows up in AI answers, scored 0–10",
+          "Competitor count, scored 1–5 stars"
+        ],
+        "answer": 2,
+        "explain": "The AEO score measures how strongly the business shows up in AI answers, scored 0 to 10."
+      },
+      {
+        "q": "How is Zoca positioned relative to the enterprise tool Profound?",
+        "options": [
+          "Zoca resells Profound to small businesses",
+          "Zoca does for small businesses what Profound does for enterprise",
+          "Profound is a generic SEO agency to avoid comparing to",
+          "Zoca is built on Profound's API"
+        ],
+        "answer": 1,
+        "explain": "The lesson frames Zoca as doing for small businesses what Profound does for enterprise companies like Salesforce and Ramp."
+      }
+    ]
+  },
+  "discovery/05-google-business-profile": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Why must GBP verification be qualified early in the conversation?",
+        "options": [
+          "Verification costs the owner extra money",
+          "An unverified profile breaks the overview screen and disables features",
+          "Google bans unverified businesses from search",
+          "Verification is only needed for the website, not the listing"
+        ],
+        "answer": 1,
+        "explain": "The objection callout states an unverified profile breaks the overview screen and disables features, so it's a hard dependency to qualify early."
+      },
+      {
+        "q": "How are collected reviews gated before going public?",
+        "options": [
+          "All reviews auto-publish immediately",
+          "Reviews under 4 stars are held internally; 5-star/strong ones publish to the website and GBP",
+          "Only reviews left via QR code are published",
+          "The owner must manually publish every review"
+        ],
+        "answer": 1,
+        "explain": "The 'HOW REVIEWS ARE GATED' callout: anything under 4 stars is held internally, while 5-star/strong reviews publish to the website and GBP."
+      },
+      {
+        "q": "On the Photos screen, which three slots does Google score the profile on?",
+        "options": [
+          "Logo, Cover, and Exterior",
+          "Logo, Interior, and Staff",
+          "Cover, Menu, and Products",
+          "Exterior, Interior, and Team"
+        ],
+        "answer": 0,
+        "explain": "The 'ON THE SCREEN' callout names three photo slots Google scores you on: Logo, Cover, and Exterior."
+      },
+      {
+        "q": "What is described as the single biggest ranking signal on the profile?",
+        "options": [
+          "The number of photos uploaded",
+          "Hours accuracy",
+          "The primary category",
+          "The website link"
+        ],
+        "answer": 2,
+        "explain": "The lesson states the primary category is the single biggest ranking signal (with hours accuracy as the top trust signal)."
+      }
+    ]
+  },
+  "discovery/06-leads-and-reporting": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the four statuses an enquiry can carry in the leads surface?",
+        "options": [
+          "New, Contacted, Won, Lost",
+          "Booked, Not booked, Unresponsive, Duplicate",
+          "Hot, Warm, Cold, Dead",
+          "Open, Pending, Closed, Spam"
+        ],
+        "answer": 1,
+        "explain": "The lesson lists the four lead statuses as Booked, Not booked, Unresponsive, and Duplicate."
+      },
+      {
+        "q": "What is the central reframe of this lesson?",
+        "options": [
+          "Promise a guaranteed monthly lead count",
+          "Sell the visible marketing work that produces leads, not a lead-prediction number",
+          "Focus the demo entirely on the leads list",
+          "Only sell the audit, never the dashboards"
+        ],
+        "answer": 1,
+        "explain": "The big reframe is to sell the visible marketing work that produces leads, never a lead-prediction number."
+      },
+      {
+        "q": "Where do abandoned booking leads from the Front Desk product appear?",
+        "options": [
+          "Only inside the Front Desk product",
+          "They are discarded if not completed",
+          "In the Discovery leads surface",
+          "In a separate billing report"
+        ],
+        "answer": 2,
+        "explain": "The lesson explains abandoned leads captured by Front Desk surface in the Discovery leads view."
+      },
+      {
+        "q": "On the Overview tab, why does 'Reviews consistency' measure the percent of weeks with a new review rather than a lifetime total?",
+        "options": [
+          "Because lifetime totals are hard to compute",
+          "Because Google rewards velocity, not a lifetime total",
+          "Because owners prefer weekly numbers",
+          "Because it limits Google API calls"
+        ],
+        "answer": 1,
+        "explain": "The 'ON THE SCREEN' callout says Reviews consistency is the % of weeks with at least one new review because Google rewards velocity, not a lifetime total."
+      }
+    ]
+  },
+  "discovery/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "Discovery is best described as Zoca's 'wedge.' What does that mean?",
+        "options": [
+          "The most expensive, highest-commitment product",
+          "An optional add-on for existing customers",
+          "The lowest-commitment entry product that leads customers toward the rest of Zoca",
+          "A product that requires switching booking platforms"
+        ],
+        "answer": 2,
+        "explain": "Discovery is the wedge: the lowest-commitment entry product (no booking switch) and the on-ramp to everything else."
+      },
+      {
+        "q": "Which statement about AI search is correct?",
+        "options": [
+          "Businesses are ranked at numbered positions",
+          "It's about being recommended and cited, not a position number",
+          "Only ChatGPT is measured",
+          "Citations never reveal competitors"
+        ],
+        "answer": 1,
+        "explain": "AI search has no ranking — it's about mentions and citations, including which competitors got cited."
+      },
+      {
+        "q": "How does Discovery select keywords?",
+        "options": [
+          "A fixed flat list of a few keywords",
+          "By the full service catalog, measuring demand and qualifying by opportunity",
+          "Only branded keywords",
+          "Whatever the owner types in manually"
+        ],
+        "answer": 1,
+        "explain": "Discovery looks at the full service catalog, measures demand, and qualifies services by opportunity — not a fixed flat list."
+      },
+      {
+        "q": "What two CTAs appear on every Discovery website?",
+        "options": [
+          "Call and Book",
+          "Map and Menu",
+          "Email and Subscribe",
+          "Review and Share"
+        ],
+        "answer": 0,
+        "explain": "Every generated site carries both a Call and a Book button."
+      },
+      {
+        "q": "What is E-E-A-T?",
+        "options": [
+          "A pricing tier for Discovery plans",
+          "Experience, Expertise, Authoritativeness, Trustworthiness — a content-quality framework",
+          "The four AI engines audited",
+          "The four lead statuses"
+        ],
+        "answer": 1,
+        "explain": "E-E-A-T is Google's content-quality framework — Experience, Expertise, Authoritativeness, Trustworthiness — influencing both SEO and AI recommendations."
+      },
+      {
+        "q": "Why is the Brain described as the 'moat' for AI recommendations?",
+        "options": [
+          "It stores billing and payment data",
+          "It is a fixed keyword list",
+          "It holds genuinely unique business facts that keep content unique and grounded",
+          "It blocks competitors from being cited"
+        ],
+        "answer": 2,
+        "explain": "The Brain stores genuinely unique business facts that keep content unique and grounded — exactly what gets a business recommended."
+      },
+      {
+        "q": "Roughly how many blogs does the content engine publish by default, and how is it framed?",
+        "options": [
+          "5 per week, fixed",
+          "1 per day, fixed",
+          "~2 per week, configurable",
+          "10 per month, fixed"
+        ],
+        "answer": 2,
+        "explain": "The default is ~2 blogs per week, presented as configurable — don't quote a fixed '5/week'."
+      },
+      {
+        "q": "When a prospect asks 'how many leads will I get?', what is the recommended response?",
+        "options": [
+          "Promise a specific monthly number",
+          "Refuse to give a number and redirect to the visible work and where they stand today",
+          "Quote the competitor's lead count",
+          "Estimate based on their review count"
+        ],
+        "answer": 1,
+        "explain": "The lesson advises not to promise a number and to redirect to the visible work on the dashboard and where they stand today."
+      }
+    ]
+  },
+  "foundations/01-local-seo-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "According to Google's Business Profile help documentation, what three factors does Google use to rank local results?",
+        "options": [
+          "Keywords, backlinks, and page speed",
+          "Relevance, distance, and prominence",
+          "Reviews, photos, and hours",
+          "Budget, ad spend, and bid amount"
+        ],
+        "answer": 1,
+        "explain": "The lesson states Google's own documentation lists relevance, distance, and prominence as the three local ranking factors."
+      },
+      {
+        "q": "Which two of Google's three local ranking factors does a business mostly control?",
+        "options": [
+          "Distance and prominence",
+          "Relevance and distance",
+          "Relevance and prominence",
+          "Distance and intent"
+        ],
+        "answer": 2,
+        "explain": "The lesson's rule of thumb says you mostly control relevance and prominence but cannot control distance."
+      },
+      {
+        "q": "What does NAP consistency mean in local SEO?",
+        "options": [
+          "Name, Address, and Phone number written identically everywhere online",
+          "Number of Active Profiles kept up to date",
+          "New Appointments Posted on the profile",
+          "Name, Account, and Password matching across sites"
+        ],
+        "answer": 0,
+        "explain": "The lesson defines NAP consistency as Name, Address, and Phone number written identically everywhere online."
+      },
+      {
+        "q": "Roughly what share of all Google searches does the lesson say have local intent?",
+        "options": [
+          "About 12%",
+          "About 25%",
+          "About 46%",
+          "About 75%"
+        ],
+        "answer": 2,
+        "explain": "The lesson states roughly 46% of all Google searches have local intent."
+      }
+    ]
+  },
+  "foundations/02-aeo-geo-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the core mindset shift of AEO/GEO compared to classic SEO?",
+        "options": [
+          "You buy ad placement inside AI answers",
+          "You aim to rank #1 in ChatGPT",
+          "There is no 'position' to win; the goal is to be included and cited in the AI's answer",
+          "You optimize purely for backlinks"
+        ],
+        "answer": 2,
+        "explain": "The lesson stresses there is no ranked position in AI answers; the goal is to be included and recommended within the synthesized answer."
+      },
+      {
+        "q": "What does RAG (retrieval-augmented generation) describe in how AI engines build answers?",
+        "options": [
+          "The engine retrieves relevant web pages first, then generates an answer grounded in them",
+          "The engine ranks all websites then averages them",
+          "The engine randomly assigns generated authority",
+          "The engine generates an answer first, then retrieves links to match"
+        ],
+        "answer": 0,
+        "explain": "The lesson defines RAG as retrieving relevant pages first, then generating a written answer grounded in those pages."
+      },
+      {
+        "q": "Per the Princeton-led GEO paper, adding specific statistics to content boosted AI visibility by up to what amount?",
+        "options": [
+          "Up to +10%",
+          "Up to +40%",
+          "Up to +115%",
+          "Up to +200%"
+        ],
+        "answer": 1,
+        "explain": "The lesson reports the GEO paper found adding specific statistics boosted visibility up to +40%."
+      },
+      {
+        "q": "How do teams measure AEO/GEO success since there is no rank report?",
+        "options": [
+          "Total backlinks earned",
+          "Organic traffic from blue links",
+          "Page load speed across engines",
+          "AI Share of Voice — how often the business is mentioned or cited versus competitors"
+        ],
+        "answer": 3,
+        "explain": "The lesson explains success is tracked via AI Share of Voice: mention/citation frequency versus competitors across representative questions."
+      }
+    ]
+  },
+  "foundations/03-ai-voice-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What three stages make up the typical AI voice agent pipeline?",
+        "options": [
+          "STT (hear), LLM (think), TTS (speak)",
+          "Crawl, index, rank",
+          "Listen, transfer, record",
+          "Dial, ring, voicemail"
+        ],
+        "answer": 0,
+        "explain": "The lesson describes the STT to LLM to TTS pipeline as ears, brain, and mouth."
+      },
+      {
+        "q": "What latency window does the lesson cite as the benchmark most production voice agents aim for?",
+        "options": [
+          "50-100ms",
+          "300-800ms",
+          "1-2 seconds",
+          "2-3 seconds"
+        ],
+        "answer": 1,
+        "explain": "The lesson cites roughly 500ms as natural, with most production agents aiming for a 300-800ms window."
+      },
+      {
+        "q": "What is 'grounding' in the context of an AI voice agent?",
+        "options": [
+          "Limiting the agent to one phone line",
+          "Recording every call for compliance",
+          "Feeding the agent the business's real, current facts so answers come from a trusted source, not guesses",
+          "Forwarding calls to voicemail after hours"
+        ],
+        "answer": 2,
+        "explain": "The lesson defines grounding as feeding the agent real business facts so answers are factual rather than guessed."
+      },
+      {
+        "q": "What does 'barge-in' allow during a call with an AI voice agent?",
+        "options": [
+          "The agent to transfer to a human automatically",
+          "The caller to interrupt the agent while it's talking and have it stop to listen",
+          "The agent to place the caller on hold",
+          "Two callers to join the same line"
+        ],
+        "answer": 1,
+        "explain": "The lesson defines barge-in as the caller interrupting the agent while it talks, causing it to stop and listen."
+      }
+    ]
+  },
+  "foundations/04-reviews-reputation-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is 'review gating' as defined in the lesson?",
+        "options": [
+          "Charging customers to leave a review",
+          "Deleting all reviews older than a year",
+          "Requiring login before posting a review",
+          "Routing only happy customers to public review sites while steering unhappy ones to a private form"
+        ],
+        "answer": 3,
+        "explain": "The lesson defines review gating as selectively sending happy customers to public sites and unhappy ones to private feedback instead."
+      },
+      {
+        "q": "Under the FTC's 2024 rule, what is the current maximum civil penalty per violation cited in the lesson?",
+        "options": [
+          "Up to $51,744 per violation",
+          "Up to $5,000 per violation",
+          "Up to $1 million per violation",
+          "Up to $10,000 per violation"
+        ],
+        "answer": 0,
+        "explain": "The lesson states the FTC can seek civil penalties currently up to $51,744 per violation."
+      },
+      {
+        "q": "What is the single most effective tactic the lesson recommends for ethically generating reviews?",
+        "options": [
+          "Offer a discount in exchange for a 5-star review",
+          "Ask every customer right after the visit and make it one tap",
+          "Only ask customers you expect to be happy",
+          "Buy reviews from a reputable directory"
+        ],
+        "answer": 1,
+        "explain": "The lesson says the most effective tactic is asking every customer right after the visit and making it one tap."
+      },
+      {
+        "q": "Why can a perfect 5.0 rating with few reviews actually hurt a salon?",
+        "options": [
+          "Google automatically caps ratings at 4.9",
+          "It increases the cost of advertising",
+          "A wall of nothing-but-5-stars can read as fake and thin counts seem unproven",
+          "Customers prefer salons with no reviews"
+        ],
+        "answer": 2,
+        "explain": "The lesson notes a flawless rating with few reviews can read as fake, while a 4.7 with hundreds of reviews is more persuasive."
+      }
+    ]
+  },
+  "foundations/05-google-business-profile-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which Google Business Profile field is described as the single strongest controllable ranking lever?",
+        "options": [
+          "The primary category",
+          "The business description",
+          "The number of photos",
+          "The website link"
+        ],
+        "answer": 0,
+        "explain": "The lesson identifies the primary category as the #1 local pack ranking factor and strongest controllable lever."
+      },
+      {
+        "q": "In 2025, what verification method does Google most often require for a Business Profile?",
+        "options": [
+          "A mailed postcard code only",
+          "Video verification — an unedited walkthrough of the business",
+          "An email confirmation only",
+          "A notarized legal document"
+        ],
+        "answer": 1,
+        "explain": "The lesson states Google most often requires video verification, an unedited walkthrough showing the storefront and interior."
+      },
+      {
+        "q": "According to the lesson, fully populated, verified profiles appear about how much more often than incomplete ones?",
+        "options": [
+          "About 20% more often",
+          "About 50% more often",
+          "About 80% more often",
+          "About 200% more often"
+        ],
+        "answer": 2,
+        "explain": "The lesson states fully populated, verified profiles appear roughly 80% more often than incomplete ones."
+      },
+      {
+        "q": "What is happening to the traditional Q&A tab on Google Business Profiles?",
+        "options": [
+          "It is being expanded with video answers",
+          "It is being moved to the website only",
+          "It is being phased out and replaced by an AI-generated 'Ask about this place' answer",
+          "It now requires a paid subscription"
+        ],
+        "answer": 2,
+        "explain": "The lesson says the Q&A tab is being phased out in favor of an AI-generated 'Ask about this place' answer drawn from profile data."
+      }
+    ]
+  },
+  "foundations/06-seo-and-content-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the three stages of how Google Search works, per Google's documentation?",
+        "options": [
+          "Search, click, convert",
+          "Crawl, index, rank",
+          "Relevance, distance, prominence",
+          "On-page, technical, off-page"
+        ],
+        "answer": 1,
+        "explain": "The lesson states Google works in three stages: crawl (discover), index (understand and store), and rank (order results)."
+      },
+      {
+        "q": "What does the 'extra E' in E-E-A-T stand for, added in 2022?",
+        "options": [
+          "Engagement",
+          "Efficiency",
+          "Experience",
+          "Endorsement"
+        ],
+        "answer": 2,
+        "explain": "The lesson explains the extra E added in 2022 is Experience, rewarding content from someone who has actually done the thing."
+      },
+      {
+        "q": "What does the lesson say about whether Google penalizes AI-written content?",
+        "options": [
+          "AI content is always penalized regardless of quality",
+          "False — Google penalizes thin, generic content, not content for being AI-written",
+          "AI content ranks higher automatically",
+          "Google bans all AI content from its index"
+        ],
+        "answer": 1,
+        "explain": "The lesson states AI-written content is not penalized for being AI; the risk is thin, generic, mass-produced content with little value."
+      },
+      {
+        "q": "What realistic timeline does the lesson give for meaningful SEO results?",
+        "options": [
+          "1-2 weeks",
+          "1-3 months",
+          "4-12 months",
+          "2-3 years"
+        ],
+        "answer": 2,
+        "explain": "The lesson cites a 4-12 month window for meaningful SEO results, describing it as slow then compounding."
+      }
+    ]
+  },
+  "foundations/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "What is the local pack (also called the map pack or 3-pack)?",
+        "options": [
+          "A paid advertising bundle for local businesses",
+          "The boxed cluster of usually three local businesses, shown with a map, at the top of local-intent searches",
+          "A set of three keywords every page should target",
+          "A Google subscription tier for salons"
+        ],
+        "answer": 1,
+        "explain": "The lesson defines the local pack as the top-of-page block of typically three local businesses shown with a map."
+      },
+      {
+        "q": "Which two of Google's three local ranking factors are mostly within a business's control?",
+        "options": [
+          "Relevance and prominence",
+          "Distance and relevance",
+          "Distance and prominence",
+          "Proximity and intent"
+        ],
+        "answer": 0,
+        "explain": "The Local SEO lesson states businesses mostly control relevance and prominence but not distance."
+      },
+      {
+        "q": "What does 'zero-click search' mean in the AEO/GEO context?",
+        "options": [
+          "A search that returns no results",
+          "A search blocked by an ad blocker",
+          "A search answered on-screen so the user never clicks through to a website",
+          "A search performed without typing"
+        ],
+        "answer": 2,
+        "explain": "The AEO/GEO lesson defines a zero-click search as one answered on-screen so the user never visits a website."
+      },
+      {
+        "q": "In an AI voice agent, what is 'hallucination'?",
+        "options": [
+          "When the agent transfers a call to a human",
+          "When the agent confidently makes up a wrong answer",
+          "When two callers hear different voices",
+          "When the agent records a message"
+        ],
+        "answer": 1,
+        "explain": "The AI Voice lesson defines hallucination as an AI confidently making up a wrong answer."
+      },
+      {
+        "q": "Which practice both Google's policies and the FTC's 2024 rule push against in reviews?",
+        "options": [
+          "Asking every customer for a public review",
+          "Responding to negative reviews calmly",
+          "Review gating and suppression of negative reviews",
+          "Mentioning the stylist in a reply"
+        ],
+        "answer": 2,
+        "explain": "The Reviews lesson explains review gating and suppression violate Google policy and the FTC's 2024 rule."
+      },
+      {
+        "q": "What does the lesson identify as the #1 Google Business Profile local-pack ranking factor?",
+        "options": [
+          "Number of photos uploaded",
+          "The primary category",
+          "Length of the business description",
+          "Having a booking button"
+        ],
+        "answer": 1,
+        "explain": "The GBP lesson identifies the primary category as the #1 local pack ranking factor."
+      },
+      {
+        "q": "Of the four classic search-intent types, which describes a searcher who wants to act now (e.g., 'book gel manicure downtown')?",
+        "options": [
+          "Informational",
+          "Navigational",
+          "Commercial",
+          "Transactional"
+        ],
+        "answer": 3,
+        "explain": "The SEO lesson classifies 'book/price/near me' act-now queries as transactional intent."
+      },
+      {
+        "q": "What is a 'citation' in local SEO?",
+        "options": [
+          "A backlink from a high-authority news site",
+          "Any place online where a business's NAP appears, such as Yelp or Apple Maps",
+          "A legal warning from Google about policy violations",
+          "A footnote in a blog post linking to the business"
+        ],
+        "answer": 1,
+        "explain": "The Local SEO lesson defines a citation as any online place where a business's NAP (Name, Address, Phone) appears."
+      }
+    ]
+  },
+  "front-desk/01-what-zoe-does": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is one of the things Zoe will explicitly NOT do?",
+        "options": [
+          "Answer inbound calls 24/7",
+          "Collect a payment or take a deposit / card",
+          "Recognize returning clients by phone",
+          "Detect and filter spam"
+        ],
+        "answer": 1,
+        "explain": "Zoe never collects payment or takes a deposit/card; the salon takes payment its normal way."
+      },
+      {
+        "q": "How does Zoe recognize a returning client?",
+        "options": [
+          "By asking the caller to state their name",
+          "By a downloaded client app",
+          "By the phone number they're calling from, matched to the client list",
+          "By voice recognition of the caller"
+        ],
+        "answer": 2,
+        "explain": "Returning callers are matched on the phone number they're calling from, pulled from the salon's client list and booking history."
+      },
+      {
+        "q": "How does Zoe's spam shield actually work?",
+        "options": [
+          "It blocks junk calls before they ring, using a caller-reputation database",
+          "It answers, then tags very short calls and obvious robocalls as spam after the call",
+          "It forwards all suspicious calls to a human",
+          "It requires callers to pass a verification challenge first"
+        ],
+        "answer": 1,
+        "explain": "The spam shield is post-call tagging of very short calls and obvious robocalls, not a pre-answer wall or third-party reputation database."
+      },
+      {
+        "q": "About how long does a standard booking call with Zoe typically run?",
+        "options": [
+          "60-120 seconds",
+          "10-20 seconds",
+          "4-5 minutes",
+          "15-30 minutes"
+        ],
+        "answer": 0,
+        "explain": "A standard booking call runs about 60-120 seconds; a quick hours question is 30-60 seconds and a messy reschedule can take 4-5 minutes."
+      }
+    ]
+  },
+  "front-desk/02-booking-and-platforms": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the core differentiator of how Zoe handles bookings?",
+        "options": [
+          "She texts the caller a booking link to complete later",
+          "She only works with Calendly",
+          "She writes the appointment into the salon's existing scheduler, live on the call",
+          "She emails the salon to enter the booking manually"
+        ],
+        "answer": 2,
+        "explain": "Zoe writes the appointment end-to-end into the scheduler the salon already runs on, live on the call."
+      },
+      {
+        "q": "Which two platforms are described as TRUE integrations through the salon's own account?",
+        "options": [
+          "Booksy and Vagaro",
+          "Square and Mindbody",
+          "Fresha and GlossGenius",
+          "Zoca Scheduling and Boulevard"
+        ],
+        "answer": 1,
+        "explain": "Square and Mindbody are true integrations via the salon's own account; Booksy, Vagaro, Fresha, and GlossGenius use the secure-assistant approach."
+      },
+      {
+        "q": "Why does Zoe book without collecting a deposit or card on the call?",
+        "options": [
+          "Because the schedulers don't support deposits",
+          "It's a deliberate feature so most bookings land confirmed instead of stuck awaiting payment",
+          "Because deposits are illegal over the phone",
+          "Because she can't access the salon's deposit settings"
+        ],
+        "answer": 1,
+        "explain": "Deposits-off is deliberate; with no payment step to stall on, most Zoe bookings land confirmed and the salon's deposit settings stay untouched."
+      },
+      {
+        "q": "What is the correct, customer-safe way to describe how Zoe connects to Booksy, Vagaro, Fresha, and GlossGenius?",
+        "options": [
+          "An official API partnership",
+          "A reverse-engineered workaround",
+          "A secure automated assistant set up on the account using the salon's login",
+          "A manual data export each morning"
+        ],
+        "answer": 2,
+        "explain": "The honest framing is a secure automated assistant on the account using the login; never say official API partnership, hacky, or workaround."
+      }
+    ]
+  },
+  "front-desk/03-telephony-and-setup": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Who provides and pays for Zoe's dedicated phone number?",
+        "options": [
+          "The salon, as a monthly add-on",
+          "Zoca provides and pays for it, and the owner can pick the area code",
+          "The salon's existing carrier",
+          "Google, via the Business Profile"
+        ],
+        "answer": 1,
+        "explain": "Zoca provisions and pays for a US/Canada number, and the owner can choose the area code so it feels local."
+      },
+      {
+        "q": "How does the salon keep its existing number while using Zoe?",
+        "options": [
+          "By forwarding its existing line to Zoe's number",
+          "By instant self-serve porting of the number to Zoca",
+          "By replacing all signage with the new number",
+          "By using two separate phones at the front desk"
+        ],
+        "answer": 0,
+        "explain": "The salon forwards its existing line to Zoe's number via a guided wizard; a true self-serve port-in is only on the roadmap."
+      },
+      {
+        "q": "What does Zoe's transfer/handoff capability look like today?",
+        "options": [
+          "A warm transfer to multiple destinations",
+          "A cold transfer to one destination during transfer hours",
+          "No transfer is possible at all",
+          "An automatic transfer to a call center"
+        ],
+        "answer": 1,
+        "explain": "Today it's a cold transfer to one destination per salon during transfer hours; warm transfer and multiple destinations are on the roadmap."
+      },
+      {
+        "q": "How long does Zoe's guided onboarding take, and how many steps does it have?",
+        "options": [
+          "A multi-day IT project across 20 steps",
+          "About 5 minutes, fully self-serve, 3 steps",
+          "About 45 minutes (rarely over an hour), 10 steps",
+          "About 2 hours, 7 steps"
+        ],
+        "answer": 2,
+        "explain": "Setup is a guided ~45-minute, 10-step onboarding ending with a free test call and go-live."
+      }
+    ]
+  },
+  "front-desk/04-training-and-memory": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which two Training tab sections are REQUIRED to go live?",
+        "options": [
+          "QnAs and Policies",
+          "Business Profile and Services",
+          "Custom Instructions and QnAs",
+          "Services and Policies"
+        ],
+        "answer": 1,
+        "explain": "Business Profile and Services are the two required-to-go-live sections; QnAs, Policies, and Custom Instructions fine-tune her."
+      },
+      {
+        "q": "How many voices can the owner choose from for Zoe?",
+        "options": [
+          "Four (Eryn, Vexa, Mark, Jessica)",
+          "Two (male and female)",
+          "Unlimited via voice cloning",
+          "Six, one per salon type"
+        ],
+        "answer": 0,
+        "explain": "The owner picks one of four voices (Eryn, Vexa, Mark, Jessica); there is no voice cloning."
+      },
+      {
+        "q": "How does the 'Questions from calls' Brain loop work?",
+        "options": [
+          "Zoe mines transcripts and invents memories automatically",
+          "Zoe surfaces questions she couldn't answer, and the owner's answer becomes knowledge",
+          "An AI auto-answers every gap without owner input",
+          "The owner must re-record the whole Training tab weekly"
+        ],
+        "answer": 1,
+        "explain": "Zoe surfaces questions she couldn't fully answer; the owner answers, and that answer becomes permanent knowledge, keeping the owner in control."
+      },
+      {
+        "q": "What is Configs, the flagship upcoming feature?",
+        "options": [
+          "A live feature today for warm transfers",
+          "A way to clone the owner's voice",
+          "Rules so Zoe acts more like the owner, e.g. offering an on-the-spot discount (not live yet)",
+          "A second calendar for Zoe to manage"
+        ],
+        "answer": 2,
+        "explain": "Configs (~1-2 months, flagship) will let Zoe act like the owner, headlined by on-the-spot discounting, but it isn't live and shouldn't be demoed as such."
+      }
+    ]
+  },
+  "front-desk/05-dashboard-and-l2b": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
+        "options": [
+          "Overview",
+          "Bookings",
+          "Activity",
+          "Analytics"
+        ],
+        "answer": 2,
+        "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
+      },
+      {
+        "q": "What does L2B (Lead-to-Booking) do?",
+        "options": [
+          "It calls every abandoned lead by voice immediately",
+          "When someone abandons a web booking, Zoe texts them back and re-books in the thread",
+          "It exports leads to a spreadsheet for manual follow-up",
+          "It blocks repeat callers from booking twice"
+        ],
+        "answer": 1,
+        "explain": "L2B recovers abandoned web bookings by SMS today, with booking tools inside the text thread so the customer can confirm right there."
+      },
+      {
+        "q": "How should the 'revenue saved' Impact number be presented?",
+        "options": [
+          "As an audited accounting figure",
+          "As a guaranteed result",
+          "As an estimate showing the scale of value, used directionally",
+          "As the salon's actual measured profit"
+        ],
+        "answer": 2,
+        "explain": "The Impact figure is an estimate the system calculates to show the kind of value Zoe drives, never a guarantee or audited number."
+      },
+      {
+        "q": "What can the owner NOT do with the Activity feed in v1?",
+        "options": [
+          "Read a full SMS thread",
+          "Play an inline recording",
+          "Jump in and reply as themselves from the feed",
+          "See the AI summary of a call"
+        ],
+        "answer": 2,
+        "explain": "The v1 feed is read-only; the owner can read threads but can't reply as themselves, and human SMS take-over is on the roadmap."
+      }
+    ]
+  },
+  "front-desk/06-pricing-and-competitive": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the Front Desk standalone monthly price and what's the included voice minute pool?",
+        "options": [
+          "$99/mo with 100 voice minutes included",
+          "$349/mo with unlimited minutes",
+          "$239.20/mo with 500 voice minutes",
+          "$49/mo with 50 voice minutes"
+        ],
+        "answer": 0,
+        "explain": "Front Desk standalone is $99/mo with 100 voice minutes included; year-2 renewal is $149/mo."
+      },
+      {
+        "q": "How does the free trial work?",
+        "options": [
+          "30 days free, no card required",
+          "7 days free, card on file required, first $99 auto-charges unless cancelled",
+          "14 days free, billed in advance",
+          "No trial is offered"
+        ],
+        "answer": 1,
+        "explain": "There's a 7-day free trial with a card on file; the clock starts at onboarding completion and the first $99 auto-charges unless cancelled."
+      },
+      {
+        "q": "Roughly what does a human receptionist cost, per the comparison that closes deals?",
+        "options": [
+          "About $5/hour",
+          "About $99/month total",
+          "About $25/hour, easily a few thousand dollars a month",
+          "About $1/minute"
+        ],
+        "answer": 2,
+        "explain": "A human receptionist runs roughly $25/hour, easily a few thousand a month, and still goes home, takes lunch, and handles one call at a time."
+      },
+      {
+        "q": "What is 'the core win' against competitors repeated throughout the docs?",
+        "options": [
+          "Zoe is the cheapest tool available",
+          "Zoe offers unlimited voice minutes",
+          "Zoe books into the salon's existing calendar end-to-end on the call, while rivals send a link or only do Calendly",
+          "Zoe ships a mobile app for clients"
+        ],
+        "answer": 2,
+        "explain": "The core win is that Zoe writes the booking into the salon's existing calendar end-to-end on the call, unlike rivals that send a link or only support Calendly/Google Calendar."
+      }
+    ]
+  },
+  "front-desk/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "Which of these is something Zoe will NOT do?",
+        "options": [
+          "Transfer to a human during forwarding hours",
+          "Impersonate a human (she discloses she's AI if asked)",
+          "Send SMS confirmations and reminders",
+          "Follow up on abandoned web bookings"
+        ],
+        "answer": 1,
+        "explain": "Zoe never impersonates a human and discloses she's AI if asked; that's a deliberate trust and compliance choice."
+      },
+      {
+        "q": "If a prospect is on no scheduler at all, what's the move?",
+        "options": [
+          "Run Zoe in info-only, no-booking mode",
+          "Put them on Zoca Scheduling",
+          "Decline the deal entirely",
+          "Have Zoe email bookings to the salon"
+        ],
+        "answer": 1,
+        "explain": "A connected platform is required with no booking-less mode, so a prospect with no scheduler should go on Zoca Scheduling."
+      },
+      {
+        "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
+        "options": [
+          "Square",
+          "Booksy",
+          "Boulevard",
+          "GlossGenius"
+        ],
+        "answer": 2,
+        "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
+      },
+      {
+        "q": "What is the universal carrier fallback for turning call forwarding on and off?",
+        "options": [
+          "Dial *72 to turn forwarding on, *73 to turn it off",
+          "Dial #1 to forward, #0 to stop",
+          "Press 9 then the destination number",
+          "Forwarding can't be toggled manually"
+        ],
+        "answer": 0,
+        "explain": "The forwarding wizard supports 28+ carriers with a universal fallback: dial *72 to turn forwarding on and *73 to turn it off."
+      },
+      {
+        "q": "Which statement about Zoe's memory today is TRUE?",
+        "options": [
+          "She recalls what a client got last visit",
+          "She carries preferences like 'always book me with Sarah' across calls",
+          "She recognizes returning callers by phone and sees upcoming appointments",
+          "She reads and writes client notes for allergies and VIP status"
+        ],
+        "answer": 2,
+        "explain": "Today Zoe recognizes callers by phone and sees upcoming appointments; past-visit recall, cross-call preferences, and client notes are all roadmap."
+      },
+      {
+        "q": "What is the correct customer-safe framing of the 'revenue saved' Impact number?",
+        "options": [
+          "An audited accounting figure",
+          "An estimate showing the scale of value, used directionally not as a guarantee",
+          "A guaranteed minimum return",
+          "The salon's verified added profit"
+        ],
+        "answer": 1,
+        "explain": "The Impact number is an estimate to show the scale of value, used directionally and never presented as audited or guaranteed."
+      },
+      {
+        "q": "Which competitor ships no voice receptionist at all?",
+        "options": [
+          "Rosie",
+          "Smith.ai",
+          "GlossGenius",
+          "Slang.ai"
+        ],
+        "answer": 2,
+        "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
+      },
+      {
+        "q": "How should an AE handle a salon that insists Zoe must enforce deposits / collect a card on the call?",
+        "options": [
+          "Promise it and turn on the deposit toggle",
+          "Improvise a workaround on the spot",
+          "Escalate to Ashish, Robin, Chintan, Kushagra, or Piyush; don't promise it",
+          "Tell the salon it's impossible and end the call"
+        ],
+        "answer": 2,
+        "explain": "The deposit-enforcement toggles are intentionally off; building it on is a product decision, so the AE should escalate to the named people, not promise or improvise."
+      }
+    ]
+  },
+  "onboarding/01-the-flow": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How is Zoca onboarding delivered to a prospect?",
+        "options": [
+          "As a public self-serve sign-up they complete alone",
+          "As an assisted, desktop-first setup run with the prospect on a screen-share",
+          "As a downloadable mobile app installed before the demo",
+          "As an emailed login the owner figures out on their own"
+        ],
+        "answer": 1,
+        "explain": "Onboarding is an assisted, desktop-first session run with the prospect on a screen-share, not a public self-serve sign-up."
+      },
+      {
+        "q": "In what fixed order are the three AI agents introduced during agent setup?",
+        "options": [
+          "Front Desk, Bookings, Discovery",
+          "Bookings, Discovery, Front Desk",
+          "Discovery, Bookings, Front Desk",
+          "Discovery, Front Desk, Bookings"
+        ],
+        "answer": 2,
+        "explain": "The agents are introduced one at a time in the fixed order Discovery, then Bookings, then Front Desk."
+      },
+      {
+        "q": "Where do a salon's services come from during onboarding?",
+        "options": [
+          "They are imported automatically from the salon's current booking link and confirmed on a review screen",
+          "The owner retypes every service and price from scratch",
+          "They are copied from the salon's Google Business Profile",
+          "An AE enters them manually after the call ends"
+        ],
+        "answer": 0,
+        "explain": "Services are imported automatically from the current booking link, then confirmed on a review-services screen before the website builds."
+      },
+      {
+        "q": "What are the three sections of onboarding?",
+        "options": [
+          "Discovery, Bookings, and Front Desk",
+          "Platform setup, agent setup, and formalities",
+          "Audit, demo, and migration",
+          "Sign-in, payment, and go-live"
+        ],
+        "answer": 1,
+        "explain": "Onboarding is organized into three sections: platform setup, per-agent setup, and formalities."
+      }
+    ]
+  },
+  "onboarding/02-trial-contract-and-card": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How long is the free trial, and when does the first charge land?",
+        "options": [
+          "14 days, charged on the first day",
+          "30 days, charged immediately",
+          "7 days, charged only after the trial ends",
+          "7 days, charged at the moment the card is added"
+        ],
+        "answer": 2,
+        "explain": "The trial is 7 days and the first charge auto-bills only after the trial ends, like Netflix."
+      },
+      {
+        "q": "Which payment methods are supported to start the trial?",
+        "options": [
+          "Card only; PayPal and Apple Pay are not supported",
+          "Card, PayPal, and Apple Pay",
+          "PayPal or Apple Pay only",
+          "Bank transfer or card"
+        ],
+        "answer": 0,
+        "explain": "A valid, funded card is required to start the trial; PayPal and Apple Pay are not supported."
+      },
+      {
+        "q": "What happens to the contract when a business adds more agents later?",
+        "options": [
+          "A brand-new contract must be signed and a new card added",
+          "The existing contract is augmented automatically with no re-signing and the same card",
+          "The trial restarts from day one",
+          "The business must book an offboarding call first"
+        ],
+        "answer": 1,
+        "explain": "Adding agents later augments the same one-per-business contract automatically with no re-signing and the same card on file."
+      },
+      {
+        "q": "How does a customer cancel during the trial?",
+        "options": [
+          "By emailing a cancellation request",
+          "By letting the card expire on its own",
+          "By clicking a single cancel button in settings",
+          "By booking an offboarding call rather than flipping a switch"
+        ],
+        "answer": 3,
+        "explain": "Cancellation isn't one click; it requires booking an offboarding call so there's a human conversation first."
+      }
+    ]
+  },
+  "onboarding/03-platform-journeys": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How many platform journeys are there, and what decides which one a prospect lands in?",
+        "options": [
+          "Three journeys, decided by their plan tier",
+          "Five journeys, decided by the platform they run today",
+          "Five journeys, decided by how much they pay",
+          "Three journeys, decided by their location"
+        ],
+        "answer": 1,
+        "explain": "There are five platform journeys, and the prospect's current booking platform determines which one they land in."
+      },
+      {
+        "q": "What does the secure automated assistant do on the salon's platform?",
+        "options": [
+          "It edits and updates the salon's existing system",
+          "It deletes the old platform after migrating",
+          "It reads their information read-only without changing their existing system",
+          "It charges the salon a connection fee"
+        ],
+        "answer": 2,
+        "explain": "The secure automated assistant signs in to read the salon's current data read-only and never changes their existing system."
+      },
+      {
+        "q": "How does pricing differ between the platform journeys?",
+        "options": [
+          "There is no price difference; the journey only changes the setup steps",
+          "The flagship migration costs the most",
+          "Direct connection is cheapest",
+          "The secure automated assistant adds a surcharge"
+        ],
+        "answer": 0,
+        "explain": "There is no price difference between journeys; the journey changes only the setup, not the bill."
+      },
+      {
+        "q": "What does the flagship migration journey do?",
+        "options": [
+          "Keeps the salon entirely on their old platform",
+          "Reads data read-only without moving anything",
+          "Connects two systems but changes nothing",
+          "Moves the salon fully onto Zoca's own bookings and payments"
+        ],
+        "answer": 3,
+        "explain": "The flagship migration moves the salon fully onto Zoca's own bookings and payments as the end-state."
+      }
+    ]
+  },
+  "onboarding/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "How should you pitch Zoca onboarding in one line?",
+        "options": [
+          "\"Sign up online and explore on your own.\"",
+          "\"Three steps, one screen-share, and you're live.\"",
+          "\"Download the app and we'll call you later.\"",
+          "\"Pay first, then we set everything up.\""
+        ],
+        "answer": 1,
+        "explain": "The flow doc pitches onboarding as \"Three steps, one screen-share, and you're live.\""
+      },
+      {
+        "q": "Roughly how long does getting a salon live with website, bookings, and AI receptionist take?",
+        "options": [
+          "A full working day",
+          "About three business days",
+          "Well under an hour",
+          "Around two to three hours"
+        ],
+        "answer": 2,
+        "explain": "The whole setup comes together in well under an hour."
+      },
+      {
+        "q": "During Front Desk setup, what does the prospect do?",
+        "options": [
+          "Connect platform, set up number, choose voice, set call forwarding, and run a test call",
+          "Only confirm services and prices",
+          "Import their booking link and build a website",
+          "E-sign the contract and add a card"
+        ],
+        "answer": 0,
+        "explain": "Front Desk has the prospect connect the platform, set up a number, choose a voice, set call forwarding, and run a live test call."
+      },
+      {
+        "q": "Why is the card-on-file step framed \"like Netflix\"?",
+        "options": [
+          "Because Zoca streams training videos",
+          "Because the trial includes free movies",
+          "Because billing is handled by Netflix",
+          "Because you put a card down, get a free week, and aren't charged until it's up"
+        ],
+        "answer": 3,
+        "explain": "The Netflix framing means a card on file starts a free week with no charge until the trial ends, and you can cancel."
+      },
+      {
+        "q": "If a payment fails after the trial, what happens?",
+        "options": [
+          "Access is cut off instantly",
+          "There's a short grace period to fix it before functionality closes",
+          "The trial automatically restarts",
+          "A second card is charged automatically"
+        ],
+        "answer": 1,
+        "explain": "A failed payment triggers a short grace period to resolve it before access closes."
+      },
+      {
+        "q": "What kind of business is onboarding built for today?",
+        "options": [
+          "Multi-location chains only",
+          "Franchises with shared billing",
+          "Solo and single-location businesses (multiple staff are fine)",
+          "Online-only businesses with no storefront"
+        ],
+        "answer": 2,
+        "explain": "Onboarding is built for solo and single-location businesses; multiple staff are fine but multiple locations aren't yet."
+      },
+      {
+        "q": "Why must onboarding be confirmed on the current environment before a live setup?",
+        "options": [
+          "Because the newest version lives in the demo/sandbox environment and production can lag",
+          "Because production is always more up to date",
+          "Because the prospect chooses the environment",
+          "Because pricing differs by environment"
+        ],
+        "answer": 0,
+        "explain": "The newest version lives in the demo/sandbox environment and production can lag, so confirm the current environment first."
+      },
+      {
+        "q": "Where are the salon's card details stored?",
+        "options": [
+          "Directly by Zoca on its own servers",
+          "By the salon's current booking platform",
+          "By Zoca's billing provider, not by Zoca directly",
+          "Only on the owner's local device"
+        ],
+        "answer": 2,
+        "explain": "Card details are stored by Zoca's billing provider, not held by Zoca directly."
+      }
+    ]
+  },
+  "scheduling/01-calendar": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which calendar engine is the Zoca Calendar built on?",
+        "options": [
+          "FullCalendar",
+          "Google Calendar",
+          "Outlook",
+          "Square Calendar"
+        ],
+        "answer": 0,
+        "explain": "The lesson states the Calendar is built on a real calendar engine, FullCalendar."
+      },
+      {
+        "q": "When a client is completing checkout, how long is a slot temporarily held so it can't be double-booked?",
+        "options": [
+          "About 30 minutes",
+          "About 60 minutes",
+          "About 10 minutes",
+          "About 5 minutes"
+        ],
+        "answer": 2,
+        "explain": "A slot is held for roughly 10 minutes while a client finishes paying."
+      },
+      {
+        "q": "Times on the calendar are always anchored to what?",
+        "options": [
+          "The client's device time zone",
+          "The staff member's time zone",
+          "UTC",
+          "The location's time zone"
+        ],
+        "answer": 3,
+        "explain": "Appointments are pinned to the location's time zone regardless of where anyone is logged in."
+      },
+      {
+        "q": "Which client self-check-in method is supported today, per the lesson?",
+        "options": [
+          "QR code",
+          "SMS reply",
+          "Kiosk check-in",
+          "Email link"
+        ],
+        "answer": 0,
+        "explain": "QR-code self-check-in is supported today; SMS-reply and kiosk are on the roadmap."
+      }
+    ]
+  },
+  "scheduling/02-booking-lifecycle": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the three ways a booking can be created in Zoca?",
+        "options": [
+          "Email, fax, phone",
+          "Client online, front desk in-app, Zoca's AI outbound",
+          "Owner only, manager only, staff only",
+          "Walk-in, mail, kiosk"
+        ],
+        "answer": 1,
+        "explain": "Bookings can be created by the client online, the front desk in-app, or Zoca's AI booking outbound."
+      },
+      {
+        "q": "Roughly how long does the short-lived online checkout cart last?",
+        "options": [
+          "About 30 minutes",
+          "About 10 minutes",
+          "About 2 hours",
+          "About 5 minutes"
+        ],
+        "answer": 0,
+        "explain": "Online checkout uses a short-lived cart of about 30 minutes."
+      },
+      {
+        "q": "When a booking is cancelled, what does the system do with the slot?",
+        "options": [
+          "Keeps it blocked until the owner reviews",
+          "Releases it back onto the calendar",
+          "Deletes the appointment record entirely",
+          "Marks it as a no-show"
+        ],
+        "answer": 1,
+        "explain": "Cancelling releases the slot back onto the calendar and checks the waitlist."
+      },
+      {
+        "q": "When the salon itself cancels (e.g., a stylist is out sick), what typically happens to the client's payment?",
+        "options": [
+          "The client forfeits the deposit",
+          "A partial refund based on the window",
+          "A full refund regardless of timing",
+          "No refund is issued"
+        ],
+        "answer": 2,
+        "explain": "Salon-initiated cancellations typically refund the client in full, plus an optional goodwill credit."
+      }
+    ]
+  },
+  "scheduling/03-no-shows": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the default grace period before the system flags a no-show?",
+        "options": [
+          "5 minutes",
+          "10 minutes",
+          "15 minutes",
+          "30 minutes"
+        ],
+        "answer": 2,
+        "explain": "The system detects a no-show after a default 15-minute grace period, which the salon can change."
+      },
+      {
+        "q": "What is the key difference between a cancellation and a no-show?",
+        "options": [
+          "A cancellation is silence; a no-show is explicit",
+          "A cancellation is explicit before the time; a no-show is silence",
+          "They are handled by the same policy",
+          "A no-show always means a full refund"
+        ],
+        "answer": 1,
+        "explain": "A cancellation is the client explicitly calling it off ahead of time; a no-show is silence, detected after the grace period."
+      },
+      {
+        "q": "When a deposit was collected, what is the most common no-show setup?",
+        "options": [
+          "Deposit forfeiture (deposit becomes the fee)",
+          "An extra flat $50 charge",
+          "Refunding the deposit and charging the full service",
+          "Waiving everything automatically"
+        ],
+        "answer": 0,
+        "explain": "Deposit forfeiture means the already-paid deposit converts into the no-show fee, with nothing extra to charge."
+      },
+      {
+        "q": "At what levels can cancellation and no-show policies be configured, with the most specific rule winning?",
+        "options": [
+          "Business only",
+          "Service, stylist, location, or business",
+          "Client account only",
+          "Per appointment only"
+        ],
+        "answer": 1,
+        "explain": "Policies can be set per service, stylist, location, or the whole business, and the most specific rule wins."
+      }
+    ]
+  },
+  "scheduling/04-deposits-and-payments": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "When is a deposit actually charged?",
+        "options": [
+          "At the appointment",
+          "5-10 days after booking",
+          "At booking time, as soon as the appointment is created",
+          "Only after the service is completed"
+        ],
+        "answer": 2,
+        "explain": "The deposit is charged at booking time, as soon as the appointment is created."
+      },
+      {
+        "q": "A deposit amount can be set as which of the following?",
+        "options": [
+          "A flat amount or a percentage of the service price",
+          "A percentage of the tip only",
+          "Always exactly 50%",
+          "A flat amount only"
+        ],
+        "answer": 0,
+        "explain": "The salon sets the deposit as a flat amount or a percentage of the service price."
+      },
+      {
+        "q": "Which payment method requires no setup at all?",
+        "options": [
+          "Card on file",
+          "Tap-to-pay",
+          "In-person card reader",
+          "Cash"
+        ],
+        "answer": 3,
+        "explain": "Cash is recorded instantly with no card processing and works with no setup, while card payments need Stripe."
+      },
+      {
+        "q": "How long do clients typically wait to see a card refund?",
+        "options": [
+          "Instantly",
+          "About 5-10 business days",
+          "About 24 hours",
+          "About 30 days"
+        ],
+        "answer": 1,
+        "explain": "Card refunds go back to the original card and clients typically see them in about 5-10 business days."
+      }
+    ]
+  },
+  "scheduling/05-checkout-pos": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the difference between checkout and quick-sale?",
+        "options": [
+          "Checkout settles a completed appointment; quick-sale has no appointment attached",
+          "Checkout is for retail only; quick-sale is for services",
+          "They use different carts and payment methods",
+          "Quick-sale requires a card reader"
+        ],
+        "answer": 0,
+        "explain": "Checkout settles a completed appointment, while quick-sale is a sale not tied to any appointment, such as a walk-in."
+      },
+      {
+        "q": "Which feature is described as 'coming soon, targeting the next couple of weeks' rather than live today?",
+        "options": [
+          "Taking tips at checkout",
+          "Cash payments",
+          "Retail products, inventory, and gift cards",
+          "Applying discounts"
+        ],
+        "answer": 2,
+        "explain": "Retail products, inventory, and gift cards are launching shortly and should not be demoed as working today."
+      },
+      {
+        "q": "How is the Stripe card reader described as connecting?",
+        "options": [
+          "Server-driven over the internet, paired once",
+          "Via daily Bluetooth pairing each morning",
+          "Hand-keyed on a separate terminal",
+          "Through a USB cable to the computer"
+        ],
+        "answer": 0,
+        "explain": "The reader is server-driven: it pairs once over the salon's internet through Stripe, with no daily Bluetooth fiddling."
+      },
+      {
+        "q": "What option lets staff demonstrate the reader flow without owning hardware?",
+        "options": [
+          "Tap-to-pay mode",
+          "A simulated reader",
+          "Cash mode",
+          "Payment link"
+        ],
+        "answer": 1,
+        "explain": "A simulated reader shows the full payment flow for training and demos without physical hardware."
+      }
+    ]
+  },
+  "scheduling/06-offers-and-discounts": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the defining behavior of an offer in Zoca today?",
+        "options": [
+          "It requires a typed coupon code",
+          "It auto-applies to eligible clients with no code",
+          "It is applied only by the owner manually",
+          "It only works at the front desk"
+        ],
+        "answer": 1,
+        "explain": "An offer auto-applies to eligible clients based on rules, so the client never types a code."
+      },
+      {
+        "q": "Which two discount shapes are supported today?",
+        "options": [
+          "Buy-one-get-one and loyalty points",
+          "Tiered and bundle discounts",
+          "Percentage off (up to 99%) and fixed amount off (to a $0 floor)",
+          "Percentage off only"
+        ],
+        "answer": 2,
+        "explain": "Offers support percentage off up to 99% and fixed amount off down to a $0 floor."
+      },
+      {
+        "q": "Which eligibility option targets clients with no prior bookings?",
+        "options": [
+          "New clients only",
+          "Returning clients only",
+          "All clients",
+          "Staff override"
+        ],
+        "answer": 0,
+        "explain": "The 'new clients only' eligibility targets clients with no prior bookings."
+      },
+      {
+        "q": "What is the offer lifecycle described in the lesson?",
+        "options": [
+          "Open, partially paid, paid",
+          "Pending, confirmed, completed",
+          "Draft, Live (or Future), Paused, Expired",
+          "Created, edited, cancelled"
+        ],
+        "answer": 2,
+        "explain": "Offers move through Draft, Live (or Future if scheduled), Paused, and Expired."
+      }
+    ]
+  },
+  "scheduling/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "Everything on the Calendar opens in what, so you never lose your place?",
+        "options": [
+          "A new browser tab",
+          "A side sheet over the calendar",
+          "A full new page",
+          "A pop-up window that replaces the view"
+        ],
+        "answer": 1,
+        "explain": "Actions like editing, checkout, or blocking time open in a side sheet that slides over the calendar."
+      },
+      {
+        "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
+        "options": [
+          "Pending",
+          "Archived",
+          "Converted",
+          "Declined"
+        ],
+        "answer": 2,
+        "explain": "When the AI reaches out and books a lead, the lead is marked converted."
+      },
+      {
+        "q": "What is the default grace period before a no-show is flagged?",
+        "options": [
+          "15 minutes",
+          "30 minutes",
+          "10 minutes",
+          "5 minutes"
+        ],
+        "answer": 0,
+        "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
+      },
+      {
+        "q": "A no-show fee can be configured as which of the following?",
+        "options": [
+          "A percentage of the tip",
+          "A percentage of deposit, a fixed amount, or a percentage of service price",
+          "Always a flat $100",
+          "Only a forfeited deposit"
+        ],
+        "answer": 1,
+        "explain": "The fee is configurable as a percentage of the deposit, a fixed amount, or a percentage of the service price."
+      },
+      {
+        "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
+        "options": [
+          "A ledger",
+          "A cart",
+          "A sale",
+          "A receipt"
+        ],
+        "answer": 2,
+        "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
+      },
+      {
+        "q": "Which states does a sale move through as it is paid?",
+        "options": [
+          "Draft, Live, Paused",
+          "Pending, confirmed, completed",
+          "Created, edited, cancelled",
+          "Open, partially paid, paid"
+        ],
+        "answer": 3,
+        "explain": "The system tracks the sale as it moves from open to partially paid to paid."
+      },
+      {
+        "q": "For in-person card acceptance, which account must the salon connect?",
+        "options": [
+          "PayPal",
+          "Stripe",
+          "Square",
+          "Clover"
+        ],
+        "answer": 1,
+        "explain": "Card readers and tap-to-pay run on the salon's connected Stripe account."
+      },
+      {
+        "q": "The killer offer demo described is a slow-day offer that shows targeting, automation, and what else at once?",
+        "options": [
+          "Margin control",
+          "Loyalty rewards",
+          "Inventory tracking",
+          "Gift card sales"
+        ],
+        "answer": 0,
+        "explain": "The slow-day offer demo shows targeting, automation, and margin control simultaneously."
+      }
+    ]
+  },
+  "selling-zoca/01-know-your-buyer": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the recommended entry tactic for a Type B (skeptical) buyer?",
+        "options": [
+          "Give a wake-up call that the digital shift is real",
+          "Open with one hard-hitting fact they don't already know",
+          "Show the cost and chaos of juggling 5+ tools",
+          "Walk them through a full feature demo immediately"
+        ],
+        "answer": 1,
+        "explain": "Type B knows marketing exists, so you have ~30 seconds and must open with a fact they cannot already know to spark curiosity."
+      },
+      {
+        "q": "According to the module, why does Google search produce higher-quality leads than social media?",
+        "options": [
+          "Google search carries predefined intent while social is discovery-first",
+          "Social media is more expensive to advertise on",
+          "Google leads are always cheaper per click",
+          "Social media users never book beauty services"
+        ],
+        "answer": 0,
+        "explain": "Someone searching 'Botox near me' already wants the service (predefined intent), whereas social-media intent is created later and can evaporate."
+      },
+      {
+        "q": "What average customer retention figure does the internal coaching cite across Zoca's users?",
+        "options": [
+          "~96%",
+          "~60%",
+          "~40%",
+          "~20%"
+        ],
+        "answer": 2,
+        "explain": "About 40% of customers repeat, which is the whole argument for constant acquisition and why marketing is a must-have."
+      },
+      {
+        "q": "What does the 'map pack' refer to?",
+        "options": [
+          "The sponsored ads labelled above local results",
+          "The top-3 local listings shown beside a map in Google results",
+          "All organic results on a Google search page",
+          "The set of AI assistants that answer queries"
+        ],
+        "answer": 1,
+        "explain": "The map pack is the top-3 local listings beside a Google map; sponsored ads can appear above it and are labelled as ads."
+      }
+    ]
+  },
+  "selling-zoca/02-the-pitch-narrative": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "According to the narrative, what is the real first step in a business's life-cycle?",
+        "options": [
+          "Booking",
+          "Payments",
+          "Acquisition",
+          "Taxation"
+        ],
+        "answer": 2,
+        "explain": "Legacy platforms started from booking, but acquisition (getting found) comes first—if nobody finds the business, the booking tool has nothing to do."
+      },
+      {
+        "q": "When a prospect says 'I can write my own content with AI,' what should the AE do?",
+        "options": [
+          "Argue that AI cannot write a good blog",
+          "Ask the cornering questions so they reach the conclusion themselves",
+          "Immediately offer a discount",
+          "Show them the pricing page"
+        ],
+        "answer": 1,
+        "explain": "Don't argue—ask the cornering questions that expose how much they'd actually have to own, letting them arrive at the conclusion."
+      },
+      {
+        "q": "Which messaging discipline does the module insist on regarding who does the work?",
+        "options": [
+          "Say a team of humans does it to add credibility",
+          "Always say an agent does it, not a team",
+          "Avoid mentioning who does the work at all",
+          "Say a mix of humans and software does it"
+        ],
+        "answer": 1,
+        "explain": "Saying 'a team does it' lowers the perceived intelligence of the product; always say the agent does the work."
+      },
+      {
+        "q": "How does the module frame an organic lead?",
+        "options": [
+          "It is the core product Zoca sells",
+          "It is the outcome of doing marketing, profile, content and reviews well",
+          "It is something Zoca resells like a marketplace",
+          "It is generated by $20-CPC ad agencies"
+        ],
+        "answer": 1,
+        "explain": "A lead is what falls out when everything is done well; Zoca builds the durable asset and the leads follow, rather than being a lead-gen machine."
+      }
+    ]
+  },
+  "selling-zoca/03-the-sales-process-and-team": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the rule about payment relative to the demo?",
+        "options": [
+          "Payment is collected before the discovery call",
+          "No payment before the demo—the prospect sees the product first",
+          "Payment is optional and never required",
+          "Payment is collected only after 7 days regardless of demo"
+        ],
+        "answer": 1,
+        "explain": "The pipeline mandates a fully-loaded discovery call with no payment before the demo."
+      },
+      {
+        "q": "Who owns qualification in the sales model?",
+        "options": [
+          "The full-cycle AE re-qualifies every deal",
+          "The SDR owns qualification and the AE does not re-qualify",
+          "The CX pod handles qualification",
+          "The customer self-qualifies online"
+        ],
+        "answer": 1,
+        "explain": "The SDR owns qualification; the AE closes and does not re-qualify, the main reason not to close being product rejection."
+      },
+      {
+        "q": "What triggers which of the five onboarding journeys (A–E) a customer takes?",
+        "options": [
+          "The booking platform they already use",
+          "The price tier they select",
+          "Their geographic location",
+          "The number of staff they employ"
+        ],
+        "answer": 0,
+        "explain": "The onboarding journey is determined by the prospect's current booking platform (API, no-API/browser automation, or full migration)."
+      },
+      {
+        "q": "What are the trial and billing mechanics described?",
+        "options": [
+          "30-day trial, no card required, billed via Stripe",
+          "7-day trial, card on file required, auto-charge after 7 days via Chargebee",
+          "14-day trial, manual invoicing each month",
+          "No trial; pay in full up front via Chargebee"
+        ],
+        "answer": 1,
+        "explain": "A 7-day trial requires a card on file and auto-charges after 7 days, billed through Chargebee, with a one-per-business contract e-signed first."
+      }
+    ]
+  },
+  "selling-zoca/04-master-objection-bank": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "For objection #5, 'How do you rank on AI SEO?', what is the correct response?",
+        "options": [
+          "Explain the exact ranking algorithm step by step",
+          "There is no ranking in AI search—GEO/AEO is about being recommended and cited",
+          "Promise a top-3 position within a week",
+          "Admit Zoca cannot influence AI search at all"
+        ],
+        "answer": 1,
+        "explain": "It's a trick: AI search recommends and cites rather than ranking, so you optimize for mentions, citations and trust signals."
+      },
+      {
+        "q": "How should objection #10, 'I don't want AI to answer my calls,' be reframed?",
+        "options": [
+          "Around 'never miss a call'—it catches calls you'd otherwise lose",
+          "By offering a discount on Front Desk",
+          "By replacing the human receptionist entirely",
+          "By saying AI is required and cannot be turned off"
+        ],
+        "answer": 0,
+        "explain": "Reframe to 'never miss a call'—it catches after-hours, simultaneous and busy-time calls and transfers to you during your hours, so you stay in control."
+      },
+      {
+        "q": "In the audit for AI SEO (#4), which engines' mentions and citations are measured?",
+        "options": [
+          "Only Google and Bing",
+          "ChatGPT, Gemini, Google AI Overview, and Perplexity",
+          "Only ChatGPT and Siri",
+          "Facebook, Instagram, and TikTok"
+        ],
+        "answer": 1,
+        "explain": "The audit measures mentions and citations across ChatGPT, Gemini, Google AI Overview, and Perplexity."
+      },
+      {
+        "q": "What is the cure for objection #15, 'The content doesn't sound like me, it's generic'?",
+        "options": [
+          "Switch to a human copywriter",
+          "Feed the Brain relevant context so the output becomes differentiated",
+          "Lower the publishing frequency",
+          "Turn off AI content generation"
+        ],
+        "answer": 1,
+        "explain": "Feeding the Brain real context turns generic output into differentiated content, converting the complaint into a Brain-building conversation."
+      }
+    ]
+  },
+  "selling-zoca/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "What is the entry tactic for a Type C (overwhelmed) buyer?",
+        "options": [
+          "A wake-up call that the digital shift is real",
+          "One hard-hitting fact they don't already know",
+          "Show the cost and chaos of juggling 5+ tools and sell simplicity",
+          "A full feature-by-feature product demo"
+        ],
+        "answer": 2,
+        "explain": "Type C feels covered because they pay for many tools, so show the cost and chaos and sell simplicity, cohesiveness and context."
+      },
+      {
+        "q": "Which principle governs how a pitch should open?",
+        "options": [
+          "Lead with features (the 'what')",
+          "Lead with the why—the buyer's world and pain—before any feature",
+          "Lead with pricing to filter prospects",
+          "Lead with competitor comparisons"
+        ],
+        "answer": 1,
+        "explain": "Why-before-what: anchor the conversation in the buyer's reality first so the product lands harder once they feel understood."
+      },
+      {
+        "q": "What is the one-sentence marketing story when a prospect asks what the marketing does?",
+        "options": [
+          "Leads and conversions",
+          "Content + context",
+          "Ads and retargeting",
+          "Bookings and payments"
+        ],
+        "answer": 1,
+        "explain": "The story compresses to content plus context, where context is the business-specific nuance that makes content non-generic."
+      },
+      {
+        "q": "How is Zoca distinguished from a marketplace like Fresha?",
+        "options": [
+          "Zoca charges a flat fee per lead-generated booking",
+          "Zoca is a lead reseller that rents leads",
+          "Zoca makes a business findable rather than reselling it leads",
+          "Zoca takes ~10% of every service price"
+        ],
+        "answer": 2,
+        "explain": "Zoca is not a marketplace or lead reseller; Google is where the search happens and Zoca makes the business findable."
+      },
+      {
+        "q": "What is the nature of the discovery call in the sales pipeline?",
+        "options": [
+          "An optional intro call before qualification",
+          "A mandatory, fully-loaded product demo with all agents active",
+          "A pure conversion call focused only on closing",
+          "A post-payment onboarding session"
+        ],
+        "answer": 1,
+        "explain": "The discovery call is mandatory, shows the product fully loaded with all agents active, and is not a conversion call."
+      },
+      {
+        "q": "What is true about pricing across the five onboarding journeys?",
+        "options": [
+          "Browser-automation journeys cost less than full migration",
+          "API integrations are the most expensive tier",
+          "There is no price difference between journeys",
+          "Migration to Zoca bookings is discounted"
+        ],
+        "answer": 2,
+        "explain": "Pricing is the same whether a customer integrates, runs on browser automation or migrates fully, so guide them to the best-fit path."
+      },
+      {
+        "q": "In the support/CX model, who gets a dedicated pod?",
+        "options": [
+          "Every paying customer",
+          "Customers paying under $5k",
+          "Customers over $5k or on the full suite",
+          "Only multi-location accounts"
+        ],
+        "answer": 2,
+        "explain": "A dedicated pod is reserved for customers over $5k or on the full suite; others rely on Command Center plus the AI account manager."
+      },
+      {
+        "q": "For objection #12, how is Front Desk positioned versus a human receptionist?",
+        "options": [
+          "As a full replacement that fires the receptionist",
+          "As coverage, not replacement—24/7, simultaneous calls, after-hours",
+          "As a cheaper but less capable alternative",
+          "As identical in capability to a human"
+        ],
+        "answer": 1,
+        "explain": "It's coverage not replacement—24/7, simultaneous calls, after-hours, spam filtering and outbound recovery at ~$99/mo versus a few thousand for a human."
+      }
+    ]
+  }
+}

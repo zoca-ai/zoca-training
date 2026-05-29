@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoca Sales Academy</title>
+    <meta
+      name="description"
+      content="Internal sales &amp; AE enablement training for the Zoca product suite."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <!-- LOGIN SCREEN -->
+    <div id="login-screen" class="login-screen" hidden>
+      <div class="login-card">
+        <div class="login-brand">
+          <div class="logo-mark">Z</div>
+          <div>
+            <div class="login-title">Zoca Sales Academy</div>
+            <div class="login-sub">Sales &amp; AE enablement</div>
+          </div>
+        </div>
+        <p class="login-blurb">
+          Learn every Zoca product, the concepts behind them, the questions
+          customers ask, and how to handle objections — then test yourself.
+        </p>
+        <form id="login-form" autocomplete="off">
+          <label for="login-email">Work email</label>
+          <input
+            id="login-email"
+            type="email"
+            placeholder="you@zoca.com"
+            required
+          />
+          <label for="login-password">Password</label>
+          <input
+            id="login-password"
+            type="password"
+            placeholder="••••••••"
+            required
+          />
+          <div id="login-error" class="login-error" hidden></div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Sign in
+          </button>
+        </form>
+        <p class="login-foot">
+          No account? Ask your enablement lead to add you to the roster.
+        </p>
+      </div>
+    </div>
+
+    <!-- APP SHELL -->
+    <div id="app" class="app" hidden>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+          <div class="logo-mark">Z</div>
+          <div class="sidebar-brand-text">
+            <span class="sidebar-brand-title">Sales Academy</span>
+            <span class="sidebar-brand-sub">Zoca enablement</span>
+          </div>
+        </div>
+        <nav id="sidebar-nav" class="sidebar-nav"><!-- built by JS --></nav>
+        <div class="sidebar-foot">
+          <div class="user-chip">
+            <div class="user-avatar" id="user-avatar">?</div>
+            <div class="user-meta">
+              <span class="user-name" id="user-name">—</span>
+              <button id="logout-btn" class="link-btn">Sign out</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+            ☰
+          </button>
+          <div id="breadcrumb" class="breadcrumb"></div>
+          <div class="topbar-spacer"></div>
+          <div id="topbar-progress" class="topbar-progress"></div>
+        </header>
+        <div id="view" class="view"><!-- routed view --></div>
+      </main>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

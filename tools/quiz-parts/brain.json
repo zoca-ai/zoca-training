@@ -1,0 +1,276 @@
+{
+  "brain/01-what-it-is": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the Brain, in one line?",
+        "options": [
+          "A shared industry database every Zoca business contributes facts to",
+          "A per-business memory layer storing owner-approved facts that grounds every Zoca AI",
+          "A standalone chatbot that replaces the front-desk phone line",
+          "A generic AI writing tool like ChatGPT for marketing copy"
+        ],
+        "answer": 1,
+        "explain": "The Brain is a per-business memory layer that stores facts the owner has approved and serves them to every Zoca AI."
+      },
+      {
+        "q": "Why does fixing one fact in the Brain improve every Zoca tool at once?",
+        "options": [
+          "Because each tool keeps its own copy that syncs nightly",
+          "Because the owner manually pushes updates to each AI",
+          "Because all five Zoca AIs read from the same Brain",
+          "Because only the website and Front Desk share facts"
+        ],
+        "answer": 2,
+        "explain": "All five Zoca AIs read from the same Brain, so correcting one fact makes every tool better at once."
+      },
+      {
+        "q": "Which is one of the three foundation principles of how the Brain works?",
+        "options": [
+          "Facts are pooled and shared to train other owners' AIs",
+          "Per-business ownership — a Brain belongs to one business and is never shared",
+          "Facts are auto-confirmed without owner review to save time",
+          "The Brain stays fixed and never changes after setup"
+        ],
+        "answer": 1,
+        "explain": "Per-business ownership means a Brain belongs to one business and is never pooled or shared."
+      },
+      {
+        "q": "According to the lesson, can owners control whether a fact is used per-tool today (e.g., on calls but not the blog)?",
+        "options": [
+          "Yes, per-surface control is fully available now",
+          "No — per-tool control isn't possible yet; a fact is available to all tools",
+          "Yes, but only for pricing facts",
+          "Only staff accounts can set per-tool rules"
+        ],
+        "answer": 1,
+        "explain": "Per-tool control is a known gap; today a confirmed fact is available to all tools, so don't promise per-surface control."
+      }
+    ]
+  },
+  "brain/02-the-five-tabs": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
+        "options": ["Canvas", "Validate", "Preview", "Memory History"],
+        "answer": 0,
+        "explain": "Canvas is the visual topic map of all confirmed facts and is opened first as the wow shot."
+      },
+      {
+        "q": "What are the four actions an owner can take on a card in the Validate tab?",
+        "options": [
+          "Approve, Pause, Archive, Delete",
+          "Confirm, Refine, Edit, Reject",
+          "Accept, Flag, Merge, Restore",
+          "Confirm, Share, Edit, Export"
+        ],
+        "answer": 1,
+        "explain": "The four Validate actions are Confirm, Refine, Edit, and Reject."
+      },
+      {
+        "q": "What does the Preview tab let an owner do?",
+        "options": [
+          "Schedule when facts go live",
+          "Type a customer question and see the exact grounded answer with citations to the facts used",
+          "Bulk-import an FAQ list",
+          "Compare their Brain to a competitor's"
+        ],
+        "answer": 1,
+        "explain": "Preview lets you type any customer question and see the exact grounded answer with citations to the Brain facts it used."
+      },
+      {
+        "q": "Why do compliance-minded buyers care about Memory History?",
+        "options": [
+          "It hides facts from staff members",
+          "It auto-deletes old facts after 30 days",
+          "It's a complete, dated, attributed, exportable audit trail of every fact with one-click restore",
+          "It blocks the AI from answering until reviewed"
+        ],
+        "answer": 2,
+        "explain": "Memory History is a complete, dated, attributed audit trail that is exportable, with one-click restore — exactly what compliance asks for."
+      }
+    ]
+  },
+  "brain/03-how-it-learns": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the Brain's two learning paths?",
+        "options": [
+          "Path A KNOWN (AI confirms an answer it has) and Path B UNKNOWN (it becomes a question to answer)",
+          "Automatic scraping and manual entry",
+          "Owner path and staff path",
+          "Daily crawl and weekly crawl"
+        ],
+        "answer": 0,
+        "explain": "Path A (KNOWN) drops a confirmation into Validate; Path B (UNKNOWN) becomes a question in the Question Bank to answer."
+      },
+      {
+        "q": "Which sources are read ONCE at onboarding to seed the Brain?",
+        "options": [
+          "Command Center chats and the nightly gap-scan",
+          "Your website, Google Business Profile, past call transcripts, and existing Zoca data",
+          "Generated blog and social posts",
+          "Competitor websites and Yelp reviews only"
+        ],
+        "answer": 1,
+        "explain": "Website, Google profile, past calls, and existing Zoca data are read once at onboarding to seed the Brain — there is no nightly re-crawl."
+      },
+      {
+        "q": "When a new candidate fact contradicts an existing fact, what does the Brain do?",
+        "options": [
+          "Silently overwrites with the newer fact",
+          "Keeps the older fact and ignores the new one",
+          "Flags the conflict and offers a three-way choice: replace, keep both, or cancel",
+          "Deletes both facts to avoid errors"
+        ],
+        "answer": 2,
+        "explain": "The Brain never silently overwrites; it flags the conflict and offers replace, keep both, or cancel."
+      },
+      {
+        "q": "What is the cap on the AI work behind the Brain?",
+        "options": [
+          "$50 per month per location",
+          "$50 per month per business",
+          "$100 per month per location",
+          "There is no cap"
+        ],
+        "answer": 0,
+        "explain": "AI costs are capped at $50 per month per location, a safety ceiling so an owner can't run up a bill."
+      }
+    ]
+  },
+  "brain/04-objections-and-demo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the strict 5-minute demo path through the tabs?",
+        "options": [
+          "Question Bank → Canvas → Preview → Validate",
+          "Canvas → Validate → Preview → Memory History",
+          "Validate → Memory History → Canvas → Preview",
+          "Canvas → Question Bank → Preview → Validate"
+        ],
+        "answer": 1,
+        "explain": "The strict path is Canvas (wow shot) → Validate (confirm live) → Preview (cited answer) → Memory History (audit close)."
+      },
+      {
+        "q": "Which is the single most powerful demo moment?",
+        "options": [
+          "Touring all five tabs thoroughly",
+          "Explaining how the engine works under the hood",
+          "Steps 3 and 4 back-to-back: the owner confirms a fact, then watches it come out of the AI cited",
+          "Showing the $50 cost cap first"
+        ],
+        "answer": 2,
+        "explain": "Handing them the mouse to confirm a fact, then immediately seeing it cited in Preview, is 'the click' the demo is built around."
+      },
+      {
+        "q": "Which is one of the three NEVER-SAY over-promises?",
+        "options": [
+          "\"You're in control of every fact\"",
+          "\"The AI will never hallucinate\"",
+          "\"Each card takes about 30 seconds\"",
+          "\"Your Brain is private to your business\""
+        ],
+        "answer": 1,
+        "explain": "'The AI will never hallucinate' is a NEVER-SAY; say instead it grounds against approved facts and is scored to catch drift."
+      },
+      {
+        "q": "If an owner asks about time-bound offers, per-surface control, or other languages, how should you handle it?",
+        "options": [
+          "Demo it as live to impress them",
+          "Promise a specific delivery date",
+          "Say 'coming soon' but don't demo it as live or commit a date",
+          "Tell them it will never be built"
+        ],
+        "answer": 2,
+        "explain": "These are roadmap items: it's fine to say 'coming soon,' but do not demo them as live or promise a date."
+      }
+    ]
+  },
+  "brain/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "How should you pitch the Brain at the highest level?",
+        "options": [
+          "\"It's a free AI chatbot for your website\"",
+          "\"Train your AI once, the way you'd train a great new receptionist\"",
+          "\"It shares your best facts with the Zoca network\"",
+          "\"Set it and forget it forever\""
+        ],
+        "answer": 1,
+        "explain": "The core pitch is to train your AI once the way you'd train a great new receptionist."
+      },
+      {
+        "q": "How many Zoca AIs does the Brain power?",
+        "options": ["Three", "Four", "Five", "Seven"],
+        "answer": 2,
+        "explain": "The Brain powers five Zoca AIs: Front Desk, Website, Content, Google Profile, and Command Center."
+      },
+      {
+        "q": "What is the 'source pill' on a Validate card?",
+        "options": [
+          "A confidence score for the fact",
+          "A chip showing where the candidate fact came from (call, website, Google, chat, staff save)",
+          "A button that confirms the fact",
+          "A timer showing when the fact expires"
+        ],
+        "answer": 1,
+        "explain": "The source pill is the chip on each candidate showing where the fact came from so the owner can judge whether to trust it."
+      },
+      {
+        "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
+        "options": ["Canvas", "Question Bank", "Preview", "Memory History"],
+        "answer": 2,
+        "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
+      },
+      {
+        "q": "What does NOT feed back into the Brain as new facts?",
+        "options": [
+          "Command Center chats",
+          "Content the AI generates, like its own blog and social posts",
+          "Past call transcripts at onboarding",
+          "Questions the owner answers"
+        ],
+        "answer": 1,
+        "explain": "Content the AI generates is deliberately not fed back in; the Brain is built on the owner's confirmed facts, not the AI's own output."
+      },
+      {
+        "q": "Roughly how much time does keeping the Brain current take?",
+        "options": [
+          "About 30 seconds per card and about five minutes a week",
+          "About an hour a day",
+          "A full afternoon at onboarding, then nothing",
+          "Several hours a week"
+        ],
+        "answer": 0,
+        "explain": "Each fact takes roughly 30 seconds to review and most owners spend about five minutes a week."
+      },
+      {
+        "q": "Who can confirm a fact into the Brain today?",
+        "options": [
+          "Any staff member",
+          "Only the owner; staff can save candidates but not approve",
+          "Anyone with the link",
+          "Zoca support, on the owner's behalf"
+        ],
+        "answer": 1,
+        "explain": "Today only the owner confirms a fact, by design for a consistent voice; staff can save candidates with one click."
+      },
+      {
+        "q": "How should you answer 'My business changes all the time — won't this get stale?'",
+        "options": [
+          "\"We re-crawl your website every night to stay fresh\"",
+          "\"It stays current through how you use Zoca — Command Center chats, answered questions, and a nightly gap-scan\"",
+          "\"You'll need to re-import everything monthly\"",
+          "\"It can't stay current; that's a known limitation\""
+        ],
+        "answer": 1,
+        "explain": "Freshness is usage-driven via Command Center chats, answered questions, saves, and a nightly gap-scan — not a nightly re-crawl."
+      }
+    ]
+  }
+}

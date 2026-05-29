@@ -1,0 +1,364 @@
+{
+  "foundations/01-local-seo-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "According to Google's Business Profile help documentation, what three factors does Google use to rank local results?",
+        "options": [
+          "Keywords, backlinks, and page speed",
+          "Relevance, distance, and prominence",
+          "Reviews, photos, and hours",
+          "Budget, ad spend, and bid amount"
+        ],
+        "answer": 1,
+        "explain": "The lesson states Google's own documentation lists relevance, distance, and prominence as the three local ranking factors."
+      },
+      {
+        "q": "Which two of Google's three local ranking factors does a business mostly control?",
+        "options": [
+          "Distance and prominence",
+          "Relevance and distance",
+          "Relevance and prominence",
+          "Distance and intent"
+        ],
+        "answer": 2,
+        "explain": "The lesson's rule of thumb says you mostly control relevance and prominence but cannot control distance."
+      },
+      {
+        "q": "What does NAP consistency mean in local SEO?",
+        "options": [
+          "Name, Address, and Phone number written identically everywhere online",
+          "Number of Active Profiles kept up to date",
+          "New Appointments Posted on the profile",
+          "Name, Account, and Password matching across sites"
+        ],
+        "answer": 0,
+        "explain": "The lesson defines NAP consistency as Name, Address, and Phone number written identically everywhere online."
+      },
+      {
+        "q": "Roughly what share of all Google searches does the lesson say have local intent?",
+        "options": ["About 12%", "About 25%", "About 46%", "About 75%"],
+        "answer": 2,
+        "explain": "The lesson states roughly 46% of all Google searches have local intent."
+      }
+    ]
+  },
+  "foundations/02-aeo-geo-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the core mindset shift of AEO/GEO compared to classic SEO?",
+        "options": [
+          "You buy ad placement inside AI answers",
+          "You aim to rank #1 in ChatGPT",
+          "There is no 'position' to win; the goal is to be included and cited in the AI's answer",
+          "You optimize purely for backlinks"
+        ],
+        "answer": 2,
+        "explain": "The lesson stresses there is no ranked position in AI answers; the goal is to be included and recommended within the synthesized answer."
+      },
+      {
+        "q": "What does RAG (retrieval-augmented generation) describe in how AI engines build answers?",
+        "options": [
+          "The engine retrieves relevant web pages first, then generates an answer grounded in them",
+          "The engine ranks all websites then averages them",
+          "The engine randomly assigns generated authority",
+          "The engine generates an answer first, then retrieves links to match"
+        ],
+        "answer": 0,
+        "explain": "The lesson defines RAG as retrieving relevant pages first, then generating a written answer grounded in those pages."
+      },
+      {
+        "q": "Per the Princeton-led GEO paper, adding specific statistics to content boosted AI visibility by up to what amount?",
+        "options": ["Up to +10%", "Up to +40%", "Up to +115%", "Up to +200%"],
+        "answer": 1,
+        "explain": "The lesson reports the GEO paper found adding specific statistics boosted visibility up to +40%."
+      },
+      {
+        "q": "How do teams measure AEO/GEO success since there is no rank report?",
+        "options": [
+          "Total backlinks earned",
+          "Organic traffic from blue links",
+          "Page load speed across engines",
+          "AI Share of Voice — how often the business is mentioned or cited versus competitors"
+        ],
+        "answer": 3,
+        "explain": "The lesson explains success is tracked via AI Share of Voice: mention/citation frequency versus competitors across representative questions."
+      }
+    ]
+  },
+  "foundations/03-ai-voice-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What three stages make up the typical AI voice agent pipeline?",
+        "options": [
+          "STT (hear), LLM (think), TTS (speak)",
+          "Crawl, index, rank",
+          "Listen, transfer, record",
+          "Dial, ring, voicemail"
+        ],
+        "answer": 0,
+        "explain": "The lesson describes the STT to LLM to TTS pipeline as ears, brain, and mouth."
+      },
+      {
+        "q": "What latency window does the lesson cite as the benchmark most production voice agents aim for?",
+        "options": ["50-100ms", "300-800ms", "1-2 seconds", "2-3 seconds"],
+        "answer": 1,
+        "explain": "The lesson cites roughly 500ms as natural, with most production agents aiming for a 300-800ms window."
+      },
+      {
+        "q": "What is 'grounding' in the context of an AI voice agent?",
+        "options": [
+          "Limiting the agent to one phone line",
+          "Recording every call for compliance",
+          "Feeding the agent the business's real, current facts so answers come from a trusted source, not guesses",
+          "Forwarding calls to voicemail after hours"
+        ],
+        "answer": 2,
+        "explain": "The lesson defines grounding as feeding the agent real business facts so answers are factual rather than guessed."
+      },
+      {
+        "q": "What does 'barge-in' allow during a call with an AI voice agent?",
+        "options": [
+          "The agent to transfer to a human automatically",
+          "The caller to interrupt the agent while it's talking and have it stop to listen",
+          "The agent to place the caller on hold",
+          "Two callers to join the same line"
+        ],
+        "answer": 1,
+        "explain": "The lesson defines barge-in as the caller interrupting the agent while it talks, causing it to stop and listen."
+      }
+    ]
+  },
+  "foundations/04-reviews-reputation-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is 'review gating' as defined in the lesson?",
+        "options": [
+          "Charging customers to leave a review",
+          "Deleting all reviews older than a year",
+          "Requiring login before posting a review",
+          "Routing only happy customers to public review sites while steering unhappy ones to a private form"
+        ],
+        "answer": 3,
+        "explain": "The lesson defines review gating as selectively sending happy customers to public sites and unhappy ones to private feedback instead."
+      },
+      {
+        "q": "Under the FTC's 2024 rule, what is the current maximum civil penalty per violation cited in the lesson?",
+        "options": [
+          "Up to $51,744 per violation",
+          "Up to $5,000 per violation",
+          "Up to $1 million per violation",
+          "Up to $10,000 per violation"
+        ],
+        "answer": 0,
+        "explain": "The lesson states the FTC can seek civil penalties currently up to $51,744 per violation."
+      },
+      {
+        "q": "What is the single most effective tactic the lesson recommends for ethically generating reviews?",
+        "options": [
+          "Offer a discount in exchange for a 5-star review",
+          "Ask every customer right after the visit and make it one tap",
+          "Only ask customers you expect to be happy",
+          "Buy reviews from a reputable directory"
+        ],
+        "answer": 1,
+        "explain": "The lesson says the most effective tactic is asking every customer right after the visit and making it one tap."
+      },
+      {
+        "q": "Why can a perfect 5.0 rating with few reviews actually hurt a salon?",
+        "options": [
+          "Google automatically caps ratings at 4.9",
+          "It increases the cost of advertising",
+          "A wall of nothing-but-5-stars can read as fake and thin counts seem unproven",
+          "Customers prefer salons with no reviews"
+        ],
+        "answer": 2,
+        "explain": "The lesson notes a flawless rating with few reviews can read as fake, while a 4.7 with hundreds of reviews is more persuasive."
+      }
+    ]
+  },
+  "foundations/05-google-business-profile-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which Google Business Profile field is described as the single strongest controllable ranking lever?",
+        "options": [
+          "The primary category",
+          "The business description",
+          "The number of photos",
+          "The website link"
+        ],
+        "answer": 0,
+        "explain": "The lesson identifies the primary category as the #1 local pack ranking factor and strongest controllable lever."
+      },
+      {
+        "q": "In 2025, what verification method does Google most often require for a Business Profile?",
+        "options": [
+          "A mailed postcard code only",
+          "Video verification — an unedited walkthrough of the business",
+          "An email confirmation only",
+          "A notarized legal document"
+        ],
+        "answer": 1,
+        "explain": "The lesson states Google most often requires video verification, an unedited walkthrough showing the storefront and interior."
+      },
+      {
+        "q": "According to the lesson, fully populated, verified profiles appear about how much more often than incomplete ones?",
+        "options": [
+          "About 20% more often",
+          "About 50% more often",
+          "About 80% more often",
+          "About 200% more often"
+        ],
+        "answer": 2,
+        "explain": "The lesson states fully populated, verified profiles appear roughly 80% more often than incomplete ones."
+      },
+      {
+        "q": "What is happening to the traditional Q&A tab on Google Business Profiles?",
+        "options": [
+          "It is being expanded with video answers",
+          "It is being moved to the website only",
+          "It is being phased out and replaced by an AI-generated 'Ask about this place' answer",
+          "It now requires a paid subscription"
+        ],
+        "answer": 2,
+        "explain": "The lesson says the Q&A tab is being phased out in favor of an AI-generated 'Ask about this place' answer drawn from profile data."
+      }
+    ]
+  },
+  "foundations/06-seo-and-content-101": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the three stages of how Google Search works, per Google's documentation?",
+        "options": [
+          "Search, click, convert",
+          "Crawl, index, rank",
+          "Relevance, distance, prominence",
+          "On-page, technical, off-page"
+        ],
+        "answer": 1,
+        "explain": "The lesson states Google works in three stages: crawl (discover), index (understand and store), and rank (order results)."
+      },
+      {
+        "q": "What does the 'extra E' in E-E-A-T stand for, added in 2022?",
+        "options": ["Engagement", "Efficiency", "Experience", "Endorsement"],
+        "answer": 2,
+        "explain": "The lesson explains the extra E added in 2022 is Experience, rewarding content from someone who has actually done the thing."
+      },
+      {
+        "q": "What does the lesson say about whether Google penalizes AI-written content?",
+        "options": [
+          "AI content is always penalized regardless of quality",
+          "False — Google penalizes thin, generic content, not content for being AI-written",
+          "AI content ranks higher automatically",
+          "Google bans all AI content from its index"
+        ],
+        "answer": 1,
+        "explain": "The lesson states AI-written content is not penalized for being AI; the risk is thin, generic, mass-produced content with little value."
+      },
+      {
+        "q": "What realistic timeline does the lesson give for meaningful SEO results?",
+        "options": ["1-2 weeks", "1-3 months", "4-12 months", "2-3 years"],
+        "answer": 2,
+        "explain": "The lesson cites a 4-12 month window for meaningful SEO results, describing it as slow then compounding."
+      }
+    ]
+  },
+  "foundations/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "What is the local pack (also called the map pack or 3-pack)?",
+        "options": [
+          "A paid advertising bundle for local businesses",
+          "The boxed cluster of usually three local businesses, shown with a map, at the top of local-intent searches",
+          "A set of three keywords every page should target",
+          "A Google subscription tier for salons"
+        ],
+        "answer": 1,
+        "explain": "The lesson defines the local pack as the top-of-page block of typically three local businesses shown with a map."
+      },
+      {
+        "q": "Which two of Google's three local ranking factors are mostly within a business's control?",
+        "options": [
+          "Relevance and prominence",
+          "Distance and relevance",
+          "Distance and prominence",
+          "Proximity and intent"
+        ],
+        "answer": 0,
+        "explain": "The Local SEO lesson states businesses mostly control relevance and prominence but not distance."
+      },
+      {
+        "q": "What does 'zero-click search' mean in the AEO/GEO context?",
+        "options": [
+          "A search that returns no results",
+          "A search blocked by an ad blocker",
+          "A search answered on-screen so the user never clicks through to a website",
+          "A search performed without typing"
+        ],
+        "answer": 2,
+        "explain": "The AEO/GEO lesson defines a zero-click search as one answered on-screen so the user never visits a website."
+      },
+      {
+        "q": "In an AI voice agent, what is 'hallucination'?",
+        "options": [
+          "When the agent transfers a call to a human",
+          "When the agent confidently makes up a wrong answer",
+          "When two callers hear different voices",
+          "When the agent records a message"
+        ],
+        "answer": 1,
+        "explain": "The AI Voice lesson defines hallucination as an AI confidently making up a wrong answer."
+      },
+      {
+        "q": "Which practice both Google's policies and the FTC's 2024 rule push against in reviews?",
+        "options": [
+          "Asking every customer for a public review",
+          "Responding to negative reviews calmly",
+          "Review gating and suppression of negative reviews",
+          "Mentioning the stylist in a reply"
+        ],
+        "answer": 2,
+        "explain": "The Reviews lesson explains review gating and suppression violate Google policy and the FTC's 2024 rule."
+      },
+      {
+        "q": "What does the lesson identify as the #1 Google Business Profile local-pack ranking factor?",
+        "options": [
+          "Number of photos uploaded",
+          "The primary category",
+          "Length of the business description",
+          "Having a booking button"
+        ],
+        "answer": 1,
+        "explain": "The GBP lesson identifies the primary category as the #1 local pack ranking factor."
+      },
+      {
+        "q": "Of the four classic search-intent types, which describes a searcher who wants to act now (e.g., 'book gel manicure downtown')?",
+        "options": [
+          "Informational",
+          "Navigational",
+          "Commercial",
+          "Transactional"
+        ],
+        "answer": 3,
+        "explain": "The SEO lesson classifies 'book/price/near me' act-now queries as transactional intent."
+      },
+      {
+        "q": "What is a 'citation' in local SEO?",
+        "options": [
+          "A backlink from a high-authority news site",
+          "Any place online where a business's NAP appears, such as Yelp or Apple Maps",
+          "A legal warning from Google about policy violations",
+          "A footnote in a blog post linking to the business"
+        ],
+        "answer": 1,
+        "explain": "The Local SEO lesson defines a citation as any online place where a business's NAP (Name, Address, Phone) appears."
+      }
+    ]
+  }
+}

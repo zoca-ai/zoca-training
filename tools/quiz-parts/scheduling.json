@@ -1,0 +1,359 @@
+{
+  "scheduling/01-calendar": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "Which calendar engine is the Zoca Calendar built on?",
+        "options": [
+          "FullCalendar",
+          "Google Calendar",
+          "Outlook",
+          "Square Calendar"
+        ],
+        "answer": 0,
+        "explain": "The lesson states the Calendar is built on a real calendar engine, FullCalendar."
+      },
+      {
+        "q": "When a client is completing checkout, how long is a slot temporarily held so it can't be double-booked?",
+        "options": [
+          "About 30 minutes",
+          "About 60 minutes",
+          "About 10 minutes",
+          "About 5 minutes"
+        ],
+        "answer": 2,
+        "explain": "A slot is held for roughly 10 minutes while a client finishes paying."
+      },
+      {
+        "q": "Times on the calendar are always anchored to what?",
+        "options": [
+          "The client's device time zone",
+          "The staff member's time zone",
+          "UTC",
+          "The location's time zone"
+        ],
+        "answer": 3,
+        "explain": "Appointments are pinned to the location's time zone regardless of where anyone is logged in."
+      },
+      {
+        "q": "Which client self-check-in method is supported today, per the lesson?",
+        "options": ["QR code", "SMS reply", "Kiosk check-in", "Email link"],
+        "answer": 0,
+        "explain": "QR-code self-check-in is supported today; SMS-reply and kiosk are on the roadmap."
+      }
+    ]
+  },
+  "scheduling/02-booking-lifecycle": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What are the three ways a booking can be created in Zoca?",
+        "options": [
+          "Email, fax, phone",
+          "Client online, front desk in-app, Zoca's AI outbound",
+          "Owner only, manager only, staff only",
+          "Walk-in, mail, kiosk"
+        ],
+        "answer": 1,
+        "explain": "Bookings can be created by the client online, the front desk in-app, or Zoca's AI booking outbound."
+      },
+      {
+        "q": "Roughly how long does the short-lived online checkout cart last?",
+        "options": [
+          "About 30 minutes",
+          "About 10 minutes",
+          "About 2 hours",
+          "About 5 minutes"
+        ],
+        "answer": 0,
+        "explain": "Online checkout uses a short-lived cart of about 30 minutes."
+      },
+      {
+        "q": "When a booking is cancelled, what does the system do with the slot?",
+        "options": [
+          "Keeps it blocked until the owner reviews",
+          "Releases it back onto the calendar",
+          "Deletes the appointment record entirely",
+          "Marks it as a no-show"
+        ],
+        "answer": 1,
+        "explain": "Cancelling releases the slot back onto the calendar and checks the waitlist."
+      },
+      {
+        "q": "When the salon itself cancels (e.g., a stylist is out sick), what typically happens to the client's payment?",
+        "options": [
+          "The client forfeits the deposit",
+          "A partial refund based on the window",
+          "A full refund regardless of timing",
+          "No refund is issued"
+        ],
+        "answer": 2,
+        "explain": "Salon-initiated cancellations typically refund the client in full, plus an optional goodwill credit."
+      }
+    ]
+  },
+  "scheduling/03-no-shows": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the default grace period before the system flags a no-show?",
+        "options": ["5 minutes", "10 minutes", "15 minutes", "30 minutes"],
+        "answer": 2,
+        "explain": "The system detects a no-show after a default 15-minute grace period, which the salon can change."
+      },
+      {
+        "q": "What is the key difference between a cancellation and a no-show?",
+        "options": [
+          "A cancellation is silence; a no-show is explicit",
+          "A cancellation is explicit before the time; a no-show is silence",
+          "They are handled by the same policy",
+          "A no-show always means a full refund"
+        ],
+        "answer": 1,
+        "explain": "A cancellation is the client explicitly calling it off ahead of time; a no-show is silence, detected after the grace period."
+      },
+      {
+        "q": "When a deposit was collected, what is the most common no-show setup?",
+        "options": [
+          "Deposit forfeiture (deposit becomes the fee)",
+          "An extra flat $50 charge",
+          "Refunding the deposit and charging the full service",
+          "Waiving everything automatically"
+        ],
+        "answer": 0,
+        "explain": "Deposit forfeiture means the already-paid deposit converts into the no-show fee, with nothing extra to charge."
+      },
+      {
+        "q": "At what levels can cancellation and no-show policies be configured, with the most specific rule winning?",
+        "options": [
+          "Business only",
+          "Service, stylist, location, or business",
+          "Client account only",
+          "Per appointment only"
+        ],
+        "answer": 1,
+        "explain": "Policies can be set per service, stylist, location, or the whole business, and the most specific rule wins."
+      }
+    ]
+  },
+  "scheduling/04-deposits-and-payments": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "When is a deposit actually charged?",
+        "options": [
+          "At the appointment",
+          "5-10 days after booking",
+          "At booking time, as soon as the appointment is created",
+          "Only after the service is completed"
+        ],
+        "answer": 2,
+        "explain": "The deposit is charged at booking time, as soon as the appointment is created."
+      },
+      {
+        "q": "A deposit amount can be set as which of the following?",
+        "options": [
+          "A flat amount or a percentage of the service price",
+          "A percentage of the tip only",
+          "Always exactly 50%",
+          "A flat amount only"
+        ],
+        "answer": 0,
+        "explain": "The salon sets the deposit as a flat amount or a percentage of the service price."
+      },
+      {
+        "q": "Which payment method requires no setup at all?",
+        "options": [
+          "Card on file",
+          "Tap-to-pay",
+          "In-person card reader",
+          "Cash"
+        ],
+        "answer": 3,
+        "explain": "Cash is recorded instantly with no card processing and works with no setup, while card payments need Stripe."
+      },
+      {
+        "q": "How long do clients typically wait to see a card refund?",
+        "options": [
+          "Instantly",
+          "About 5-10 business days",
+          "About 24 hours",
+          "About 30 days"
+        ],
+        "answer": 1,
+        "explain": "Card refunds go back to the original card and clients typically see them in about 5-10 business days."
+      }
+    ]
+  },
+  "scheduling/05-checkout-pos": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the difference between checkout and quick-sale?",
+        "options": [
+          "Checkout settles a completed appointment; quick-sale has no appointment attached",
+          "Checkout is for retail only; quick-sale is for services",
+          "They use different carts and payment methods",
+          "Quick-sale requires a card reader"
+        ],
+        "answer": 0,
+        "explain": "Checkout settles a completed appointment, while quick-sale is a sale not tied to any appointment, such as a walk-in."
+      },
+      {
+        "q": "Which feature is described as 'coming soon, targeting the next couple of weeks' rather than live today?",
+        "options": [
+          "Taking tips at checkout",
+          "Cash payments",
+          "Retail products, inventory, and gift cards",
+          "Applying discounts"
+        ],
+        "answer": 2,
+        "explain": "Retail products, inventory, and gift cards are launching shortly and should not be demoed as working today."
+      },
+      {
+        "q": "How is the Stripe card reader described as connecting?",
+        "options": [
+          "Server-driven over the internet, paired once",
+          "Via daily Bluetooth pairing each morning",
+          "Hand-keyed on a separate terminal",
+          "Through a USB cable to the computer"
+        ],
+        "answer": 0,
+        "explain": "The reader is server-driven: it pairs once over the salon's internet through Stripe, with no daily Bluetooth fiddling."
+      },
+      {
+        "q": "What option lets staff demonstrate the reader flow without owning hardware?",
+        "options": [
+          "Tap-to-pay mode",
+          "A simulated reader",
+          "Cash mode",
+          "Payment link"
+        ],
+        "answer": 1,
+        "explain": "A simulated reader shows the full payment flow for training and demos without physical hardware."
+      }
+    ]
+  },
+  "scheduling/06-offers-and-discounts": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the defining behavior of an offer in Zoca today?",
+        "options": [
+          "It requires a typed coupon code",
+          "It auto-applies to eligible clients with no code",
+          "It is applied only by the owner manually",
+          "It only works at the front desk"
+        ],
+        "answer": 1,
+        "explain": "An offer auto-applies to eligible clients based on rules, so the client never types a code."
+      },
+      {
+        "q": "Which two discount shapes are supported today?",
+        "options": [
+          "Buy-one-get-one and loyalty points",
+          "Tiered and bundle discounts",
+          "Percentage off (up to 99%) and fixed amount off (to a $0 floor)",
+          "Percentage off only"
+        ],
+        "answer": 2,
+        "explain": "Offers support percentage off up to 99% and fixed amount off down to a $0 floor."
+      },
+      {
+        "q": "Which eligibility option targets clients with no prior bookings?",
+        "options": [
+          "New clients only",
+          "Returning clients only",
+          "All clients",
+          "Staff override"
+        ],
+        "answer": 0,
+        "explain": "The 'new clients only' eligibility targets clients with no prior bookings."
+      },
+      {
+        "q": "What is the offer lifecycle described in the lesson?",
+        "options": [
+          "Open, partially paid, paid",
+          "Pending, confirmed, completed",
+          "Draft, Live (or Future), Paused, Expired",
+          "Created, edited, cancelled"
+        ],
+        "answer": 2,
+        "explain": "Offers move through Draft, Live (or Future if scheduled), Paused, and Expired."
+      }
+    ]
+  },
+  "scheduling/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "Everything on the Calendar opens in what, so you never lose your place?",
+        "options": [
+          "A new browser tab",
+          "A side sheet over the calendar",
+          "A full new page",
+          "A pop-up window that replaces the view"
+        ],
+        "answer": 1,
+        "explain": "Actions like editing, checkout, or blocking time open in a side sheet that slides over the calendar."
+      },
+      {
+        "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
+        "options": ["Pending", "Archived", "Converted", "Declined"],
+        "answer": 2,
+        "explain": "When the AI reaches out and books a lead, the lead is marked converted."
+      },
+      {
+        "q": "What is the default grace period before a no-show is flagged?",
+        "options": ["15 minutes", "30 minutes", "10 minutes", "5 minutes"],
+        "answer": 0,
+        "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
+      },
+      {
+        "q": "A no-show fee can be configured as which of the following?",
+        "options": [
+          "A percentage of the tip",
+          "A percentage of deposit, a fixed amount, or a percentage of service price",
+          "Always a flat $100",
+          "Only a forfeited deposit"
+        ],
+        "answer": 1,
+        "explain": "The fee is configurable as a percentage of the deposit, a fixed amount, or a percentage of the service price."
+      },
+      {
+        "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
+        "options": ["A ledger", "A cart", "A sale", "A receipt"],
+        "answer": 2,
+        "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
+      },
+      {
+        "q": "Which states does a sale move through as it is paid?",
+        "options": [
+          "Draft, Live, Paused",
+          "Pending, confirmed, completed",
+          "Created, edited, cancelled",
+          "Open, partially paid, paid"
+        ],
+        "answer": 3,
+        "explain": "The system tracks the sale as it moves from open to partially paid to paid."
+      },
+      {
+        "q": "For in-person card acceptance, which account must the salon connect?",
+        "options": ["PayPal", "Stripe", "Square", "Clover"],
+        "answer": 1,
+        "explain": "Card readers and tap-to-pay run on the salon's connected Stripe account."
+      },
+      {
+        "q": "The killer offer demo described is a slow-day offer that shows targeting, automation, and what else at once?",
+        "options": [
+          "Margin control",
+          "Loyalty rewards",
+          "Inventory tracking",
+          "Gift card sales"
+        ],
+        "answer": 0,
+        "explain": "The slow-day offer demo shows targeting, automation, and margin control simultaneously."
+      }
+    ]
+  }
+}

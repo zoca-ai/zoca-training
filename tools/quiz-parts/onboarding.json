@@ -1,0 +1,242 @@
+{
+  "onboarding/01-the-flow": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How is Zoca onboarding delivered to a prospect?",
+        "options": [
+          "As a public self-serve sign-up they complete alone",
+          "As an assisted, desktop-first setup run with the prospect on a screen-share",
+          "As a downloadable mobile app installed before the demo",
+          "As an emailed login the owner figures out on their own"
+        ],
+        "answer": 1,
+        "explain": "Onboarding is an assisted, desktop-first session run with the prospect on a screen-share, not a public self-serve sign-up."
+      },
+      {
+        "q": "In what fixed order are the three AI agents introduced during agent setup?",
+        "options": [
+          "Front Desk, Bookings, Discovery",
+          "Bookings, Discovery, Front Desk",
+          "Discovery, Bookings, Front Desk",
+          "Discovery, Front Desk, Bookings"
+        ],
+        "answer": 2,
+        "explain": "The agents are introduced one at a time in the fixed order Discovery, then Bookings, then Front Desk."
+      },
+      {
+        "q": "Where do a salon's services come from during onboarding?",
+        "options": [
+          "They are imported automatically from the salon's current booking link and confirmed on a review screen",
+          "The owner retypes every service and price from scratch",
+          "They are copied from the salon's Google Business Profile",
+          "An AE enters them manually after the call ends"
+        ],
+        "answer": 0,
+        "explain": "Services are imported automatically from the current booking link, then confirmed on a review-services screen before the website builds."
+      },
+      {
+        "q": "What are the three sections of onboarding?",
+        "options": [
+          "Discovery, Bookings, and Front Desk",
+          "Platform setup, agent setup, and formalities",
+          "Audit, demo, and migration",
+          "Sign-in, payment, and go-live"
+        ],
+        "answer": 1,
+        "explain": "Onboarding is organized into three sections: platform setup, per-agent setup, and formalities."
+      }
+    ]
+  },
+  "onboarding/02-trial-contract-and-card": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How long is the free trial, and when does the first charge land?",
+        "options": [
+          "14 days, charged on the first day",
+          "30 days, charged immediately",
+          "7 days, charged only after the trial ends",
+          "7 days, charged at the moment the card is added"
+        ],
+        "answer": 2,
+        "explain": "The trial is 7 days and the first charge auto-bills only after the trial ends, like Netflix."
+      },
+      {
+        "q": "Which payment methods are supported to start the trial?",
+        "options": [
+          "Card only; PayPal and Apple Pay are not supported",
+          "Card, PayPal, and Apple Pay",
+          "PayPal or Apple Pay only",
+          "Bank transfer or card"
+        ],
+        "answer": 0,
+        "explain": "A valid, funded card is required to start the trial; PayPal and Apple Pay are not supported."
+      },
+      {
+        "q": "What happens to the contract when a business adds more agents later?",
+        "options": [
+          "A brand-new contract must be signed and a new card added",
+          "The existing contract is augmented automatically with no re-signing and the same card",
+          "The trial restarts from day one",
+          "The business must book an offboarding call first"
+        ],
+        "answer": 1,
+        "explain": "Adding agents later augments the same one-per-business contract automatically with no re-signing and the same card on file."
+      },
+      {
+        "q": "How does a customer cancel during the trial?",
+        "options": [
+          "By emailing a cancellation request",
+          "By letting the card expire on its own",
+          "By clicking a single cancel button in settings",
+          "By booking an offboarding call rather than flipping a switch"
+        ],
+        "answer": 3,
+        "explain": "Cancellation isn't one click; it requires booking an offboarding call so there's a human conversation first."
+      }
+    ]
+  },
+  "onboarding/03-platform-journeys": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How many platform journeys are there, and what decides which one a prospect lands in?",
+        "options": [
+          "Three journeys, decided by their plan tier",
+          "Five journeys, decided by the platform they run today",
+          "Five journeys, decided by how much they pay",
+          "Three journeys, decided by their location"
+        ],
+        "answer": 1,
+        "explain": "There are five platform journeys, and the prospect's current booking platform determines which one they land in."
+      },
+      {
+        "q": "What does the secure automated assistant do on the salon's platform?",
+        "options": [
+          "It edits and updates the salon's existing system",
+          "It deletes the old platform after migrating",
+          "It reads their information read-only without changing their existing system",
+          "It charges the salon a connection fee"
+        ],
+        "answer": 2,
+        "explain": "The secure automated assistant signs in to read the salon's current data read-only and never changes their existing system."
+      },
+      {
+        "q": "How does pricing differ between the platform journeys?",
+        "options": [
+          "There is no price difference; the journey only changes the setup steps",
+          "The flagship migration costs the most",
+          "Direct connection is cheapest",
+          "The secure automated assistant adds a surcharge"
+        ],
+        "answer": 0,
+        "explain": "There is no price difference between journeys; the journey changes only the setup, not the bill."
+      },
+      {
+        "q": "What does the flagship migration journey do?",
+        "options": [
+          "Keeps the salon entirely on their old platform",
+          "Reads data read-only without moving anything",
+          "Connects two systems but changes nothing",
+          "Moves the salon fully onto Zoca's own bookings and payments"
+        ],
+        "answer": 3,
+        "explain": "The flagship migration moves the salon fully onto Zoca's own bookings and payments as the end-state."
+      }
+    ]
+  },
+  "onboarding/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "How should you pitch Zoca onboarding in one line?",
+        "options": [
+          "\"Sign up online and explore on your own.\"",
+          "\"Three steps, one screen-share, and you're live.\"",
+          "\"Download the app and we'll call you later.\"",
+          "\"Pay first, then we set everything up.\""
+        ],
+        "answer": 1,
+        "explain": "The flow doc pitches onboarding as \"Three steps, one screen-share, and you're live.\""
+      },
+      {
+        "q": "Roughly how long does getting a salon live with website, bookings, and AI receptionist take?",
+        "options": [
+          "A full working day",
+          "About three business days",
+          "Well under an hour",
+          "Around two to three hours"
+        ],
+        "answer": 2,
+        "explain": "The whole setup comes together in well under an hour."
+      },
+      {
+        "q": "During Front Desk setup, what does the prospect do?",
+        "options": [
+          "Connect platform, set up number, choose voice, set call forwarding, and run a test call",
+          "Only confirm services and prices",
+          "Import their booking link and build a website",
+          "E-sign the contract and add a card"
+        ],
+        "answer": 0,
+        "explain": "Front Desk has the prospect connect the platform, set up a number, choose a voice, set call forwarding, and run a live test call."
+      },
+      {
+        "q": "Why is the card-on-file step framed \"like Netflix\"?",
+        "options": [
+          "Because Zoca streams training videos",
+          "Because the trial includes free movies",
+          "Because billing is handled by Netflix",
+          "Because you put a card down, get a free week, and aren't charged until it's up"
+        ],
+        "answer": 3,
+        "explain": "The Netflix framing means a card on file starts a free week with no charge until the trial ends, and you can cancel."
+      },
+      {
+        "q": "If a payment fails after the trial, what happens?",
+        "options": [
+          "Access is cut off instantly",
+          "There's a short grace period to fix it before functionality closes",
+          "The trial automatically restarts",
+          "A second card is charged automatically"
+        ],
+        "answer": 1,
+        "explain": "A failed payment triggers a short grace period to resolve it before access closes."
+      },
+      {
+        "q": "What kind of business is onboarding built for today?",
+        "options": [
+          "Multi-location chains only",
+          "Franchises with shared billing",
+          "Solo and single-location businesses (multiple staff are fine)",
+          "Online-only businesses with no storefront"
+        ],
+        "answer": 2,
+        "explain": "Onboarding is built for solo and single-location businesses; multiple staff are fine but multiple locations aren't yet."
+      },
+      {
+        "q": "Why must onboarding be confirmed on the current environment before a live setup?",
+        "options": [
+          "Because the newest version lives in the demo/sandbox environment and production can lag",
+          "Because production is always more up to date",
+          "Because the prospect chooses the environment",
+          "Because pricing differs by environment"
+        ],
+        "answer": 0,
+        "explain": "The newest version lives in the demo/sandbox environment and production can lag, so confirm the current environment first."
+      },
+      {
+        "q": "Where are the salon's card details stored?",
+        "options": [
+          "Directly by Zoca on its own servers",
+          "By the salon's current booking platform",
+          "By Zoca's billing provider, not by Zoca directly",
+          "Only on the owner's local device"
+        ],
+        "answer": 2,
+        "explain": "Card details are stored by Zoca's billing provider, not held by Zoca directly."
+      }
+    ]
+  }
+}

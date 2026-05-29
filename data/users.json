@@ -1,0 +1,9 @@
+[
+  { "email": "demo@zoca.com", "password": "zoca2026", "name": "Demo User" },
+  {
+    "email": "ae@zoca.com",
+    "password": "zoca2026",
+    "name": "Account Executive"
+  },
+  { "email": "robin@zoca.com", "password": "zoca2026", "name": "Robin Chauhan" }
+]

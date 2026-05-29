@@ -1,0 +1,237 @@
+{
+  "command-center/01-overview-and-demo": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the core distinction the lesson uses to define Command Center?",
+        "options": [
+          "It only answers questions about the salon's data",
+          "It performs actions on the salon's behalf, not just answers questions",
+          "It replaces the Front Desk AI entirely",
+          "It is a separate mobile-only app"
+        ],
+        "answer": 1,
+        "explain": "Command Center performs actions in plain language rather than merely giving advice, which the lesson calls the whole point."
+      },
+      {
+        "q": "Which keyboard shortcut opens Command Center from any page?",
+        "options": ["Cmd+K", "Cmd+J", "Ctrl+Space", "Cmd+Enter"],
+        "answer": 0,
+        "explain": "The lesson states Cmd+K is the shortcut to open Command Center instantly from anywhere."
+      },
+      {
+        "q": "What are the three things behind every Command Center reply?",
+        "options": [
+          "Calendar, billing, and reviews",
+          "Voice, text, and email",
+          "Knowledge base, action toolkit, and memory/Brain",
+          "Read, write, and confirm"
+        ],
+        "answer": 2,
+        "explain": "Every request draws on the knowledge base, the action toolkit, and memory/Brain."
+      },
+      {
+        "q": "What happens before Command Center applies an impactful change like new business hours?",
+        "options": [
+          "It applies the change and emails a receipt",
+          "It previews the change in a confirmation card and waits for approval",
+          "It requires a manager password",
+          "It schedules the change for the next business day"
+        ],
+        "answer": 1,
+        "explain": "Impactful writes are previewed in a confirmation card and the owner must approve before they land."
+      }
+    ]
+  },
+  "command-center/02-what-it-can-do": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the headline figure to use externally for Command Center's breadth?",
+        "options": [
+          "About 50 actions across 10 areas",
+          "1000+ actions across 100 areas",
+          "230+ actions across ~26 areas",
+          "26 actions across 230 areas"
+        ],
+        "answer": 2,
+        "explain": "The lesson says to say '230+ actions across ~26 areas' externally."
+      },
+      {
+        "q": "How does Command Center decide which part of the product a request belongs to?",
+        "options": [
+          "The owner must pick the area first",
+          "It routes the request to the right specialist behind the scenes",
+          "It guesses randomly and corrects later",
+          "It asks support staff to triage it"
+        ],
+        "answer": 1,
+        "explain": "Command Center decides the area itself and hands the request to the right specialist; the owner never picks."
+      },
+      {
+        "q": "Which is an example of a WRITE action from the lesson?",
+        "options": [
+          "\"How many website clicks have I gotten?\"",
+          "\"How are my reviews trending?\"",
+          "\"What's my active subscription and when's my next bill?\"",
+          "\"Reschedule Friday's 2pm to 10am and text the customer.\""
+        ],
+        "answer": 3,
+        "explain": "Rescheduling and texting the customer changes data, making it a write action."
+      },
+      {
+        "q": "When you tell Command Center to change your business hours, what helpful follow-up can it do?",
+        "options": [
+          "Push the change to your Google Business Profile so Google stays in sync",
+          "Automatically refund recent customers",
+          "Delete past appointments outside the new hours",
+          "Disable the Front Desk agent"
+        ],
+        "answer": 0,
+        "explain": "It can push the hours change to the Google Business Profile so the listing stays in sync."
+      }
+    ]
+  },
+  "command-center/03-trust-safety-and-memory": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "What is the team's internal rule about confirmations?",
+        "options": [
+          "Confirmation is optional for trusted owners",
+          "If it's not asking for confirmation before a change, something is off",
+          "Confirmation only applies to deletions",
+          "Confirmation is shown only on the first change each day"
+        ],
+        "answer": 1,
+        "explain": "The team's rule is that Command Center always takes confirmation; if it isn't asking, something is off."
+      },
+      {
+        "q": "What is the design target for data sharing between businesses?",
+        "options": [
+          "Limited sharing for benchmarking",
+          "Sharing only with owner consent",
+          "Zero data shared across business owners",
+          "Sharing aggregated anonymous data"
+        ],
+        "answer": 2,
+        "explain": "Cross-business isolation targets zero data shared across business owners and is specifically tested."
+      },
+      {
+        "q": "How does Command Center handle payment-card data?",
+        "options": [
+          "It stores it securely for faster checkout",
+          "It will not handle or expose card data (PCI refusal)",
+          "It encrypts and forwards it to Stripe",
+          "It handles it only with manager approval"
+        ],
+        "answer": 1,
+        "explain": "It refuses payment-card data outright as a deliberate PCI safety feature."
+      },
+      {
+        "q": "When you save a fact through Command Center that conflicts with an existing value, what happens today?",
+        "options": [
+          "It silently overwrites the old value",
+          "It ignores the new value entirely",
+          "It shows the existing value and asks which one to keep",
+          "It auto-catches contradictions from calls and your website too"
+        ],
+        "answer": 2,
+        "explain": "Saving a conflicting fact surfaces the existing value and asks which to keep, via save-structured-memory returning conflict: true."
+      }
+    ]
+  },
+  "command-center/__final__": {
+    "passScore": 80,
+    "questions": [
+      {
+        "q": "The internal framing for Command Center is best described as:",
+        "options": [
+          "\"Claude Code for salon owners\"",
+          "\"A smarter FAQ bot\"",
+          "\"The Zoca settings menu\"",
+          "\"A voice-only assistant\""
+        ],
+        "answer": 0,
+        "explain": "The product team frames it as 'Claude Code for salon owners' because it does the action rather than just advising."
+      },
+      {
+        "q": "Where does Command Center live in the dashboard?",
+        "options": [
+          "Only on the calendar page",
+          "On every page, via a top-right button plus Cmd+K",
+          "Only inside the billing settings",
+          "Only on the mobile app"
+        ],
+        "answer": 1,
+        "explain": "It lives on every page with a top-right button and a Cmd+K shortcut."
+      },
+      {
+        "q": "Which scope description matches the knowledge base?",
+        "options": [
+          "Per business and unique to each owner",
+          "Depends on which products are enabled",
+          "Global, the same for every business",
+          "Only available on full-screen mode"
+        ],
+        "answer": 2,
+        "explain": "The knowledge base is global static know-how that is the same for every business."
+      },
+      {
+        "q": "Which four broad domains do the specialists cover?",
+        "options": [
+          "Calendar, Email, SMS, and Voice",
+          "Scheduling, Discovery/marketing, Front Desk, and Support",
+          "Read, Write, Confirm, and Memory",
+          "Sales, HR, Legal, and Finance"
+        ],
+        "answer": 1,
+        "explain": "The specialists cover Scheduling, Discovery/marketing, Front Desk, and Support."
+      },
+      {
+        "q": "Which of these is a READ action?",
+        "options": [
+          "\"Reply to my latest review.\"",
+          "\"Post an update about my new summer color package.\"",
+          "\"Pull up everyone who hasn't booked in 90 days.\"",
+          "\"Add a pedicure to this booking and send a deposit link.\""
+        ],
+        "answer": 2,
+        "explain": "Pulling up clients who haven't booked fetches data without changing anything, so it is a read."
+      },
+      {
+        "q": "How does Command Center's memory operate?",
+        "options": [
+          "Per user and reset each session",
+          "Per business and shared across the business",
+          "Global across all Zoca businesses",
+          "Only retained for 24 hours"
+        ],
+        "answer": 1,
+        "explain": "Memory is per business and shared across the business so it stays consistent regardless of who uses it."
+      },
+      {
+        "q": "How are a business's multiple locations handled in Command Center?",
+        "options": [
+          "Each location needs a separate login and chat",
+          "One conversation handles all locations without switching and starting over",
+          "Only the primary location is supported",
+          "Locations must be merged into one before use"
+        ],
+        "answer": 1,
+        "explain": "One conversation handles all locations; the owner can ask about one then another in the same chat."
+      },
+      {
+        "q": "What is the relationship between Command Center and Zoca's Brain?",
+        "options": [
+          "Command Center can only read from the Brain",
+          "The Brain is a separate product Command Center cannot access",
+          "It is a two-way link: Command Center reads from and writes to the Brain",
+          "Command Center replaces the Brain entirely"
+        ],
+        "answer": 2,
+        "explain": "The connection is two-way: it reads Brain facts to ground answers and writes new facts other tools can use."
+      }
+    ]
+  }
+}
