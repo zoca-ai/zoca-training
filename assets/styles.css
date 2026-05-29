@@ -151,26 +151,32 @@ body {
   color: var(--ink-soft);
   margin: 0 0 22px;
 }
-#login-form label {
+#login-form label,
+#signup-form label {
   display: block;
   font-size: 13px;
   font-weight: 600;
   margin: 14px 0 6px;
 }
-#login-form input {
+#login-form input,
+#signup-form input {
+  display: block;
   width: 100%;
+  box-sizing: border-box;
   font: inherit;
   padding: 11px 13px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--cream);
 }
-#login-form input:focus {
+#login-form input:focus,
+#signup-form input:focus {
   outline: none;
   border-color: var(--maroon);
   box-shadow: 0 0 0 3px rgba(122, 28, 46, 0.12);
 }
-#login-form .btn {
+#login-form .btn,
+#signup-form .btn {
   margin-top: 20px;
 }
 .login-error {
