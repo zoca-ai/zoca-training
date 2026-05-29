@@ -7,6 +7,9 @@
 "use strict";
 
 const SESSION_KEY = "zoca_academy_session";
+const USERS_KEY = "zoca_academy_users"; // self-created accounts (localStorage JSON, passwords hashed)
+const ALLOWED_DOMAIN = "zoca.com"; // company-email-only sign-up
+const MIN_PASSWORD = 8;
 const progressKey = (email) => `zoca_academy_progress::${email.toLowerCase()}`;
 
 const state = {
@@ -135,27 +138,127 @@ function sessionRead() {
   }
 }
 
+/* self-created accounts live in localStorage as a JSON array of
+   { email, name, passhash } — no backend, no DB. Seeded accounts still
+   come from data/users.json (plaintext). Login checks both. */
+function loadLocalUsers() {
+  try {
+    return JSON.parse(localStorage.getItem(USERS_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+function saveLocalUsers(arr) {
+  localStorage.setItem(USERS_KEY, JSON.stringify(arr));
+}
+async function sha256(text) {
+  const buf = await crypto.subtle.digest(
+    "SHA-256",
+    new TextEncoder().encode(text)
+  );
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+function emailDomainOk(email) {
+  const parts = email.split("@");
+  return (
+    parts.length === 2 && parts[0].length > 0 && parts[1] === ALLOWED_DOMAIN
+  );
+}
+function emailExists(email) {
+  const e = email.toLowerCase();
+  return (
+    state.users.some((u) => u.email.toLowerCase() === e) ||
+    loadLocalUsers().some((u) => u.email.toLowerCase() === e)
+  );
+}
+function nameFromEmail(email) {
+  const local = email.split("@")[0];
+  const pretty = local
+    .split(/[._-]+/)
+    .filter(Boolean)
+    .map((w) => w[0].toUpperCase() + w.slice(1))
+    .join(" ");
+  return pretty || local;
+}
+function startSession(email, name) {
+  state.session = { email, name };
+  localStorage.setItem(SESSION_KEY, JSON.stringify(state.session));
+  showApp();
+}
+
+function showAuthView(view) {
+  const signup = view === "signup";
+  $("#login-form").hidden = signup;
+  $("#to-signup-foot").hidden = signup;
+  $("#signup-form").hidden = !signup;
+  $("#to-login-foot").hidden = !signup;
+  $("#login-error").hidden = true;
+  $("#signup-error").hidden = true;
+}
+
 function showLogin() {
   $("#app").hidden = true;
   $("#login-screen").hidden = false;
-  const form = $("#login-form");
-  form.onsubmit = (e) => {
+  showAuthView("login");
+
+  $("#login-form").onsubmit = async (e) => {
     e.preventDefault();
     const email = $("#login-email").value.trim().toLowerCase();
     const pw = $("#login-password").value;
-    const user = state.users.find(
+    const errBox = $("#login-error");
+    // 1) seeded accounts from data/users.json (plaintext)
+    let user = state.users.find(
       (u) => u.email.toLowerCase() === email && u.password === pw
     );
-    const errBox = $("#login-error");
+    // 2) self-created accounts in localStorage (hashed)
+    if (!user) {
+      const hash = await sha256(pw);
+      const local = loadLocalUsers().find(
+        (u) => u.email.toLowerCase() === email && u.passhash === hash
+      );
+      if (local) user = { email: local.email, name: local.name };
+    }
     if (!user) {
       errBox.textContent = "Email or password not recognised.";
       errBox.hidden = false;
       return;
     }
-    state.session = { email: user.email, name: user.name };
-    localStorage.setItem(SESSION_KEY, JSON.stringify(state.session));
-    showApp();
+    startSession(user.email, user.name);
   };
+
+  $("#signup-form").onsubmit = async (e) => {
+    e.preventDefault();
+    const email = $("#signup-email").value.trim().toLowerCase();
+    const pw = $("#signup-password").value;
+    const pw2 = $("#signup-password2").value;
+    const errBox = $("#signup-error");
+    const fail = (msg) => {
+      errBox.textContent = msg;
+      errBox.hidden = false;
+    };
+    if (!emailDomainOk(email))
+      return fail(
+        `Use your @${ALLOWED_DOMAIN} work email to create an account.`
+      );
+    if (pw.length < MIN_PASSWORD)
+      return fail(`Password must be at least ${MIN_PASSWORD} characters.`);
+    if (pw !== pw2) return fail("Passwords don't match.");
+    if (emailExists(email))
+      return fail(
+        "An account with that email already exists — try signing in."
+      );
+
+    const users = loadLocalUsers();
+    const name = nameFromEmail(email);
+    users.push({ email, name, passhash: await sha256(pw) });
+    saveLocalUsers(users);
+    startSession(email, name);
+  };
+
+  $("#show-signup").onclick = () => showAuthView("signup");
+  $("#show-login").onclick = () => showAuthView("login");
 }
 
 function logout() {
