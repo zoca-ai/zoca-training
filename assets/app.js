@@ -51,12 +51,23 @@ function pushProgressBlob(email, name, p) {
   try {
     if (!SYNC_URL || !email) return;
     p = p || {};
+    const completed = p.completed || {};
+    const scores = p.scores || {};
+    const certs = p.certs || {};
+    // Never push a fully-empty blob (corrupted/missing read) — the backend
+    // merges and won't shrink anyway, but this avoids pointless writes.
+    if (
+      !Object.keys(completed).length &&
+      !Object.keys(scores).length &&
+      !Object.keys(certs).length
+    )
+      return;
     const payload = JSON.stringify({
       email,
       name: name || email,
-      completed: p.completed || {},
-      scores: p.scores || {},
-      certs: p.certs || {},
+      completed,
+      scores,
+      certs,
     });
     let sent = false;
     try {
