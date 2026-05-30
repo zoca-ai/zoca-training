@@ -12,6 +12,43 @@ const ALLOWED_DOMAIN = "zoca.com"; // company-email-only sign-up
 const MIN_PASSWORD = 8;
 const progressKey = (email) => `zoca_academy_progress::${email.toLowerCase()}`;
 
+/* ---- progress sync (additive, fire-and-forget) ----
+   GitHub Pages can't store progress, so we mirror each user's progress
+   blob to a Google Apps Script web app, which upserts it into a Sheet the
+   admin overview reads. This is best-effort only: any failure is swallowed
+   so it can NEVER block, slow, or break a learner's session. Empty URL =
+   sync disabled (no-op). */
+const SYNC_URL =
+  "https://script.google.com/macros/s/AKfycbzdVclgs5BkMMUk1BBoTqYYlJTAyxcAVfuOzzJT4XgUelYJMkUaDfAuWph2L5bW1rFG3Q/exec"; // Apps Script /exec URL
+function syncProgress() {
+  try {
+    if (!SYNC_URL || !state.session) return;
+    let p;
+    try {
+      p = JSON.parse(localStorage.getItem(progressKey(state.session.email)));
+    } catch {
+      p = null;
+    }
+    p = p || {};
+    const payload = JSON.stringify({
+      email: state.session.email,
+      name: state.session.name,
+      completed: p.completed || {},
+      scores: p.scores || {},
+      certs: p.certs || {},
+    });
+    // text/plain + no-cors = a "simple" request: no preflight, never errors visibly.
+    fetch(SYNC_URL, {
+      method: "POST",
+      mode: "no-cors",
+      keepalive: true,
+      body: payload,
+    }).catch(() => {});
+  } catch {
+    /* sync must never break the app */
+  }
+}
+
 const state = {
   users: [],
   curriculum: null,
@@ -61,6 +98,7 @@ function getProgress() {
 function saveProgress(p) {
   if (!state.session) return;
   localStorage.setItem(progressKey(state.session.email), JSON.stringify(p));
+  syncProgress(); // mirror to backend (best-effort; every mutation flows through here)
 }
 const moduleGid = (tid, mid) => `${tid}/${mid}`;
 function markLessonComplete(tid, mid) {
@@ -123,6 +161,7 @@ async function boot() {
   const saved = sessionRead();
   if (saved) {
     state.session = saved;
+    syncProgress(); // returning user with a live session — push their stored progress
     showApp();
   } else {
     showLogin();
@@ -185,6 +224,7 @@ function nameFromEmail(email) {
 function startSession(email, name) {
   state.session = { email, name };
   localStorage.setItem(SESSION_KEY, JSON.stringify(state.session));
+  syncProgress(); // push existing (historical) progress on login
   showApp();
 }
 
