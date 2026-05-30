@@ -14,12 +14,71 @@ const progressKey = (email) => `zoca_academy_progress::${email.toLowerCase()}`;
 
 /* ---- progress sync (additive, fire-and-forget) ----
    GitHub Pages can't store progress, so we mirror each user's progress
-   blob to a Google Apps Script web app, which upserts it into a Sheet the
-   admin overview reads. This is best-effort only: any failure is swallowed
-   so it can NEVER block, slow, or break a learner's session. Empty URL =
-   sync disabled (no-op). */
+   blob to a Google Apps Script web app, which upserts it (by email) into a
+   Sheet the admin overview reads. Best-effort only: every failure is
+   swallowed so it can NEVER block, slow, or break a learner's session.
+   Empty URL = sync disabled (no-op).
+
+   "No data lost" guarantee for users who signed up BEFORE sync existed:
+   their progress already sits in this browser's localStorage. On every
+   page load we sweep EVERY `zoca_academy_progress::<email>` key present in
+   the browser — not just the logged-in one — and push each. So the first
+   time any past learner re-opens the site (even just the login screen,
+   even without logging in) all of their stored progress is captured. */
 const SYNC_URL =
   "https://script.google.com/macros/s/AKfycbzdVclgs5BkMMUk1BBoTqYYlJTAyxcAVfuOzzJT4XgUelYJMkUaDfAuWph2L5bW1rFG3Q/exec"; // Apps Script /exec URL
+const PROGRESS_PREFIX = "zoca_academy_progress::";
+
+/* Resolve a display name for an email from seeded users, self-created
+   localStorage accounts, or a prettified fallback. */
+function nameForEmail(email) {
+  const e = String(email || "").toLowerCase();
+  const seeded = (state.users || []).find((u) => u.email.toLowerCase() === e);
+  if (seeded && seeded.name) return seeded.name;
+  try {
+    const local = loadLocalUsers().find((u) => u.email.toLowerCase() === e);
+    if (local && local.name) return local.name;
+  } catch {
+    /* ignore */
+  }
+  return nameFromEmail(e);
+}
+
+/* Send one learner's full progress blob. sendBeacon is preferred: it is
+   queued by the browser and survives the page being closed/navigated, so a
+   sync fired on load or unload can't be dropped. Falls back to fetch. */
+function pushProgressBlob(email, name, p) {
+  try {
+    if (!SYNC_URL || !email) return;
+    p = p || {};
+    const payload = JSON.stringify({
+      email,
+      name: name || email,
+      completed: p.completed || {},
+      scores: p.scores || {},
+      certs: p.certs || {},
+    });
+    let sent = false;
+    try {
+      if (navigator.sendBeacon) sent = navigator.sendBeacon(SYNC_URL, payload);
+    } catch {
+      sent = false;
+    }
+    if (!sent) {
+      // text/plain + no-cors = a "simple" request: no preflight, never errors visibly.
+      fetch(SYNC_URL, {
+        method: "POST",
+        mode: "no-cors",
+        keepalive: true,
+        body: payload,
+      }).catch(() => {});
+    }
+  } catch {
+    /* sync must never break the app */
+  }
+}
+
+/* Sync the currently logged-in user's progress (called after every save). */
 function syncProgress() {
   try {
     if (!SYNC_URL || !state.session) return;
@@ -29,21 +88,32 @@ function syncProgress() {
     } catch {
       p = null;
     }
-    p = p || {};
-    const payload = JSON.stringify({
-      email: state.session.email,
-      name: state.session.name,
-      completed: p.completed || {},
-      scores: p.scores || {},
-      certs: p.certs || {},
-    });
-    // text/plain + no-cors = a "simple" request: no preflight, never errors visibly.
-    fetch(SYNC_URL, {
-      method: "POST",
-      mode: "no-cors",
-      keepalive: true,
-      body: payload,
-    }).catch(() => {});
+    pushProgressBlob(state.session.email, state.session.name, p || {});
+  } catch {
+    /* sync must never break the app */
+  }
+}
+
+/* Sweep & push EVERY progress record stored in this browser — captures
+   past learners (logged in or not) and any extra accounts on a shared
+   device, in a single visit. Safe to call on every load. */
+function syncAllLocalProgress() {
+  try {
+    if (!SYNC_URL) return;
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key || key.indexOf(PROGRESS_PREFIX) !== 0) continue;
+      const email = key.slice(PROGRESS_PREFIX.length);
+      if (!email) continue;
+      let p;
+      try {
+        p = JSON.parse(localStorage.getItem(key));
+      } catch {
+        p = null;
+      }
+      if (!p) continue;
+      pushProgressBlob(email, nameForEmail(email), p);
+    }
   } catch {
     /* sync must never break the app */
   }
@@ -158,10 +228,13 @@ async function boot() {
     return;
   }
 
+  // Capture every progress record in this browser on load — covers past
+  // learners who signed up before sync existed, even if they're logged out.
+  syncAllLocalProgress();
+
   const saved = sessionRead();
   if (saved) {
     state.session = saved;
-    syncProgress(); // returning user with a live session — push their stored progress
     showApp();
   } else {
     showLogin();
