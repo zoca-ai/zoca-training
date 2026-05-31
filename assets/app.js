@@ -130,6 +130,108 @@ function syncAllLocalProgress() {
   }
 }
 
+/* ---- read cloud progress back (JSONP) ----
+   On login we pull this email's saved progress from the backend and merge it
+   into localStorage, so signing in on a new device/browser restores the
+   learner's work instead of a blank slate. The backend 302-redirects its GET,
+   which a <script> (JSONP) follows but fetch cannot read cross-origin — so we
+   use JSONP here. Best-effort; never blocks or breaks login. */
+function jsonp(url, onData, onErr) {
+  try {
+    const cb = "__zoca_app_cb_" + Math.random().toString(36).slice(2);
+    const s = document.createElement("script");
+    let done = false;
+    const cleanup = () => {
+      delete window[cb];
+      if (s.parentNode) s.parentNode.removeChild(s);
+    };
+    window[cb] = (data) => {
+      if (done) return;
+      done = true;
+      cleanup();
+      onData(data);
+    };
+    s.onerror = () => {
+      if (done) return;
+      done = true;
+      cleanup();
+      if (onErr) onErr();
+    };
+    s.src = url + (url.indexOf("?") === -1 ? "?" : "&") + "callback=" + cb;
+    document.head.appendChild(s);
+  } catch {
+    if (onErr) onErr();
+  }
+}
+
+/* Merge two progress blobs monotonically — union completed lessons, keep the
+   max of each quiz score, keep any cert. Never shrinks, so a cloud restore
+   can't wipe newer work already in this browser. */
+function mergeProgress(local, cloud) {
+  local = local || {};
+  cloud = cloud || {};
+  const out = { completed: {}, scores: {}, certs: {} };
+  const lc = local.completed || {};
+  const cc = cloud.completed || {};
+  for (const k in cc) if (cc[k]) out.completed[k] = true;
+  for (const k in lc) if (lc[k]) out.completed[k] = true;
+  const ls = local.scores || {};
+  const cs = cloud.scores || {};
+  for (const k in cs) out.scores[k] = cs[k];
+  for (const k in ls)
+    out.scores[k] =
+      out.scores[k] == null ? ls[k] : Math.max(out.scores[k], ls[k]);
+  const lcert = local.certs || {};
+  const ccert = cloud.certs || {};
+  for (const k in ccert) out.certs[k] = ccert[k];
+  for (const k in lcert) if (out.certs[k] == null) out.certs[k] = lcert[k];
+  return out;
+}
+
+/* Fetch this email's cloud progress and merge it into localStorage. Resolves
+   (never rejects) within a short timeout so login is never blocked. */
+function restoreProgressFromCloud(email) {
+  return new Promise((resolve) => {
+    if (!SYNC_URL || !email) return resolve();
+    const e = String(email).toLowerCase();
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      resolve();
+    };
+    const timer = setTimeout(finish, 6000);
+    jsonp(
+      SYNC_URL,
+      (data) => {
+        clearTimeout(timer);
+        try {
+          const me = ((data && data.learners) || []).find(
+            (l) => String(l.email || "").toLowerCase() === e
+          );
+          if (me) {
+            const key = progressKey(e);
+            let local = {};
+            try {
+              local = JSON.parse(localStorage.getItem(key)) || {};
+            } catch {
+              local = {};
+            }
+            localStorage.setItem(key, JSON.stringify(mergeProgress(local, me)));
+          }
+        } catch {
+          /* ignore — login proceeds regardless */
+        }
+        finish();
+      },
+      () => {
+        clearTimeout(timer);
+        finish();
+      }
+    );
+  });
+}
+
 const state = {
   users: [],
   curriculum: null,
@@ -312,77 +414,39 @@ function startSession(email, name) {
   showApp();
 }
 
-function showAuthView(view) {
-  const signup = view === "signup";
-  $("#login-form").hidden = signup;
-  $("#to-signup-foot").hidden = signup;
-  $("#signup-form").hidden = !signup;
-  $("#to-login-foot").hidden = !signup;
-  $("#login-error").hidden = true;
-  $("#signup-error").hidden = true;
-}
-
 function showLogin() {
   $("#app").hidden = true;
   $("#login-screen").hidden = false;
-  showAuthView("login");
+  const form = $("#login-form");
+  const errBox = $("#login-error");
+  if (errBox) errBox.hidden = true;
 
-  $("#login-form").onsubmit = async (e) => {
+  form.onsubmit = async (e) => {
     e.preventDefault();
     const email = $("#login-email").value.trim().toLowerCase();
-    const pw = $("#login-password").value;
-    const errBox = $("#login-error");
-    // 1) seeded accounts from data/users.json (plaintext)
-    let user = state.users.find(
-      (u) => u.email.toLowerCase() === email && u.password === pw
-    );
-    // 2) self-created accounts in localStorage (hashed)
-    if (!user) {
-      const hash = await sha256(pw);
-      const local = loadLocalUsers().find(
-        (u) => u.email.toLowerCase() === email && u.passhash === hash
-      );
-      if (local) user = { email: local.email, name: local.name };
-    }
-    if (!user) {
-      errBox.textContent = "Email or password not recognised.";
+    // Passwordless: any valid company email gets in. Their progress lives in
+    // the cloud keyed by email, so no per-device password is needed.
+    if (!emailDomainOk(email)) {
+      errBox.textContent = `Enter your @${ALLOWED_DOMAIN} work email.`;
       errBox.hidden = false;
       return;
     }
-    startSession(user.email, user.name);
+    errBox.hidden = true;
+    const btn = form.querySelector('button[type="submit"]');
+    const label = btn ? btn.textContent : "";
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = "Loading your progress…";
+    }
+    // Pull any progress saved under this email (e.g. on another device)
+    // before opening the app, so a fresh browser isn't blank.
+    await restoreProgressFromCloud(email);
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = label;
+    }
+    startSession(email, nameForEmail(email));
   };
-
-  $("#signup-form").onsubmit = async (e) => {
-    e.preventDefault();
-    const email = $("#signup-email").value.trim().toLowerCase();
-    const pw = $("#signup-password").value;
-    const pw2 = $("#signup-password2").value;
-    const errBox = $("#signup-error");
-    const fail = (msg) => {
-      errBox.textContent = msg;
-      errBox.hidden = false;
-    };
-    if (!emailDomainOk(email))
-      return fail(
-        `Use your @${ALLOWED_DOMAIN} work email to create an account.`
-      );
-    if (pw.length < MIN_PASSWORD)
-      return fail(`Password must be at least ${MIN_PASSWORD} characters.`);
-    if (pw !== pw2) return fail("Passwords don't match.");
-    if (emailExists(email))
-      return fail(
-        "An account with that email already exists — try signing in."
-      );
-
-    const users = loadLocalUsers();
-    const name = nameFromEmail(email);
-    users.push({ email, name, passhash: await sha256(pw) });
-    saveLocalUsers(users);
-    startSession(email, name);
-  };
-
-  $("#show-signup").onclick = () => showAuthView("signup");
-  $("#show-login").onclick = () => showAuthView("login");
 }
 
 function logout() {
