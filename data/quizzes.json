@@ -53,12 +53,7 @@
     "questions": [
       {
         "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
-        "options": [
-          "Canvas",
-          "Validate",
-          "Preview",
-          "Memory History"
-        ],
+        "options": ["Canvas", "Validate", "Preview", "Memory History"],
         "answer": 0,
         "explain": "Canvas is the visual topic map of all confirmed facts and is opened first as the wow shot."
       },
@@ -211,12 +206,7 @@
       },
       {
         "q": "How many Zoca AIs does the Brain power?",
-        "options": [
-          "Three",
-          "Four",
-          "Five",
-          "Seven"
-        ],
+        "options": ["Three", "Four", "Five", "Seven"],
         "answer": 2,
         "explain": "The Brain powers five Zoca AIs: Front Desk, Website, Content, Google Profile, and Command Center."
       },
@@ -233,12 +223,7 @@
       },
       {
         "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
-        "options": [
-          "Canvas",
-          "Question Bank",
-          "Preview",
-          "Memory History"
-        ],
+        "options": ["Canvas", "Question Bank", "Preview", "Memory History"],
         "answer": 2,
         "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
       },
@@ -304,12 +289,7 @@
       },
       {
         "q": "Which keyboard shortcut opens Command Center from any page?",
-        "options": [
-          "Cmd+K",
-          "Cmd+J",
-          "Ctrl+Space",
-          "Cmd+Enter"
-        ],
+        "options": ["Cmd+K", "Cmd+J", "Ctrl+Space", "Cmd+Enter"],
         "answer": 0,
         "explain": "The lesson states Cmd+K is the shortcut to open Command Center instantly from anywhere."
       },
@@ -953,12 +933,7 @@
       },
       {
         "q": "Roughly what share of all Google searches does the lesson say have local intent?",
-        "options": [
-          "About 12%",
-          "About 25%",
-          "About 46%",
-          "About 75%"
-        ],
+        "options": ["About 12%", "About 25%", "About 46%", "About 75%"],
         "answer": 2,
         "explain": "The lesson states roughly 46% of all Google searches have local intent."
       }
@@ -991,12 +966,7 @@
       },
       {
         "q": "Per the Princeton-led GEO paper, adding specific statistics to content boosted AI visibility by up to what amount?",
-        "options": [
-          "Up to +10%",
-          "Up to +40%",
-          "Up to +115%",
-          "Up to +200%"
-        ],
+        "options": ["Up to +10%", "Up to +40%", "Up to +115%", "Up to +200%"],
         "answer": 1,
         "explain": "The lesson reports the GEO paper found adding specific statistics boosted visibility up to +40%."
       },
@@ -1029,12 +999,7 @@
       },
       {
         "q": "What latency window does the lesson cite as the benchmark most production voice agents aim for?",
-        "options": [
-          "50-100ms",
-          "300-800ms",
-          "1-2 seconds",
-          "2-3 seconds"
-        ],
+        "options": ["50-100ms", "300-800ms", "1-2 seconds", "2-3 seconds"],
         "answer": 1,
         "explain": "The lesson cites roughly 500ms as natural, with most production agents aiming for a 300-800ms window."
       },
@@ -1176,12 +1141,7 @@
       },
       {
         "q": "What does the 'extra E' in E-E-A-T stand for, added in 2022?",
-        "options": [
-          "Engagement",
-          "Efficiency",
-          "Experience",
-          "Endorsement"
-        ],
+        "options": ["Engagement", "Efficiency", "Experience", "Endorsement"],
         "answer": 2,
         "explain": "The lesson explains the extra E added in 2022 is Experience, rewarding content from someone who has actually done the thing."
       },
@@ -1198,12 +1158,7 @@
       },
       {
         "q": "What realistic timeline does the lesson give for meaningful SEO results?",
-        "options": [
-          "1-2 weeks",
-          "1-3 months",
-          "4-12 months",
-          "2-3 years"
-        ],
+        "options": ["1-2 weeks", "1-3 months", "4-12 months", "2-3 years"],
         "answer": 2,
         "explain": "The lesson cites a 4-12 month window for meaningful SEO results, describing it as slow then compounding."
       }
@@ -1503,12 +1458,7 @@
     "questions": [
       {
         "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
-        "options": [
-          "Overview",
-          "Bookings",
-          "Activity",
-          "Analytics"
-        ],
+        "options": ["Overview", "Bookings", "Activity", "Analytics"],
         "answer": 2,
         "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
       },
@@ -1623,12 +1573,7 @@
       },
       {
         "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
-        "options": [
-          "Square",
-          "Booksy",
-          "Boulevard",
-          "GlossGenius"
-        ],
+        "options": ["Square", "Booksy", "Boulevard", "GlossGenius"],
         "answer": 2,
         "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
       },
@@ -1667,12 +1612,7 @@
       },
       {
         "q": "Which competitor ships no voice receptionist at all?",
-        "options": [
-          "Rosie",
-          "Smith.ai",
-          "GlossGenius",
-          "Slang.ai"
-        ],
+        "options": ["Rosie", "Smith.ai", "GlossGenius", "Slang.ai"],
         "answer": 2,
         "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
       },
@@ -1935,13 +1875,13 @@
       {
         "q": "Which calendar views does the Zoca Calendar offer?",
         "options": [
-          "Day, 3-Day, Week, and Month",
+          "Day, Compact Day, Week, and Compact Week",
           "Day and Week only",
           "Month only",
           "Agenda list only"
         ],
         "answer": 0,
-        "explain": "The Calendar offers Day, 3-Day, Week, and Month views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals and the waitlist."
+        "explain": "The Calendar offers Day, Compact Day, Week, and Compact Week views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals."
       },
       {
         "q": "When a client is completing checkout, how long is a slot temporarily held so it can't be double-booked?",
@@ -1966,15 +1906,15 @@
         "explain": "Appointments are pinned to the location's time zone regardless of where anyone is logged in."
       },
       {
-        "q": "Which client self-check-in method is supported today, per the lesson?",
+        "q": "What actions can you take directly from an appointment on the Calendar?",
         "options": [
-          "QR code",
-          "SMS reply",
-          "Kiosk check-in",
-          "Email link"
+          "Only view the appointment details",
+          "No-show, Cancel, Refund, Resend Receipt, and Checkout",
+          "Only cancel or reschedule",
+          "Only collect payment"
         ],
-        "answer": 0,
-        "explain": "QR-code self-check-in is supported today; SMS-reply and kiosk are on the roadmap."
+        "answer": 1,
+        "explain": "From an appointment's booking details you can take actions like No-show, Cancel, Refund, Resend Receipt, and Checkout — all without leaving the calendar."
       }
     ]
   },
@@ -2012,18 +1952,18 @@
           "Marks it as a no-show"
         ],
         "answer": 1,
-        "explain": "Cancelling releases the slot back onto the calendar and checks the waitlist."
+        "explain": "Cancelling releases the slot back onto the calendar."
       },
       {
-        "q": "When the salon itself cancels (e.g., a stylist is out sick), what typically happens to the client's payment?",
+        "q": "A client cancels within the cancellation-fee window. Which statement is correct about how Zoca handles the deposit and card on file?",
         "options": [
-          "The client forfeits the deposit",
-          "A partial refund based on the window",
-          "A full refund regardless of timing",
-          "No refund is issued"
+          "Refundable deposit is returned and the cancellation fee is always charged to the card on file automatically",
+          "Non-refundable deposit is kept and the business can choose whether to charge the cancellation fee to the card on file",
+          "Refundable deposit is kept and the card on file is charged automatically",
+          "Non-refundable deposit is returned and no cancellation fee applies"
         ],
-        "answer": 2,
-        "explain": "Salon-initiated cancellations typically refund the client in full, plus an optional goodwill credit."
+        "answer": 1,
+        "explain": "A non-refundable deposit is not returned. For the cancellation fee on the card on file, the business has the control to charge or not charge it on a case-by-case basis."
       }
     ]
   },
@@ -2031,15 +1971,15 @@
     "passScore": 70,
     "questions": [
       {
-        "q": "What is the default grace period before the system flags a no-show?",
+        "q": "How is a no-show marked in Zoca?",
         "options": [
-          "5 minutes",
-          "10 minutes",
-          "15 minutes",
-          "30 minutes"
+          "The system auto-detects it after 15 minutes",
+          "The client reports it themselves",
+          "The front desk marks it from the booking's detail panel",
+          "It is flagged by the AI automatically"
         ],
         "answer": 2,
-        "explain": "The system detects a no-show after a default 15-minute grace period, which the salon can change."
+        "explain": "The front desk marks an appointment as a no-show from the booking's detail panel. It can also be undone if it was a mistake."
       },
       {
         "q": "What is the key difference between a cancellation and a no-show?",
@@ -2050,7 +1990,7 @@
           "A no-show always means a full refund"
         ],
         "answer": 1,
-        "explain": "A cancellation is the client explicitly calling it off ahead of time; a no-show is silence, detected after the grace period."
+        "explain": "A cancellation is the client explicitly calling it off ahead of time; a no-show is silence — the client neither shows nor cancels, and the front desk marks it."
       },
       {
         "q": "When a deposit was collected, what is the most common no-show setup?",
@@ -2064,15 +2004,15 @@
         "explain": "Deposit forfeiture means the already-paid deposit converts into the no-show fee, with nothing extra to charge."
       },
       {
-        "q": "At what levels can cancellation and no-show policies be configured, with the most specific rule winning?",
+        "q": "At what level is the no-show policy configured?",
         "options": [
-          "Business only",
-          "Service, stylist, location, or business",
-          "Client account only",
-          "Per appointment only"
+          "Per service",
+          "Per stylist",
+          "At the location level",
+          "Per appointment"
         ],
-        "answer": 1,
-        "explain": "Policies can be set per service, stylist, location, or the whole business, and the most specific rule wins."
+        "answer": 2,
+        "explain": "The no-show policy is set at the location level. If the fee is a percentage of the service price, the actual amount naturally varies by service."
       }
     ]
   },
@@ -2239,23 +2179,13 @@
       },
       {
         "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
-        "options": [
-          "Pending",
-          "Archived",
-          "Converted",
-          "Declined"
-        ],
+        "options": ["Pending", "Archived", "Converted", "Declined"],
         "answer": 2,
         "explain": "When the AI reaches out and books a lead, the lead is marked converted."
       },
       {
         "q": "What is the default grace period before a no-show is flagged?",
-        "options": [
-          "15 minutes",
-          "30 minutes",
-          "10 minutes",
-          "5 minutes"
-        ],
+        "options": ["15 minutes", "30 minutes", "10 minutes", "5 minutes"],
         "answer": 0,
         "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
       },
@@ -2272,12 +2202,7 @@
       },
       {
         "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
-        "options": [
-          "A ledger",
-          "A cart",
-          "A sale",
-          "A receipt"
-        ],
+        "options": ["A ledger", "A cart", "A sale", "A receipt"],
         "answer": 2,
         "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
       },
@@ -2294,12 +2219,7 @@
       },
       {
         "q": "For in-person card acceptance, which account must the salon connect?",
-        "options": [
-          "PayPal",
-          "Stripe",
-          "Square",
-          "Clover"
-        ],
+        "options": ["PayPal", "Stripe", "Square", "Clover"],
         "answer": 1,
         "explain": "Card readers and tap-to-pay run on the salon's connected Stripe account."
       },
@@ -2479,12 +2399,7 @@
       },
       {
         "q": "What is the default operating mode for the agents?",
-        "options": [
-          "Approve",
-          "Auto",
-          "Supervised",
-          "Manual"
-        ],
+        "options": ["Approve", "Auto", "Supervised", "Manual"],
         "answer": 2,
         "explain": "Supervised is the default: the agent acts on its own and surfaces the important decisions in the Content Queue; most customers stay there."
       },
