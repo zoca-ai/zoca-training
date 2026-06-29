@@ -1,0 +1,67 @@
+<div class="callout tldr"><div class="callout-title">TL;DR</div><p>Use this lesson when a customer asks &quot;do you do X?&quot; on a call. Every claim here is PM-sourced; treat anything you read elsewhere as suggestion until it shows up here. Last refreshed: 2026-06-10.</p></div>
+<hr />
+<h2>1. Live today</h2>
+<p>Everything below ships today. Pitch it freely.</p>
+<h3>Bookings &amp; Appointments</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Booking lifecycle</td><td>Full state machine: PENDING → BOOKED → COMPLETED / CANCELLED / NO_SHOW.</td></tr><tr><td>Multi-service bookings</td><td>A single booking can contain multiple service line items.</td></tr><tr><td>Approval flow</td><td>Three modes: auto-approve all, auto-approve existing clients only, or require manual approval.</td></tr><tr><td>Booking reminders</td><td>Automated 24h reminder + policy-deadline reminder.</td></tr><tr><td>Booking notes</td><td>Internal-only notes and client-facing notes can be attached to a booking.</td></tr><tr><td>Booking enquiries</td><td>Lead / inquiry capture + management for potential bookings.</td></tr></tbody></table>
+<h3>Availability &amp; Calendar</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Real-time slot availability</td><td>Computed live against working hours, breaks, and existing bookings.</td></tr><tr><td>Blocked slots (HOLD)</td><td>10-minute HOLD on a slot during checkout; auto-promoted to BOOKED on payment success.</td></tr><tr><td>Provider breaks</td><td>Time-off blocks per provider (lunch, vacation, etc.).</td></tr><tr><td>Working hours</td><td>Weekly recurring schedule + special hours for specific dates.</td></tr><tr><td>Booking windows</td><td>Configurable minimum advance notice + maximum future-booking days.</td></tr></tbody></table>
+<h3>Offers &amp; Packages</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Offers / discounts</td><td>Fixed or percentage discounts with eligibility rules, usage limits, and stackability.</td></tr><tr><td>Auto-apply best discount combo</td><td>Best discount combination auto-selected during checkout.</td></tr><tr><td>Scheduling packages</td><td>Bundled service variations at a combined discounted price; booked as a single appointment.</td></tr></tbody></table>
+<h3>Policies &amp; Configuration</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Booking policies</td><td>Advanced restrictions by intent, customer status, day/time rules.</td></tr><tr><td>Fee policies</td><td>Cancellation, no-show, and deposit fees with configurable windows.</td></tr><tr><td>Policy snapshots</td><td>Policies captured at booking time — retroactive changes do not apply to existing bookings.</td></tr><tr><td>Intake forms</td><td>Draft / published form templates. Frequency = once per client OR every appointment.</td></tr></tbody></table>
+<h3>Payment Processing</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Card payments (Stripe)</td><td>Online card processing via Stripe.</td></tr><tr><td>Cash payments</td><td>Manual cash collection at point of sale.</td></tr><tr><td>Card on file</td><td>Charge saved cards for returning customers.</td></tr><tr><td>Tap to Pay (Stripe Terminal)</td><td>In-person card reader payments via BBPOS WisePOS E / Stripe Reader S700.</td></tr><tr><td>No-payment-required policy</td><td>Booking without entering payment details. Default mode when Stripe is not connected.</td></tr></tbody></table>
+<h3>Checkout &amp; Cart</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Cart management</td><td>Pre-checkout basket with service line items (used for client online bookings).</td></tr><tr><td>Deposits</td><td>Partial upfront payment with deposit snapshot captured at booking time.</td></tr></tbody></table>
+<h3>Refunds &amp; Fees</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Refunds</td><td>Full and partial refunds.</td></tr><tr><td>Cancellation fees</td><td>Configurable fee charged when clients cancel within the fee window.</td></tr><tr><td>No-show fees</td><td>Fee charged when clients don't attend the appointment.</td></tr></tbody></table>
+<h3>Tax &amp; Tipping</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Tax rates</td><td>Master switch with inclusive / exclusive modes and per-service overrides.</td></tr><tr><td>Tipping</td><td>In-app tip collection. Tips are never taxed.</td></tr></tbody></table>
+<h3>AI Agent Tools</h3>
+<table><thead><tr><th>Feature</th><th>What it does</th></tr></thead><tbody><tr><td>Scheduling agent tools (MCP)</td><td>MCP tools enabling AI voice/chat agents to manage appointments, clients, services, sales, and enquiries.</td></tr></tbody></table>
+<div class="callout "><div class="callout-title">SAY IT SIMPLY</div><p>&quot;Scheduling is one calendar + payments engine that handles bookings, holds, deposits, refunds, tap-to-pay, and gives the AI agents the rails to do all of that automatically — so phone, web, and chat all book into the same calendar.&quot;</p></div>
+<hr />
+<h2>2. Live — but read the caveat</h2>
+<p>A handful of Scheduling features ship today with a known gotcha.</p>
+<h3>Booking windows</h3>
+<div class="callout "><div class="callout-title">GOOD TO KNOW</div><p>Configurable minimum advance notice and maximum future-booking days — owner sets the window. If a prospect asks &quot;can a customer book six months out?&quot;, check their window setting before answering.</p></div>
+<h3>Cancellation fees</h3>
+<div class="callout "><div class="callout-title">GOOD TO KNOW</div><p>Fee is configurable and only charged when clients cancel within the fee window. Set the window and the fee amount in the policy config — quote both before promising.</p></div>
+<h3>No-payment-required policy</h3>
+<div class="callout "><div class="callout-title">GOOD TO KNOW</div><p><strong>Default mode when Stripe is not connected.</strong> This is the booking-without-payment fallback — useful, but tell the owner they unlock card-on-file, deposits, and tap-to-pay only by connecting Stripe.</p></div>
+<hr />
+<h2>3. Coming Soon (roadmap)</h2>
+<p>Do <strong>not</strong> promise these on calls. Per latest PM correction, the following are <strong>not yet live in product</strong>.</p>
+<h3>Split payments at checkout</h3>
+<div class="callout "><div class="callout-title">NEVER SAY</div><p>&quot;we already do this&quot; — split payments (deposit at booking + final at checkout) are on the roadmap. Single payment per checkout today.</p></div>
+<h3>Sales ledger</h3>
+<div class="callout "><div class="callout-title">NEVER SAY</div><p>&quot;we already do this&quot; — per-booking financial ledger (subtotal, tax, tip, deposits, paid vs. due, full audit trail) is on the roadmap. Today the data exists but is not exposed as a unified ledger view.</p></div>
+<h3>Sale status tracking</h3>
+<div class="callout "><div class="callout-title">NEVER SAY</div><p>&quot;we already do this&quot; — the OPEN → PARTIALLY_PAID → PAID / VOIDED / REFUNDED / CANCELLED state machine for sales is on the roadmap.</p></div>
+<h3>Insights &amp; reports (merchant analytics)</h3>
+<div class="callout "><div class="callout-title">NEVER SAY</div><p>&quot;we already do this&quot; — the built-in revenue / conversion-funnel / utilization analytics dashboard is on the roadmap. Do not pitch &quot;no separate BI tool needed&quot; yet.</p></div>
+<h3>Comms templates</h3>
+<div class="callout "><div class="callout-title">NEVER SAY</div><p>&quot;we already do this on product&quot; — <strong>not exposed on product. Can be done on custom request now, will come on product soon.</strong> If the owner needs custom email / SMS template overrides today, route the request to the team — don't promise self-serve template editing in the dashboard yet.</p></div>
+<h3>Quick Sale (walk-in POS)</h3>
+<div class="callout "><div class="callout-title">NEVER SAY</div><p>&quot;we already do this&quot; — walk-in POS sales with offer-driven discount support at create-time and at checkout. PM-labelled &quot;(Soon).&quot;</p></div>
+<hr />
+<h2>4. Out of Scope (do NOT promise)</h2>
+<div class="callout "><div class="callout-title">DON'T PROMISE</div><p>Anything not listed in section 1 or section 3 is out of scope today. If a prospect asks about a payment processor that isn't Stripe, a calendar integration outside Front Desk's seven, or a POS feature beyond Tap to Pay — treat it as out of scope and escalate.</p></div>
+<hr />
+<h2>5. Top selling points (lead with these)</h2>
+<h3>High priority — use these value lines</h3>
+<div class="callout "><div class="callout-title">VALUE LINE</div><p><strong>Auto-apply best discount combo</strong> — &quot;Best discount combination auto-selected at checkout. Customers always get the best deal. Owner never has to think about it.&quot;</p></div>
+<div class="callout "><div class="callout-title">VALUE LINE</div><p><strong>Tap to Pay (Stripe Terminal)</strong> — &quot;In-person card payments via WisePOS / Stripe Reader S700 — no third-party POS. Sales and bookings live in one system.&quot;</p></div>
+<div class="callout "><div class="callout-title">VALUE LINE</div><p><strong>Scheduling agent tools (MCP)</strong> — &quot;Scheduling isn't just a calendar — it's the foundation for our AI agents (Front Desk Conversational AI, Command Centre) to book, manage clients, complete sales. The other agents work because Scheduling exposes the rails.&quot;</p></div>
+<h3>Medium priority — work these in when the prospect asks</h3>
+<ul><li><strong>Multi-service bookings</strong> — &quot;Cut + color + facial in one booking, one slot, one invoice.&quot;</li><li><strong>Approval flow</strong> — &quot;Auto-approve all, existing clients only, or manual — pick what fits your trust model.&quot;</li><li><strong>Booking reminders</strong> — &quot;24h + policy-deadline reminders. Reduces no-shows.&quot;</li><li><strong>Real-time slot availability</strong> — &quot;Always shows what's free right now — no double-booking, no stale slots.&quot;</li><li><strong>Scheduling packages</strong> — &quot;Bundle services at a combined price (e.g. 'bridal trial + day-of') booked as a single appointment.&quot;</li><li><strong>Policy snapshots</strong> — &quot;Policy captured at booking time. Change tomorrow's policy → past bookings unaffected. Big for trust.&quot;</li><li><strong>Card on file</strong> — &quot;Returning customers skip re-entering card details. One-click rebooking.&quot;</li><li><strong>Cancellation fees</strong> — &quot;Configurable fee inside your cancellation window — recovers last-minute-cancel revenue.&quot;</li><li><strong>No-show fees</strong> — &quot;Same protection for actual no-shows.&quot;</li></ul>
+<hr />
+<h2>6. When to escalate</h2>
+<div class="callout "><div class="callout-title">SOURCE NOTE</div><p>If a customer asks about something not on this page, treat it as Out of Scope and escalate to PM. The &quot;Coming Soon&quot; list in section 3 reflects a recent PM correction — sales ledger, sale status tracking, insights/reports, split payments, comms templates and quick sale are NOT live yet, even if older internal docs imply otherwise. When in doubt, &quot;let me confirm with the team and come back to you today&quot; is always a safe answer.</p></div>
+<hr />
+<h2>7. Key terms (glossary)</h2>
+<ul><li><strong>Booking lifecycle</strong> — the state machine a booking moves through: PENDING → BOOKED → COMPLETED / CANCELLED / NO_SHOW.</li><li><strong>HOLD</strong> — a 10-minute reservation on a slot during checkout, auto-promoted to BOOKED on payment success. Prevents two customers racing for the same slot.</li><li><strong>Policy snapshot</strong> — the cancellation / no-show / deposit policy captured at the moment of booking. Tomorrow's policy change does not retroactively apply to today's bookings.</li><li><strong>Intake form</strong> — pre-visit form (allergies, contraindications, etc.). Configurable as once-per-client or every-visit.</li><li><strong>Approval flow</strong> — the three booking-confirmation modes: auto-approve all / auto-approve existing clients only / manual approval.</li><li><strong>Tap to Pay</strong> — in-person card payments via BBPOS WisePOS E or Stripe Reader S700 terminals.</li><li><strong>Scheduling MCP tools</strong> — the agent-facing toolkit that lets Front Desk Conversational AI and Command Centre take real actions on the calendar and the cart.</li><li><strong>No-payment-required policy</strong> — the default booking mode when Stripe is not connected. Lets owners take bookings without entering any payment details.</li></ul>
+<hr />
+<h2>8. Related docs</h2>
+<ul><li><strong>Front Desk — Scope: Source of Truth</strong> — the booking actions the Front Desk agent takes against Scheduling; deposit / card-required rules are configured here but not collected on the call.</li><li><strong>Discovery — Scope: Source of Truth</strong> — the automated Get More Reviews engine requires Scheduling to be active.</li><li><strong>Command Center — Scope: Source of Truth</strong> — the Calendar / Clients / Services / Insights action sets exposed to the conversational layer all run against Scheduling.</li><li><strong>Zoca Product Scope (PM source of truth)</strong> — the master TSV this lesson is built from.</li></ul>
