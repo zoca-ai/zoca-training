@@ -781,6 +781,73 @@
               }
             ]
           }
+        },
+        {
+          "id": "07-scope-source-of-truth",
+          "title": "Scope: Source of Truth — the PM answer to 'do you do X?'",
+          "sub": "",
+          "minutes": 9,
+          "file": "content/discovery/07-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "A prospect asks whether the AI Search visibility report is live for their account. What is the accurate answer?",
+                "options": [
+                  "Yes, it ships to every Discovery account today with AI Platforms, Results, Citations and Competitors sub-views turned on for every location.",
+                  "It is entitlement-gated and not switched on today — coming soon.",
+                  "Only for accounts on the highest plan tier that have already completed the standard GBP verification flow.",
+                  "Only in the US market."
+                ],
+                "answer": 1,
+                "explain": "The AI Search sub-views are built but entitlement-gated and not switched on for any user today. Pitch as coming soon."
+              },
+              {
+                "q": "A prospect asks if they can run Content Queue without buying Discovery. What should you say?",
+                "options": [
+                  "Yes, Content Queue is a standalone product that comes bundled with the Front Desk agent at no extra cost.",
+                  "Yes, but only with a Front Desk add-on.",
+                  "No — cannot run standalone; the plan is computed from Discovery's keyword data.",
+                  "Yes for blog posts, no for GBP posts."
+                ],
+                "answer": 2,
+                "explain": "There is no standalone Content Queue product. The plan is computed from Discovery's keyword + opportunity data."
+              },
+              {
+                "q": "The automated post-checkout review-request engine is gated. What is the gate?",
+                "options": [
+                  "It only runs on the highest plan tier and requires the owner to complete a training webinar before activation.",
+                  "It requires both Front Desk AND Scheduling to be active.",
+                  "It requires Google Business Profile verification only.",
+                  "It requires Stripe to be connected."
+                ],
+                "answer": 1,
+                "explain": "The automated Get More Reviews engine runs only when both Front Desk and Scheduling are active. Manual invites still work standalone."
+              },
+              {
+                "q": "A prospect asks 'how many keywords do you pick and how?' — what's the honest answer?",
+                "options": [
+                  "We buy a keyword list from a third-party vendor and rotate it every quarter based on their release calendar.",
+                  "The salon owner picks all keywords manually.",
+                  "US Census demand + Google Ads / SEMrush volume + relevance + opportunity scoring — a 10-step AI pipeline.",
+                  "AI picks them at random."
+                ],
+                "answer": 2,
+                "explain": "The 10-step AI keyword pipeline is: US Census demand + Google Ads / SEMrush volume + relevance filtering + opportunity scoring → final list."
+              },
+              {
+                "q": "How often does Discovery pull top-keyword ranks?",
+                "options": [
+                  "Monthly on the first business day, unless the owner has manually paused the pipeline from the Preferences panel.",
+                  "Every Thursday, plus a weekly rank analysis.",
+                  "Daily.",
+                  "Only when the owner triggers a scan."
+                ],
+                "answer": 1,
+                "explain": "Weekly rank fetch is every Thursday with a weekly rank analysis attached."
+              }
+            ]
+          }
         }
       ],
       "final": {
@@ -1219,6 +1286,73 @@
               }
             ]
           }
+        },
+        {
+          "id": "07-scope-source-of-truth",
+          "title": "Scope: Source of Truth — the 9 caveats and what's out of scope",
+          "sub": "",
+          "minutes": 9,
+          "file": "content/front-desk/07-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "An owner asks 'will the agent use the custom name I typed?' What's the accurate answer?",
+                "options": [
+                  "Yes, on every call from the moment they save the name in setup.",
+                  "The greeting uses the business name, not the custom typed name.",
+                  "Only on outbound calls that the follow-up engine triggers during business hours.",
+                  "Only after a paid upgrade."
+                ],
+                "answer": 1,
+                "explain": "Known caveat #1: the greeting uses the business name even if a custom agent name has been typed."
+              },
+              {
+                "q": "Does the Front Desk agent take a deposit or charge a card on the call?",
+                "options": [
+                  "Yes, if the card-required rule is on, and the funds settle to Stripe on the same business day the booking is confirmed.",
+                  "No — the agent does not charge the card during the call, even with card-required rules enabled.",
+                  "Only for Zoca Scheduling accounts.",
+                  "Only above $50."
+                ],
+                "answer": 1,
+                "explain": "Out of scope: agent does NOT charge the card during the call, even with deposit or card-required rules enabled."
+              },
+              {
+                "q": "A prospect is on Boulevard. Can Front Desk book into their calendar?",
+                "options": [
+                  "Yes, Boulevard is fully supported for reads and writes on every plan tier including the starter plan.",
+                  "Only for reads, not writes.",
+                  "No — Boulevard is not a supported calendar.",
+                  "Yes with a paid connector."
+                ],
+                "answer": 2,
+                "explain": "Boulevard is not a supported calendar. Supported: Zoca, Square, Mindbody, Vagaro, GlossGenius, Booksy, Fresha."
+              },
+              {
+                "q": "In the Option 1 call-forwarding setup (forwarding from the salon's existing number), what happens to inbound SMS?",
+                "options": [
+                  "Inbound SMS is forwarded to the agent and it replies using the standard SMS template library like on outbound.",
+                  "Inbound SMS is queued for owner review in a dedicated dashboard inbox that refreshes every hour.",
+                  "Call-forwarding does NOT forward inbound SMS — the agent won't reply to inbound texts in that setup.",
+                  "Inbound SMS is auto-forwarded after a 10-minute delay."
+                ],
+                "answer": 2,
+                "explain": "Known caveat #8: Option 1 call forwarding does not forward inbound SMS. Recommend porting or putting the agent number on Google if inbound SMS reply is critical."
+              },
+              {
+                "q": "A prospect wants group / party bookings on the call. What is the honest answer?",
+                "options": [
+                  "Yes, up to 4 people per party if the calendar allows overlapping slots and the party names are provided during the call.",
+                  "Yes for existing customers only.",
+                  "Yes with an add-on.",
+                  "No — single-customer bookings only."
+                ],
+                "answer": 3,
+                "explain": "Group / party bookings are out of scope. Single-customer bookings only."
+              }
+            ]
+          }
         }
       ],
       "final": {
@@ -1654,6 +1788,73 @@
                 ],
                 "answer": 2,
                 "explain": "Offers move through Draft, Live (or Future if scheduled), Paused, and Expired."
+              }
+            ]
+          }
+        },
+        {
+          "id": "07-scope-source-of-truth",
+          "title": "Scope: Source of Truth — live vs. roadmap on payments and ledger",
+          "sub": "",
+          "minutes": 7,
+          "file": "content/scheduling/07-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "A prospect asks if Scheduling supports split payments (deposit at booking + final at checkout). What's the honest answer?",
+                "options": [
+                  "Yes, split payments are live and configurable via the checkout settings panel on every plan tier.",
+                  "Split payments are on the roadmap. Today it's a single payment per checkout.",
+                  "Only for Zoca Scheduling users on Stripe with Tap to Pay hardware connected.",
+                  "Yes but only for Tap to Pay."
+                ],
+                "answer": 1,
+                "explain": "Split payments are on the roadmap. Do not pitch as live."
+              },
+              {
+                "q": "A prospect asks whether a unified sales ledger view exists. What should you say?",
+                "options": [
+                  "Yes, we have a full sales ledger with subtotal, tax, tip, deposits, paid vs due, and full audit trail exposed on the dashboard.",
+                  "Yes, it comes as a downloadable CSV nightly.",
+                  "It's on the roadmap. Underlying data exists but not exposed as a unified ledger yet.",
+                  "Yes, once Stripe is connected."
+                ],
+                "answer": 2,
+                "explain": "Sales ledger is on the roadmap. Underlying data exists but no unified ledger view today."
+              },
+              {
+                "q": "A HOLD is placed on a slot during checkout. What happens next?",
+                "options": [
+                  "It's held for 30 minutes then released.",
+                  "It's held forever until the owner manually releases it from the calendar management dashboard.",
+                  "It expires at midnight.",
+                  "10-minute HOLD, auto-promoted to BOOKED on payment success."
+                ],
+                "answer": 3,
+                "explain": "HOLD is a 10-minute reservation during checkout that auto-promotes to BOOKED on payment success."
+              },
+              {
+                "q": "An owner changes their cancellation policy today. Does the new policy apply to yesterday's bookings?",
+                "options": [
+                  "Yes, all bookings inherit the latest policy automatically as soon as the owner clicks Save in the policy config panel.",
+                  "Only if the owner runs a bulk sync.",
+                  "No — policies are snapshot at booking time; retroactive changes do not apply.",
+                  "Yes, if the change happens within 24 hours."
+                ],
+                "answer": 2,
+                "explain": "Policy snapshots: the cancellation/no-show/deposit policy captured at booking time is what applies. Tomorrow's change does not retroactively apply."
+              },
+              {
+                "q": "What is the default booking mode when Stripe is NOT connected?",
+                "options": [
+                  "Card-on-file required, with the owner manually verifying the card at each visit before the booking is confirmed.",
+                  "No-payment-required policy — booking without entering payment details.",
+                  "Deposit required.",
+                  "Cash-only mode."
+                ],
+                "answer": 1,
+                "explain": "No-payment-required policy is the default mode when Stripe is not connected. Card-on-file, deposits, and Tap to Pay only unlock by connecting Stripe."
               }
             ]
           }
@@ -2250,6 +2451,73 @@
                 ],
                 "answer": 2,
                 "explain": "Saving a conflicting fact surfaces the existing value and asks which to keep, via save-structured-memory returning conflict: true."
+              }
+            ]
+          }
+        },
+        {
+          "id": "04-scope-source-of-truth",
+          "title": "Scope: Source of Truth — 137 actions across 14 areas",
+          "sub": "",
+          "minutes": 7,
+          "file": "content/command-center/04-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "How many total actions are exposed through Command Centre, split across how many areas?",
+                "options": [
+                  "230+ actions across 12 areas.",
+                  "137 actions across 14 areas.",
+                  "100 actions across 10 areas.",
+                  "200 actions across 15 areas."
+                ],
+                "answer": 1,
+                "explain": "The correct number is 137 actions across 14 areas. Do not say '230+' — that's the stale number."
+              },
+              {
+                "q": "A prospect asks to run a single-tap 'cancel all 10 appointments' via Command Centre. What actually happens?",
+                "options": [
+                  "Command Centre executes it in one tap and posts the cancellation summary to the owner's Slack digest at end of day.",
+                  "Command Centre refuses entirely.",
+                  "Walks through each item with a per-item confirmation, not a blanket approval.",
+                  "Command Centre requires an admin password."
+                ],
+                "answer": 2,
+                "explain": "Destructive bulk actions require per-item confirmation. By design — pitch it as a safety feature, not friction."
+              },
+              {
+                "q": "A prospect asks whether Command Centre can query data across two different owner accounts simultaneously. Answer?",
+                "options": [
+                  "Yes with enterprise plans that include cross-tenant lookups for approved partners after a security review.",
+                  "Yes for reads, no for writes.",
+                  "Yes if both owners are in the same chain.",
+                  "No — cross-tenant isolation is enforced; only the owner's own data on the active location."
+                ],
+                "answer": 3,
+                "explain": "Cross-tenant isolation is a tested security surface with 0 data shared across owners."
+              },
+              {
+                "q": "The multi-location owner wants simultaneous fan-out writes across all their locations. What does Command Centre support?",
+                "options": [
+                  "Fan-out writes across every location in one command using the multi-location broadcast mode from the top-right chat.",
+                  "Location switching by name — multi-location is context switch, not fan-out.",
+                  "Fan-out reads but per-location writes.",
+                  "Automatic replication of every write."
+                ],
+                "answer": 1,
+                "explain": "Multi-location is supported by switching active location by name, not by simultaneous cross-location fan-out."
+              },
+              {
+                "q": "What happens before Command Centre pushes a WRITE (like updating GBP hours)?",
+                "options": [
+                  "The write executes immediately with a post-hoc confirmation email to the owner and a follow-up dashboard notice.",
+                  "The write requires a two-factor code.",
+                  "A consent card opens with current + new values before the push.",
+                  "The write is queued for owner approval by email."
+                ],
+                "answer": 2,
+                "explain": "Every WRITE opens a consent card showing current -> new values before pushing. Nothing goes through without owner confirmation."
               }
             ]
           }
