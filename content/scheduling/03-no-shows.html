@@ -1,48 +1,275 @@
-<div class="callout tldr"><div class="callout-title">TL;DR</div><p>A no-show is a client who simply doesn't turn up. For a salon, every no-show is an empty chair that can't be re-sold. Zoca detects no-shows automatically, lets the salon charge a no-show fee (or forfeit the deposit), waive it for a good reason, and immediately offer the open slot to the waitlist. <strong>Pitch it as: &quot;Stop eating the cost of no-shows.&quot;</strong></p></div>
+<div class="callout tldr">
+  <div class="callout-title">TL;DR</div>
+  <p>
+    A no-show is a client who simply doesn't turn up. For a salon, every no-show
+    is an empty chair that can't be re-sold. Zoca lets the front desk mark a
+    no-show, charge a no-show fee (or forfeit the deposit), and waive it for a
+    good reason.
+    <strong>Pitch it as: &quot;Stop eating the cost of no-shows.&quot;</strong>
+  </p>
+</div>
 <hr />
 <h2>1. What it is</h2>
-<p>A <strong>no-show</strong> is when a client fails to arrive for a confirmed appointment and the appointment time passes without them checking in. The system detects this automatically after a short <strong>grace period</strong> (15 minutes by default, and the salon can change it).</p>
+<p>
+  A <strong>no-show</strong> is when a client fails to arrive for a confirmed
+  appointment and the appointment time passes. The front desk can mark the
+  appointment as a no-show from the booking's detail panel.
+</p>
 <p>A no-show is different from a <strong>cancellation</strong>:</p>
-<ul><li>A <strong>cancellation</strong> is when the client (or salon) <em>explicitly</em> calls off the appointment <em>before</em> the time. It runs the cancellation policy — typically with a charge window (e.g., &quot;charge if cancelled within 24 hours&quot;).</li><li>A <strong>no-show</strong> is <em>silence</em> — the client neither shows nor cancels. It's detected after the grace period and runs the <strong>no-show policy</strong>.</li></ul>
-<p>The two no-show outcomes are tracked distinctly: <strong>no-show with fee collected</strong> and <strong>no-show, fee waived</strong>.</p>
-<div class="callout "><div class="callout-title">SAY IT SIMPLY</div><p>&quot;If a client cancels, that's the cancellation policy. If they just ghost you, that's a no-show — and the system catches it and protects you.&quot;</p></div>
+<ul>
+  <li>
+    A <strong>cancellation</strong> is when the client (or salon)
+    <em>explicitly</em> calls off the appointment <em>before</em> the time. It
+    runs the cancellation policy — typically with a charge window (e.g.,
+    &quot;charge if cancelled within 24 hours&quot;).
+  </li>
+  <li>
+    A <strong>no-show</strong> is <em>silence</em> — the client neither shows
+    nor cancels. The front desk marks it, and the
+    <strong>no-show policy</strong> kicks in.
+  </li>
+</ul>
+<p>
+  The two no-show outcomes are tracked distinctly:
+  <strong>no-show with fee collected</strong> and
+  <strong>no-show, fee waived</strong>.
+</p>
+<div class="callout">
+  <div class="callout-title">SAY IT SIMPLY</div>
+  <p>
+    &quot;If a client cancels, that's the cancellation policy. If they just
+    ghost you, that's a no-show — and the system catches it and protects
+    you.&quot;
+  </p>
+</div>
 <hr />
 <h2>2. Why it matters (the salon owner's view)</h2>
-<p>No-shows are one of the biggest silent revenue leaks in a salon. A two-hour color appointment that ghosts is two hours the chair earns nothing — and it's usually too late to fill.</p>
+<p>
+  No-shows are one of the biggest silent revenue leaks in a salon. A two-hour
+  color appointment that ghosts is two hours the chair earns nothing — and it's
+  usually too late to fill.
+</p>
 <p>Zoca attacks the problem from three sides:</p>
-<ul><li><strong>Deterrence up front</strong> — deposits and attendance confirmations make clients think twice about ghosting.</li><li><strong>Recovery after the fact</strong> — a no-show fee (or a forfeited deposit) means a ghosted slot still earns something.</li><li><strong>Re-selling the slot</strong> — the moment a no-show is logged, the waitlist is pinged so someone else can grab the time.</li></ul>
-<div class="callout "><div class="callout-title">VALUE LINE</div><p>&quot;You can't make every client show up. But you can make sure a no-show doesn't cost you the whole appointment — and that someone else can take that slot.&quot;</p></div>
+<ul>
+  <li>
+    <strong>Deterrence up front</strong> — deposits and attendance confirmations
+    make clients think twice about ghosting.
+  </li>
+  <li>
+    <strong>Recovery after the fact</strong> — a no-show fee (or a forfeited
+    deposit) means a ghosted slot still earns something.
+  </li>
+  <li>
+    <strong>Re-selling the slot</strong> — the moment a no-show is logged, the
+    slot is freed up so someone else can grab the time.
+  </li>
+</ul>
+<div class="callout">
+  <div class="callout-title">VALUE LINE</div>
+  <p>
+    &quot;You can't make every client show up. But you can make sure a no-show
+    doesn't cost you the whole appointment.&quot;
+  </p>
+</div>
 <hr />
 <h2>3. How it works</h2>
-<p><strong>Detection.</strong> When an appointment's time passes and the grace period (default 15 minutes) elapses without a check-in, the system flags it. Front desk can also mark a no-show manually from the booking's detail panel, and a no-show can be <strong>undone</strong> if it was a mistake.</p>
-<p><strong>The fee.</strong> If the salon has a no-show policy with a fee turned on, the system applies it. The fee is <strong>configurable</strong> and can be:</p>
-<ul><li>a <strong>percentage of the deposit</strong> (commonly 100% — i.e., the deposit is simply kept),</li><li>a <strong>fixed amount</strong> (e.g., a flat $50), or</li><li>a <strong>percentage of the service price</strong>.</li></ul>
-<p>When a deposit was already collected at booking, the most common setup is <strong>deposit forfeiture</strong>: the deposit the client already paid converts from refundable to the no-show fee — so there's nothing extra to charge.</p>
-<div class="callout "><div class="callout-title">POLICY IS CONFIGURABLE</div><p>The 15-minute grace period and the fee amounts above are <strong>examples and defaults</strong> — the salon sets these. Cancellation and no-show policies are configured separately and can even be set at different levels (a specific service, a stylist, the location, or the whole business), with the most specific rule winning. Present it as: &quot;you decide the grace period and the fee, down to the service if you want.&quot;</p></div>
-<p><strong>Waiving.</strong> The owner stays in control. If a client had a real emergency, staff can <strong>waive the fee</strong> in one action; if money was already taken, it's refunded, and the client gets a &quot;we understand, fee waived&quot; message.</p>
-<p><strong>Disputes.</strong> If a client disputes a no-show, the salon can review and resolve it (waive, partially refund, or uphold the charge), and the whole thing is logged.</p>
-<p><strong>Attendance confirmation (deterrence).</strong> Salons can require clients to <strong>confirm they're coming</strong> before the appointment. The client taps to confirm; the stylist is notified. Note this is a <em>signal</em>, not a guarantee — it nudges clients and surfaces flakiness early, but the no-show detection still does the real enforcement. If a client reschedules, their confirmation resets so they reconfirm the new time.</p>
-<p><strong>Notifications around a no-show.</strong> The client gets a no-show notice (with the fee, if any), the stylist gets an alert, and the waitlist gets a &quot;slot opened&quot; text. If the fee is waived, the client is told.</p>
+<p>
+  <strong>Marking a no-show.</strong> When a client doesn't show up, the front
+  desk marks the appointment as a no-show from the booking's detail panel. A
+  no-show can be <strong>undone</strong> if it was a mistake.
+</p>
+<p>
+  <strong>The fee.</strong> The business sets up a no-show policy that clients
+  must accept during booking. The fee is <strong>configurable</strong> as either
+  a <strong>percentage</strong> of the service price or a
+  <strong>fixed amount</strong> (e.g., a flat $50). How it works depends on the
+  payment method:
+</p>
+<p>
+  <strong>Card on file:</strong> When the client has a card on file, the
+  business can set up a no-show fee (percentage or fixed). If the client
+  no-shows, the business has the control to charge or not charge the fee to the
+  card on file on a case-by-case basis.
+</p>
+<p>
+  <strong>Deposits:</strong> The deposit can be configured as
+  <strong>refundable</strong> or <strong>non-refundable</strong>. In addition to
+  keeping or forfeiting the deposit, a separate no-show fee can also be applied
+  on top — since the client's card is already collected, the fee can be charged
+  to it.
+</p>
+<div class="callout">
+  <div class="callout-title">POLICY IS CONFIGURABLE</div>
+  <p>
+    The fee amounts above are
+    <strong>examples</strong> — the salon sets these. Cancellation and no-show
+    policies are configured separately and are set at the
+    <strong>location level</strong>. If the fee is a percentage of the service
+    price, the actual charge naturally varies by service. Present it as:
+    &quot;you decide the fee at your location.&quot;
+  </p>
+</div>
+<p>
+  <strong>Waiving.</strong> The owner stays in control. If a client had a real
+  emergency, staff can <strong>waive the fee</strong> in one action; if money
+  was already taken, it's refunded, and the client gets a &quot;we understand,
+  fee waived&quot; message.
+</p>
+<p>
+  <strong>Disputes.</strong> If a client disputes a no-show, the salon can
+  review and resolve it (waive, partially refund, or uphold the charge), and the
+  whole thing is logged.
+</p>
+<p>
+  <strong>Attendance confirmation (deterrence).</strong> Salons can require
+  clients to <strong>confirm they're coming</strong> before the appointment. The
+  client taps to confirm; the stylist is notified. Note this is a
+  <em>signal</em>, not a guarantee — it nudges clients and surfaces flakiness
+  early. If a client reschedules, their confirmation resets so they reconfirm
+  the new time.
+</p>
+<p>
+  <strong>Notifications around a no-show.</strong> The client gets a no-show
+  notice (with the fee, if any), and the stylist gets an alert. If the fee is
+  waived, the client is told.
+</p>
 <hr />
 <h2>4. Where it lives + demo path</h2>
-<ol><li>Open a past or in-progress appointment on the <strong>Calendar</strong> → its detail panel.</li><li>Show the <strong>No-show</strong> action (and that there's an <strong>Undo no-show</strong> if it was a mistake).</li><li>Explain the <strong>grace period</strong> auto-detection — &quot;you don't even have to remember; the system catches it.&quot;</li><li>Show the choice to <strong>charge the fee or waive it</strong>.</li><li>Tie it to deposits — open the <strong>Deposits &amp; payments</strong> story: &quot;the deposit they already paid becomes the no-show fee.&quot;</li><li>Mention the <strong>waitlist</strong> ping that fires when the slot opens.</li></ol>
-<div class="callout "><div class="callout-title">DEMO TIP</div><p>The emotional hook is the deposit-becomes-fee moment: &quot;They ghosted you, but you already have their deposit — so you're not out the whole appointment, and the system just offered the slot to your waitlist.&quot; Confirm the exact button labels in your demo account beforehand.</p></div>
+<ol>
+  <li>
+    Open a past or in-progress appointment on the <strong>Calendar</strong> →
+    its detail panel.
+  </li>
+  <li>
+    Show the <strong>No-show</strong> action (and that there's an
+    <strong>Undo no-show</strong> if it was a mistake).
+  </li>
+  <li>Show the choice to <strong>charge the fee or waive it</strong>.</li>
+  <li>
+    Tie it to deposits — open the
+    <strong>Deposits &amp; payments</strong> story: &quot;the deposit they
+    already paid becomes the no-show fee.&quot;
+  </li>
+</ol>
+<div class="callout">
+  <div class="callout-title">DEMO TIP</div>
+  <p>
+    The emotional hook is the deposit-becomes-fee moment: &quot;They ghosted
+    you, but you already have their deposit — so you're not out the whole
+    appointment.&quot; Confirm the exact button labels in your demo account
+    beforehand.
+  </p>
+</div>
 <hr />
 <h2>5. Demo talk track</h2>
-<div class="callout "><div class="callout-title">TALK TRACK</div><p>&quot;Let's talk about the appointment that doesn't show up — every salon's nightmare. Here's how Zoca handles it.</p>
-<p>First, you've already got a deposit on the booking, so you're not starting from zero. If they don't show and the grace period passes — say 15 minutes — the system flags it as a no-show on its own; your front desk doesn't have to babysit it. Your no-show policy kicks in: the deposit they paid becomes the no-show fee, so that chair still earned something.</p>
-<p>Was it a real emergency? One tap to waive the fee and refund them — you stay the good guy. And the second that slot opens, your waitlist gets a text saying it's available. So a no-show turns into a re-sold appointment instead of a dead two hours.&quot;</p></div>
+<div class="callout">
+  <div class="callout-title">TALK TRACK</div>
+  <p>
+    &quot;Let's talk about the appointment that doesn't show up — every salon's
+    nightmare. Here's how Zoca handles it.
+  </p>
+  <p>
+    First, you've already got a deposit on the booking, so you're not starting
+    from zero. If they don't show, your front desk marks it as a no-show right
+    from the appointment. Your no-show policy kicks in: the deposit they paid
+    becomes the no-show fee, so that chair still earned something.
+  </p>
+  <p>
+    Was it a real emergency? One tap to waive the fee and refund them — you stay
+    the good guy.&quot;
+  </p>
+</div>
 <hr />
 <h2>6. FAQ &amp; objection handling</h2>
-<p><strong>&quot;My clients won't like being charged for no-shows.&quot;</strong> You set the policy, and you can waive any fee for a genuine emergency in one tap. Most owners find a clear, fair no-show policy actually <em>reduces</em> no-shows because clients take the booking seriously.</p>
-<p><strong>&quot;How does it know someone didn't show? My front desk is busy.&quot;</strong> It auto-detects after a grace period you set (15 minutes by default) — no babysitting required. Staff can also mark or undo a no-show manually.</p>
-<p><strong>&quot;What's the difference between a cancellation and a no-show?&quot;</strong> A cancellation is the client calling it off ahead of time (cancellation policy applies). A no-show is them not showing and not telling you (no-show policy applies). They're handled by separate rules you control.</p>
-<p><strong>&quot;Can I charge different no-show fees for different services?&quot;</strong> Yes — policies can be set per service, per stylist, per location, or for the whole business, and the most specific one wins.</p>
-<p><strong>&quot;What if I just want a deposit kept, not a separate charge?&quot;</strong> That's the most common setup: the deposit they already paid simply converts into the no-show fee.</p>
-<p><strong>&quot;A client says it was a mistake / emergency.&quot;</strong> Waive the fee in one action (refunding if needed), and they get a friendly &quot;fee waived&quot; message. You can also resolve disputes and keep an audit trail.</p>
+<p>
+  <strong>&quot;My clients won't like being charged for no-shows.&quot;</strong>
+  You set the policy, and you can waive any fee for a genuine emergency in one
+  tap. Most owners find a clear, fair no-show policy actually
+  <em>reduces</em> no-shows because clients take the booking seriously.
+</p>
+<p>
+  <strong
+    >&quot;How does it know someone didn't show? My front desk is
+    busy.&quot;</strong
+  >
+  The front desk marks a no-show right from the appointment's detail panel —
+  it's one tap. They can also undo it if it was a mistake.
+</p>
+<p>
+  <strong
+    >&quot;What's the difference between a cancellation and a
+    no-show?&quot;</strong
+  >
+  A cancellation is the client calling it off ahead of time (cancellation policy
+  applies). A no-show is them not showing and not telling you (no-show policy
+  applies). They're handled by separate rules you control.
+</p>
+<p>
+  <strong
+    >&quot;Can I charge different no-show fees for different
+    services?&quot;</strong
+  >
+  The no-show policy is set at the location level. However, if the fee is
+  configured as a percentage of the service price, the actual amount will
+  naturally vary by service.
+</p>
+<p>
+  <strong
+    >&quot;What if I just want a deposit kept, not a separate
+    charge?&quot;</strong
+  >
+  That's the most common setup: the deposit they already paid simply converts
+  into the no-show fee.
+</p>
+<p>
+  <strong>&quot;A client says it was a mistake / emergency.&quot;</strong> Waive
+  the fee in one action (refunding if needed), and they get a friendly &quot;fee
+  waived&quot; message. You can also resolve disputes and keep an audit trail.
+</p>
 <hr />
 <h2>7. Key terms</h2>
-<ul><li><strong>No-show</strong> — client didn't arrive and didn't cancel; detected after the grace period.</li><li><strong>Grace period</strong> — minutes after the start time before a no-show is logged (15 min default, configurable).</li><li><strong>No-show fee</strong> — the charge for a no-show: % of deposit, a fixed amount, or % of service.</li><li><strong>Deposit forfeiture</strong> — the already-paid deposit becomes the no-show fee (nothing extra to charge).</li><li><strong>Fee collected vs fee waived</strong> — the two no-show outcomes the system tracks.</li><li><strong>Cancellation window</strong> — for <em>cancellations</em>, the hours-before-appointment threshold where a charge applies (separate from no-shows).</li><li><strong>Attendance confirmation</strong> — an optional &quot;confirm you're coming&quot; step that nudges clients and flags flakiness early.</li></ul>
+<ul>
+  <li>
+    <strong>No-show</strong> — client didn't arrive and didn't cancel; marked by
+    the front desk from the booking's detail panel.
+  </li>
+  <li>
+    <strong>No-show fee</strong> — the charge for a no-show: a percentage of the
+    service price or a fixed amount. Can be charged to a card on file or applied
+    on top of a deposit.
+  </li>
+  <li>
+    <strong>Deposit forfeiture</strong> — the already-paid deposit becomes the
+    no-show fee (nothing extra to charge).
+  </li>
+  <li>
+    <strong>Fee collected vs fee waived</strong> — the two no-show outcomes the
+    system tracks.
+  </li>
+  <li>
+    <strong>Cancellation window</strong> — for <em>cancellations</em>, the
+    hours-before-appointment threshold where a charge applies (separate from
+    no-shows).
+  </li>
+  <li>
+    <strong>Attendance confirmation</strong> — an optional &quot;confirm you're
+    coming&quot; step that nudges clients and flags flakiness early.
+  </li>
+</ul>
 <hr />
 <h2>8. Related docs</h2>
-<ul><li><strong>Booking lifecycle</strong> — cancellation (the other &quot;didn't happen&quot; path) and refunds.</li><li><strong>Deposits &amp; payments</strong> — how deposits are collected and forfeited.</li><li><strong>Calendar</strong> — where no-shows are marked and the waitlist lives.</li><li><strong>Checkout / POS &amp; quick-sale</strong> — taking payment for the appointments that <em>do</em> show.</li></ul>
+<ul>
+  <li>
+    <strong>Booking lifecycle</strong> — cancellation (the other &quot;didn't
+    happen&quot; path) and refunds.
+  </li>
+  <li>
+    <strong>Deposits &amp; payments</strong> — how deposits are collected and
+    forfeited.
+  </li>
+  <li><strong>Calendar</strong> — where no-shows are marked.</li>
+  <li>
+    <strong>Checkout / POS &amp; quick-sale</strong> — taking payment for the
+    appointments that <em>do</em> show.
+  </li>
+</ul>

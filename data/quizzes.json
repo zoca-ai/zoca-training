@@ -63,13 +63,8 @@
     "passScore": 70,
     "questions": [
       {
-        "q": "You're 30 seconds into the demo and want the 'wow shot.' Which tab do you open first?",
-        "options": [
-          "Canvas",
-          "Validate",
-          "Preview",
-          "Memory History"
-        ],
+        "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
+        "options": ["Canvas", "Validate", "Preview", "Memory History"],
         "answer": 0,
         "explain": "Canvas is the visual topic map of every confirmed fact ‚Äî opening it first lands the 'we already know your business' moment."
       },
@@ -254,13 +249,8 @@
         "explain": "The core pitch: train your AI once, the way you'd train a great new receptionist. It's owner-driven, not magic and not set-and-forget."
       },
       {
-        "q": "An owner asks how many Zoca AIs the Brain actually powers. What's correct?",
-        "options": [
-          "Three",
-          "Four",
-          "Five",
-          "Seven"
-        ],
+        "q": "How many Zoca AIs does the Brain power?",
+        "options": ["Three", "Four", "Five", "Seven"],
         "answer": 2,
         "explain": "Five AIs: Front Desk, Website, Content, Google Profile, and Command Center."
       },
@@ -276,15 +266,10 @@
         "explain": "The source pill is the chip showing origin (call/website/Google/chat/staff save) so the owner can judge whether to trust the candidate."
       },
       {
-        "q": "An owner asks to test the AI 'like a customer would.' Which tab does that?",
-        "options": [
-          "Canvas",
-          "Question Bank",
-          "Memory History",
-          "Preview"
-        ],
-        "answer": 3,
-        "explain": "Preview takes a typed customer-style question and returns the exact grounded answer with citations."
+        "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
+        "options": ["Canvas", "Question Bank", "Preview", "Memory History"],
+        "answer": 2,
+        "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
       },
       {
         "q": "Which source does NOT feed back into the Brain as new facts?",
@@ -380,13 +365,8 @@
         "explain": "Command Center opens from the top-right of any dashboard page. Cmd+K is the shortcut."
       },
       {
-        "q": "An owner asks: 'What does Command Center actually have access to?' What's true?",
-        "options": [
-          "Active location only ‚Äî data the owner owns",
-          "Every Zoca location across the whole organization at once",
-          "All locations plus aggregated industry benchmarking data",
-          "Whatever the user types into the chat thread"
-        ],
+        "q": "Which keyboard shortcut opens Command Center from any page?",
+        "options": ["Cmd+K", "Cmd+J", "Ctrl+Space", "Cmd+Enter"],
         "answer": 0,
         "explain": "Scope = active location only, and only data the owner owns. Multi-location is supported via switching, not by mixing data."
       },
@@ -1120,7 +1100,13 @@
           "It is a fixed keyword list that AI engines cannot change"
         ],
         "answer": 0,
-        "explain": "Brain holds the business's unique facts ‚Äî exactly what AI engines reward for citation. Generic content gets ignored."
+        "explain": "The lesson defines NAP consistency as Name, Address, and Phone number written identically everywhere online."
+      },
+      {
+        "q": "Roughly what share of all Google searches does the lesson say have local intent?",
+        "options": ["About 12%", "About 25%", "About 46%", "About 75%"],
+        "answer": 2,
+        "explain": "The lesson states roughly 46% of all Google searches have local intent."
       }
     ]
   },
@@ -1150,15 +1136,10 @@
         "explain": "Caller ID lookup matched to the salon's client list and booking history. Caveat: if a regular's number is shared with someone new, Zoe may assume it's the regular."
       },
       {
-        "q": "An owner asks how Zoe's spam shield works.",
-        "options": [
-          "Blocks junk calls before they ring via reputation database",
-          "Forwards all suspicious calls to a human screener",
-          "Tags short calls and robocalls after",
-          "Requires callers to pass a verification challenge first"
-        ],
-        "answer": 2,
-        "explain": "Post-call tagging, not a pre-answer wall. Some junk gets through and is flagged after; manage expectations."
+        "q": "Per the Princeton-led GEO paper, adding specific statistics to content boosted AI visibility by up to what amount?",
+        "options": ["Up to +10%", "Up to +40%", "Up to +115%", "Up to +200%"],
+        "answer": 1,
+        "explain": "The lesson reports the GEO paper found adding specific statistics boosted visibility up to +40%."
       },
       {
         "q": "A booking call comes in. How long does a standard booking typically take?",
@@ -1199,13 +1180,8 @@
         "explain": "Core win: end-to-end booking on the call, into the salon's existing scheduler. Rivals send a link; Zoe finishes the job."
       },
       {
-        "q": "A prospect runs Boulevard. Can Zoe book into their calendar today?",
-        "options": [
-          "Yes ‚Äî Boulevard is a supported native integration today",
-          "No ‚Äî Boulevard isn't supported",
-          "Yes, via a one-way export each morning",
-          "Yes, but only on the Pro plan tier upgrade"
-        ],
+        "q": "What latency window does the lesson cite as the benchmark most production voice agents aim for?",
+        "options": ["50-100ms", "300-800ms", "1-2 seconds", "2-3 seconds"],
         "answer": 1,
         "explain": "Out of scope: Boulevard, Acuity, StyleSeat, Calendly are NOT supported. Confirm the prospect's calendar before promising anything."
       },
@@ -1390,13 +1366,8 @@
         "explain": "L2B recovers abandoned web bookings by SMS, with booking tools inside the text thread so the customer confirms there."
       },
       {
-        "q": "An owner sees a 'revenue saved' number on the dashboard. How should you frame it?",
-        "options": [
-          "An audited accounting figure",
-          "A guaranteed result for the salon",
-          "Directional estimate of value",
-          "The salon's actual measured profit each month"
-        ],
+        "q": "What does the 'extra E' in E-E-A-T stand for, added in 2022?",
+        "options": ["Engagement", "Efficiency", "Experience", "Endorsement"],
         "answer": 2,
         "explain": "Impact is a directional estimate. Never present as audited or guaranteed."
       },
@@ -1412,15 +1383,10 @@
         "explain": "Owner takeover of live SMS is Coming Soon. v1 Activity feed is read-only ‚Äî owner reads but can't reply as themselves."
       },
       {
-        "q": "Caveat: an owner notices appointment times look 'wrong' on her dashboard. Likely cause?",
-        "options": [
-          "Database bug ‚Äî file a support ticket immediately",
-          "Viewer-TZ display; customer text is right",
-          "Calendar sync is broken with the scheduler",
-          "Zoe doesn't support timezones in the dashboard"
-        ],
-        "answer": 1,
-        "explain": "Known rough edge: dashboard appointment-time timezone can reflect the viewer's TZ. Customer-facing texts are always correct. Reassure, don't escalate."
+        "q": "What realistic timeline does the lesson give for meaningful SEO results?",
+        "options": ["1-2 weeks", "1-3 months", "4-12 months", "2-3 years"],
+        "answer": 2,
+        "explain": "The lesson cites a 4-12 month window for meaningful SEO results, describing it as slow then compounding."
       }
     ]
   },
@@ -1843,15 +1809,10 @@
     "passScore": 70,
     "questions": [
       {
-        "q": "An owner asks the difference between checkout and quick-sale.",
-        "options": [
-          "Checkout settles appointments; quick-sale has none",
-          "Checkout is retail only; quick-sale is for services",
-          "They use different carts and payment methods entirely",
-          "Quick-sale requires a card reader to process payment"
-        ],
-        "answer": 0,
-        "explain": "Checkout settles a completed appointment. Quick-sale = walk-in, no appointment. And critically: Quick Sale is Coming Soon, not Live."
+        "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
+        "options": ["Overview", "Bookings", "Activity", "Analytics"],
+        "answer": 2,
+        "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
       },
       {
         "q": "A walk-in customer wants a service rung up without a booking. The owner asks if your POS handles that today.",
@@ -1985,15 +1946,10 @@
         "explain": "AI-booked leads flip to Converted. Closes the loop between outbound and the calendar."
       },
       {
-        "q": "Default no-show grace period?",
-        "options": [
-          "5 minutes flat, system default",
-          "30 minutes flat, system default",
-          "10 minutes flat, no setting",
-          "15 minutes ‚Äî configurable"
-        ],
-        "answer": 3,
-        "explain": "15-minute default, configurable per salon. Tune to the culture and traffic pattern."
+        "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
+        "options": ["Square", "Booksy", "Boulevard", "GlossGenius"],
+        "answer": 2,
+        "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
       },
       {
         "q": "How can a no-show fee be configured?",
@@ -2029,15 +1985,10 @@
         "explain": "Sale status tracking (OPEN ‚Üí PARTIALLY_PAID ‚Üí PAID) is Coming Soon. Don't demo as live."
       },
       {
-        "q": "For in-person card acceptance, which account must the salon connect?",
-        "options": [
-          "PayPal",
-          "Stripe",
-          "Square",
-          "Clover"
-        ],
-        "answer": 1,
-        "explain": "Stripe. Card on file, Tap to Pay (BBPOS WisePOS E / Stripe Reader S700), and refunds all run on the Stripe account."
+        "q": "Which competitor ships no voice receptionist at all?",
+        "options": ["Rosie", "Smith.ai", "GlossGenius", "Slang.ai"],
+        "answer": 2,
+        "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
       },
       {
         "q": "An owner asks about the killer offer demo ‚Äî a slow-day offer. What three levers does it show at once?",
@@ -2380,13 +2331,13 @@
       {
         "q": "An owner asks 'how does Google even find my website?' What three stages does she need to understand?",
         "options": [
-          "On-page, then technical, then off-page",
-          "Search, then click, then convert immediately",
-          "Relevance, then distance, then prominence",
-          "Crawl, then index, then rank"
+          "Day, Compact Day, Week, and Compact Week",
+          "Day and Week only",
+          "Month only",
+          "Agenda list only"
         ],
-        "answer": 3,
-        "explain": "Per Google's own docs, Search works in three stages: crawl (discover pages), index (understand and store them), rank (order them in results). The mental model everything else hangs from."
+        "answer": 0,
+        "explain": "The Calendar offers Day, Compact Day, Week, and Compact Week views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals."
       },
       {
         "q": "A prospect asks what the 'extra E' in E-E-A-T means and when it was added. The answer is:",
@@ -2422,15 +2373,15 @@
         "explain": "Realistic SEO timelines are 4-12 months ‚Äî slow at first, then compounding. Set expectations early; over-promising fast results is the fastest path to churn."
       },
       {
-        "q": "A salon owner who searches 'book gel manicure downtown' is in which intent category?",
+        "q": "What actions can you take directly from an appointment on the Calendar?",
         "options": [
-          "Informational ‚Äî she's just researching nail care",
-          "Commercial ‚Äî comparing nail salon brands and their prices",
-          "Transactional ‚Äî act-now, highest-converting traffic to target",
-          "Navigational ‚Äî she wants a specific salon's website"
+          "Only view the appointment details",
+          "No-show, Cancel, Refund, Resend Receipt, and Checkout",
+          "Only cancel or reschedule",
+          "Only collect payment"
         ],
-        "answer": 2,
-        "explain": "'Book/price/near me' queries are transactional ‚Äî act-now intent. They're the highest-converting traffic and the right audience for service pages with strong CTAs."
+        "answer": 1,
+        "explain": "From an appointment's booking details you can take actions like No-show, Cancel, Refund, Resend Receipt, and Checkout — all without leaving the calendar."
       }
     ]
   },
@@ -2479,29 +2430,34 @@
           "A spam call from a robocalling auto-dialer service"
         ],
         "answer": 1,
-        "explain": "Hallucination is when an AI confidently states something wrong. The fix is grounding the agent in real business facts so it pulls from a trusted source, not the model's guess."
+        "explain": "Cancelling releases the slot back onto the calendar."
       },
       {
-        "q": "An owner says 'I'll only ask my happiest customers for reviews and route the angry ones to a private form.' Which two regimes does that violate?",
+        "q": "A client cancels within the cancellation-fee window. Which statement is correct about how Zoca handles the deposit and card on file?",
         "options": [
-          "Yelp and Facebook",
-          "FCC and Apple",
-          "FTC and Google",
-          "OSHA and the BBB"
+          "Refundable deposit is returned and the cancellation fee is always charged to the card on file automatically",
+          "Non-refundable deposit is kept and the business can choose whether to charge the cancellation fee to the card on file",
+          "Refundable deposit is kept and the card on file is charged automatically",
+          "Non-refundable deposit is returned and no cancellation fee applies"
+        ],
+        "answer": 1,
+        "explain": "A non-refundable deposit is not returned. For the cancellation fee on the card on file, the business has the control to charge or not charge it on a case-by-case basis."
+      }
+    ]
+  },
+  "scheduling/03-no-shows": {
+    "passScore": 70,
+    "questions": [
+      {
+        "q": "How is a no-show marked in Zoca?",
+        "options": [
+          "The system auto-detects it after 15 minutes",
+          "The client reports it themselves",
+          "The front desk marks it from the booking's detail panel",
+          "It is flagged by the AI automatically"
         ],
         "answer": 2,
-        "explain": "Review gating violates both Google's review policies and the FTC's 2024 rule. The FTC can seek civil penalties currently up to $53,088 per violation."
-      },
-      {
-        "q": "If a salon could improve only ONE GBP field to move local rankings the most, which should it be?",
-        "options": [
-          "The primary category",
-          "Number of uploaded photos",
-          "Business description length",
-          "The booking button"
-        ],
-        "answer": 0,
-        "explain": "Primary category is the single biggest controllable local-pack ranking lever ‚Äî it tells Google what the business actually does for relevance matching."
+        "explain": "The front desk marks an appointment as a no-show from the booking's detail panel. It can also be undone if it was a mistake."
       },
       {
         "q": "A spa owner types 'book hydrafacial near me.' Which classic search intent is she in, and what content shape converts best?",
@@ -2511,8 +2467,8 @@
           "Transactional ‚Äî a focused service page with CTA",
           "Navigational ‚Äî the salon's homepage with no CTA"
         ],
-        "answer": 2,
-        "explain": "'Book/price/near me' = transactional intent. The best converting answer is a focused service page with a clear Call / Book CTA, not a general blog."
+        "answer": 1,
+        "explain": "A cancellation is the client explicitly calling it off ahead of time; a no-show is silence — the client neither shows nor cancels, and the front desk marks it."
       },
       {
         "q": "A franchise owner asks what 'citations' are in local SEO. The right definition is:",
@@ -2526,26 +2482,15 @@
         "explain": "Citations are online mentions of NAP across directories, maps, and listings. Consistency across citations builds Google's confidence in the business and supports rankings."
       },
       {
-        "q": "An owner asks what guarantees an AI voice agent gives factually correct answers. What concept describes the technique that gets her there?",
+        "q": "At what level is the no-show policy configured?",
         "options": [
-          "Voice cloning of an actual receptionist's natural speech",
-          "Grounding ‚Äî feeding the agent real current facts",
-          "Latency tuning so the response feels fast and natural",
-          "Spam shielding that blocks robocalls before they connect"
-        ],
-        "answer": 1,
-        "explain": "Grounding is the technique that constrains the agent to real business facts (services, prices, hours, policies). It's the primary defense against hallucinations."
-      },
-      {
-        "q": "A prospect says 'just rank me #1 on ChatGPT.' Which statement signals real understanding?",
-        "options": [
-          "Promise the salon a #1 spot on ChatGPT within 30 days",
-          "Buy a sponsored placement inside the AI-generated answer",
-          "No ranked position in AI ‚Äî get recommended and cited",
-          "Only Perplexity has rankings; ChatGPT doesn't rank pages"
+          "Per service",
+          "Per stylist",
+          "At the location level",
+          "Per appointment"
         ],
         "answer": 2,
-        "explain": "AEO/GEO has no positions. Engines synthesize answers; you get mentioned and cited or you don't. Recognizing this distinction is the signal you actually understand the space."
+        "explain": "The no-show policy is set at the location level. If the fee is a percentage of the service price, the actual amount naturally varies by service."
       }
     ]
   },
@@ -2744,26 +2689,16 @@
         "explain": "The one-liner from the onboarding doc: three steps (platform setup, agent setup, formalities), one screen-share, and you're live."
       },
       {
-        "q": "Roughly how long does it take to go from screen-share start to a live website + bookings + AI receptionist for a typical single-location shop?",
-        "options": [
-          "A full working day",
-          "Well under an hour",
-          "About three business days",
-          "Around two to three hours"
-        ],
-        "answer": 1,
-        "explain": "Well under an hour for a single-location shop with a laptop or iPad on hand. The whole flow is engineered for one assisted session."
+        "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
+        "options": ["Pending", "Archived", "Converted", "Declined"],
+        "answer": 2,
+        "explain": "When the AI reaches out and books a lead, the lead is marked converted."
       },
       {
-        "q": "During Front Desk setup specifically, what does the prospect actually do on the call?",
-        "options": [
-          "Sign the service contract and add a payment card to the account",
-          "Connect platform, set up number, pick voice, set forwarding, test call",
-          "Only confirm services and prices, nothing else on the call",
-          "Import the booking link and build out the entire website"
-        ],
-        "answer": 1,
-        "explain": "Front Desk setup is connect platform ‚Üí set up Zoca's number ‚Üí pick voice ‚Üí set call forwarding ‚Üí live test call. The test call is the trust moment."
+        "q": "What is the default grace period before a no-show is flagged?",
+        "options": ["15 minutes", "30 minutes", "10 minutes", "5 minutes"],
+        "answer": 0,
+        "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
       },
       {
         "q": "An owner asks 'why am I putting my card down if I'm not getting charged?' What's the cleanest reframe?",
@@ -2777,26 +2712,10 @@
         "explain": "The Netflix framing lands fast: card on file starts a free week, no charge until day 7, cancel any time during the trial. Familiar pattern, low resistance."
       },
       {
-        "q": "Day 9, a customer's card payment fails. What happens?",
-        "options": [
-          "Access is cut off instantly with no warning given",
-          "The 7-day trial restarts from day one automatically",
-          "A backup card on file is auto-charged silently",
-          "Short grace period to resolve it before access closes"
-        ],
-        "answer": 3,
-        "explain": "A failed charge triggers a short grace period to fix the card before access closes ‚Äî not instant lockout, not trial restart."
-      },
-      {
-        "q": "A franchise group with 8 locations across 2 states wants to onboard today. What's the right move?",
-        "options": [
-          "Onboarding today is built for single-location shops; 5+ escalates",
-          "Onboard all 8 locations together in one session",
-          "Refuse ‚Äî multi-location franchises aren't supported at all",
-          "Tell them to onboard one location, figure out rest later"
-        ],
-        "answer": 0,
-        "explain": "Onboarding flow today is built for solo and single-location shops. 5+ locations is enterprise territory ‚Äî escalate rather than trying to close it solo."
+        "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
+        "options": ["A ledger", "A cart", "A sale", "A receipt"],
+        "answer": 2,
+        "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
       },
       {
         "q": "Why does the team insist on confirming the current environment before any live setup?",
@@ -2810,24 +2729,8 @@
         "explain": "The newest features ship to demo/sandbox first; production trails by days or weeks. Confirming the environment avoids onboarding a customer into a stale build."
       },
       {
-        "q": "A prospect asks where her card details actually sit. What's the honest answer?",
-        "options": [
-          "Directly on Zoca's own servers in encrypted form",
-          "On the salon's current booking platform's account vault",
-          "Only on the owner's local device in iOS keychain",
-          "With Zoca's billing provider, not Zoca directly"
-        ],
-        "answer": 3,
-        "explain": "Card data lives with Zoca's billing provider (the payment processor), not on Zoca's servers ‚Äî standard PCI-safe pattern that owners are familiar with from any SaaS."
-      },
-      {
-        "q": "A 3-month customer wants to add Loyalty Agent. What's the contract impact?",
-        "options": [
-          "She signs a brand-new contract for the new agent",
-          "Existing contract augments automatically ‚Äî same card, no re-signing",
-          "Her 7-day trial restarts from day one on add",
-          "She must book an offboarding call before adding agents"
-        ],
+        "q": "For in-person card acceptance, which account must the salon connect?",
+        "options": ["PayPal", "Stripe", "Square", "Clover"],
         "answer": 1,
         "explain": "One contract per business. Adding agents later augments it automatically ‚Äî joins the same subscription, same cycle, same card on file, no re-signing."
       },
@@ -3039,15 +2942,10 @@
         "explain": "Discovery Neo = Discovery Agent (marketing brain) + Front Desk Agent (voice brain), bundled as ONE product. Every new logo gets both; they cannot be unbundled."
       },
       {
-        "q": "Of the three operating modes (Approve / Supervised / Auto), which is the default and what does it mean?",
-        "options": [
-          "Supervised ‚Äî agent acts; Content Queue surfaces big decisions",
-          "Approve ‚Äî every action gated until the owner taps approve",
-          "Auto ‚Äî full autopilot with no human review at all",
-          "Manual ‚Äî the owner does every action themselves end-to-end"
-        ],
-        "answer": 0,
-        "explain": "Supervised is the default and where most customers stay forever. The agent acts, the Content Queue surfaces big decisions ‚Äî agency-level output with founder-level transparency."
+        "q": "What is the default operating mode for the agents?",
+        "options": ["Approve", "Auto", "Supervised", "Manual"],
+        "answer": 2,
+        "explain": "Supervised is the default: the agent acts on its own and surfaces the important decisions in the Content Queue; most customers stay there."
       },
       {
         "q": "An owner asks for the prices of the Loyalty and Conversion add-ons. The correct answer is:",
