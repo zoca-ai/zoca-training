@@ -52,12 +52,7 @@
               },
               {
                 "q": "Roughly what share of all Google searches does the lesson say have local intent?",
-                "options": [
-                  "About 12%",
-                  "About 25%",
-                  "About 46%",
-                  "About 75%"
-                ],
+                "options": ["About 12%", "About 25%", "About 46%", "About 75%"],
                 "answer": 2,
                 "explain": "The lesson states roughly 46% of all Google searches have local intent."
               }
@@ -781,6 +776,73 @@
               }
             ]
           }
+        },
+        {
+          "id": "07-scope-source-of-truth",
+          "title": "Scope: Source of Truth — the PM answer to 'do you do X?'",
+          "sub": "",
+          "minutes": 9,
+          "file": "content/discovery/07-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "A prospect asks whether the AI Search visibility report is live for their account. What is the accurate answer?",
+                "options": [
+                  "Yes, it ships to every Discovery account today with AI Platforms, Results, Citations and Competitors sub-views turned on for every location.",
+                  "It is entitlement-gated and not switched on today — coming soon.",
+                  "Only for accounts on the highest plan tier that have already completed the standard GBP verification flow.",
+                  "Only in the US market."
+                ],
+                "answer": 1,
+                "explain": "The AI Search sub-views are built but entitlement-gated and not switched on for any user today. Pitch as coming soon."
+              },
+              {
+                "q": "A prospect asks if they can run Content Queue without buying Discovery. What should you say?",
+                "options": [
+                  "Yes, Content Queue is a standalone product that comes bundled with the Front Desk agent at no extra cost.",
+                  "Yes, but only with a Front Desk add-on.",
+                  "No — cannot run standalone; the plan is computed from Discovery's keyword data.",
+                  "Yes for blog posts, no for GBP posts."
+                ],
+                "answer": 2,
+                "explain": "There is no standalone Content Queue product. The plan is computed from Discovery's keyword + opportunity data."
+              },
+              {
+                "q": "The automated post-checkout review-request engine is gated. What is the gate?",
+                "options": [
+                  "It only runs on the highest plan tier and requires the owner to complete a training webinar before activation.",
+                  "It requires both Front Desk AND Scheduling to be active.",
+                  "It requires Google Business Profile verification only.",
+                  "It requires Stripe to be connected."
+                ],
+                "answer": 1,
+                "explain": "The automated Get More Reviews engine runs only when both Front Desk and Scheduling are active. Manual invites still work standalone."
+              },
+              {
+                "q": "A prospect asks 'how many keywords do you pick and how?' — what's the honest answer?",
+                "options": [
+                  "We buy a keyword list from a third-party vendor and rotate it every quarter based on their release calendar.",
+                  "The salon owner picks all keywords manually.",
+                  "US Census demand + Google Ads / SEMrush volume + relevance + opportunity scoring — a 10-step AI pipeline.",
+                  "AI picks them at random."
+                ],
+                "answer": 2,
+                "explain": "The 10-step AI keyword pipeline is: US Census demand + Google Ads / SEMrush volume + relevance filtering + opportunity scoring → final list."
+              },
+              {
+                "q": "How often does Discovery pull top-keyword ranks?",
+                "options": [
+                  "Monthly on the first business day, unless the owner has manually paused the pipeline from the Preferences panel.",
+                  "Every Thursday, plus a weekly rank analysis.",
+                  "Daily.",
+                  "Only when the owner triggers a scan."
+                ],
+                "answer": 1,
+                "explain": "Weekly rank fetch is every Thursday with a weekly rank analysis attached."
+              }
+            ]
+          }
         }
       ],
       "final": {
@@ -1119,12 +1181,7 @@
             "questions": [
               {
                 "q": "Which dashboard tab serves as the inbox of every call and text Zoe handled?",
-                "options": [
-                  "Overview",
-                  "Bookings",
-                  "Activity",
-                  "Analytics"
-                ],
+                "options": ["Overview", "Bookings", "Activity", "Analytics"],
                 "answer": 2,
                 "explain": "The Activity feed is the inbox; there's no separate Inbox tab, and it shows transcripts, AI summaries, and recordings."
               },
@@ -1219,6 +1276,73 @@
               }
             ]
           }
+        },
+        {
+          "id": "07-scope-source-of-truth",
+          "title": "Scope: Source of Truth — the 9 caveats and what's out of scope",
+          "sub": "",
+          "minutes": 9,
+          "file": "content/front-desk/07-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "An owner asks 'will the agent use the custom name I typed?' What's the accurate answer?",
+                "options": [
+                  "Yes, on every call from the moment they save the name in setup.",
+                  "The greeting uses the business name, not the custom typed name.",
+                  "Only on outbound calls that the follow-up engine triggers during business hours.",
+                  "Only after a paid upgrade."
+                ],
+                "answer": 1,
+                "explain": "Known caveat #1: the greeting uses the business name even if a custom agent name has been typed."
+              },
+              {
+                "q": "Does the Front Desk agent take a deposit or charge a card on the call?",
+                "options": [
+                  "Yes, if the card-required rule is on, and the funds settle to Stripe on the same business day the booking is confirmed.",
+                  "No — the agent does not charge the card during the call, even with card-required rules enabled.",
+                  "Only for Zoca Scheduling accounts.",
+                  "Only above $50."
+                ],
+                "answer": 1,
+                "explain": "Out of scope: agent does NOT charge the card during the call, even with deposit or card-required rules enabled."
+              },
+              {
+                "q": "A prospect is on Boulevard. Can Front Desk book into their calendar?",
+                "options": [
+                  "Yes, Boulevard is fully supported for reads and writes on every plan tier including the starter plan.",
+                  "Only for reads, not writes.",
+                  "No — Boulevard is not a supported calendar.",
+                  "Yes with a paid connector."
+                ],
+                "answer": 2,
+                "explain": "Boulevard is not a supported calendar. Supported: Zoca, Square, Mindbody, Vagaro, GlossGenius, Booksy, Fresha."
+              },
+              {
+                "q": "In the Option 1 call-forwarding setup (forwarding from the salon's existing number), what happens to inbound SMS?",
+                "options": [
+                  "Inbound SMS is forwarded to the agent and it replies using the standard SMS template library like on outbound.",
+                  "Inbound SMS is queued for owner review in a dedicated dashboard inbox that refreshes every hour.",
+                  "Call-forwarding does NOT forward inbound SMS — the agent won't reply to inbound texts in that setup.",
+                  "Inbound SMS is auto-forwarded after a 10-minute delay."
+                ],
+                "answer": 2,
+                "explain": "Known caveat #8: Option 1 call forwarding does not forward inbound SMS. Recommend porting or putting the agent number on Google if inbound SMS reply is critical."
+              },
+              {
+                "q": "A prospect wants group / party bookings on the call. What is the honest answer?",
+                "options": [
+                  "Yes, up to 4 people per party if the calendar allows overlapping slots and the party names are provided during the call.",
+                  "Yes for existing customers only.",
+                  "Yes with an add-on.",
+                  "No — single-customer bookings only."
+                ],
+                "answer": 3,
+                "explain": "Group / party bookings are out of scope. Single-customer bookings only."
+              }
+            ]
+          }
         }
       ],
       "final": {
@@ -1248,12 +1372,7 @@
           },
           {
             "q": "Which platform is on the roadmap with no connector yet, so AEs shouldn't promise it works today?",
-            "options": [
-              "Square",
-              "Booksy",
-              "Boulevard",
-              "GlossGenius"
-            ],
+            "options": ["Square", "Booksy", "Boulevard", "GlossGenius"],
             "answer": 2,
             "explain": "Boulevard is on the roadmap with no connector yet; Acuity and StyleSeat are being explored, not supported."
           },
@@ -1292,12 +1411,7 @@
           },
           {
             "q": "Which competitor ships no voice receptionist at all?",
-            "options": [
-              "Rosie",
-              "Smith.ai",
-              "GlossGenius",
-              "Slang.ai"
-            ],
+            "options": ["Rosie", "Smith.ai", "GlossGenius", "Slang.ai"],
             "answer": 2,
             "explain": "GlossGenius ships no voice receptionist; Slang.ai is restaurant-only and Smith.ai books Calendly only."
           },
@@ -1334,13 +1448,13 @@
               {
                 "q": "Which calendar views does the Zoca Calendar offer?",
                 "options": [
-                  "Day, 3-Day, Week, and Month",
+                  "Day, Compact Day, Week, and Compact Week",
                   "Day and Week only",
                   "Month only",
                   "Agenda list only"
                 ],
                 "answer": 0,
-                "explain": "The Calendar offers Day, 3-Day, Week, and Month views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals and the waitlist."
+                "explain": "The Calendar offers Day, Compact Day, Week, and Compact Week views, plus a sidebar mini-calendar, staff filtering, and quick lists for pending approvals."
               },
               {
                 "q": "When a client is completing checkout, how long is a slot temporarily held so it can't be double-booked?",
@@ -1365,15 +1479,15 @@
                 "explain": "Appointments are pinned to the location's time zone regardless of where anyone is logged in."
               },
               {
-                "q": "Which client self-check-in method is supported today, per the lesson?",
+                "q": "What actions can you take directly from an appointment on the Calendar?",
                 "options": [
-                  "QR code",
-                  "SMS reply",
-                  "Kiosk check-in",
-                  "Email link"
+                  "Only view the appointment details",
+                  "No-show, Cancel, Refund, Resend Receipt, and Checkout",
+                  "Only cancel or reschedule",
+                  "Only collect payment"
                 ],
-                "answer": 0,
-                "explain": "QR-code self-check-in is supported today; SMS-reply and kiosk are on the roadmap."
+                "answer": 1,
+                "explain": "From an appointment's booking details you can take actions like No-show, Cancel, Refund, Resend Receipt, and Checkout — all without leaving the calendar."
               }
             ]
           }
@@ -1418,18 +1532,18 @@
                   "Marks it as a no-show"
                 ],
                 "answer": 1,
-                "explain": "Cancelling releases the slot back onto the calendar and checks the waitlist."
+                "explain": "Cancelling releases the slot back onto the calendar."
               },
               {
-                "q": "When the salon itself cancels (e.g., a stylist is out sick), what typically happens to the client's payment?",
+                "q": "A client cancels within the cancellation-fee window. Which statement is correct about how Zoca handles the deposit and card on file?",
                 "options": [
-                  "The client forfeits the deposit",
-                  "A partial refund based on the window",
-                  "A full refund regardless of timing",
-                  "No refund is issued"
+                  "Refundable deposit is returned and the cancellation fee is always charged to the card on file automatically",
+                  "Non-refundable deposit is kept and the business can choose whether to charge the cancellation fee to the card on file",
+                  "Refundable deposit is kept and the card on file is charged automatically",
+                  "Non-refundable deposit is returned and no cancellation fee applies"
                 ],
-                "answer": 2,
-                "explain": "Salon-initiated cancellations typically refund the client in full, plus an optional goodwill credit."
+                "answer": 1,
+                "explain": "A non-refundable deposit is not returned. For the cancellation fee on the card on file, the business has the control to charge or not charge it on a case-by-case basis."
               }
             ]
           }
@@ -1444,15 +1558,15 @@
             "passScore": 70,
             "questions": [
               {
-                "q": "What is the default grace period before the system flags a no-show?",
+                "q": "How is a no-show marked in Zoca?",
                 "options": [
-                  "5 minutes",
-                  "10 minutes",
-                  "15 minutes",
-                  "30 minutes"
+                  "The system auto-detects it after 15 minutes",
+                  "The client reports it themselves",
+                  "The front desk marks it from the booking's detail panel",
+                  "It is flagged by the AI automatically"
                 ],
                 "answer": 2,
-                "explain": "The system detects a no-show after a default 15-minute grace period, which the salon can change."
+                "explain": "The front desk marks an appointment as a no-show from the booking's detail panel. It can also be undone if it was a mistake."
               },
               {
                 "q": "What is the key difference between a cancellation and a no-show?",
@@ -1477,15 +1591,15 @@
                 "explain": "Deposit forfeiture means the already-paid deposit converts into the no-show fee, with nothing extra to charge."
               },
               {
-                "q": "At what levels can cancellation and no-show policies be configured, with the most specific rule winning?",
+                "q": "At what level is the no-show policy configured?",
                 "options": [
-                  "Business only",
-                  "Service, stylist, location, or business",
-                  "Client account only",
-                  "Per appointment only"
+                  "Per service",
+                  "Per stylist",
+                  "At the location level",
+                  "Per appointment"
                 ],
-                "answer": 1,
-                "explain": "Policies can be set per service, stylist, location, or the whole business, and the most specific rule wins."
+                "answer": 2,
+                "explain": "The no-show policy is set at the location level. If the fee is a percentage of the service price, the actual amount naturally varies by service."
               }
             ]
           }
@@ -1657,6 +1771,73 @@
               }
             ]
           }
+        },
+        {
+          "id": "07-scope-source-of-truth",
+          "title": "Scope: Source of Truth — live vs. roadmap on payments and ledger",
+          "sub": "",
+          "minutes": 7,
+          "file": "content/scheduling/07-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "A prospect asks if Scheduling supports split payments (deposit at booking + final at checkout). What's the honest answer?",
+                "options": [
+                  "Yes, split payments are live and configurable via the checkout settings panel on every plan tier.",
+                  "Split payments are on the roadmap. Today it's a single payment per checkout.",
+                  "Only for Zoca Scheduling users on Stripe with Tap to Pay hardware connected.",
+                  "Yes but only for Tap to Pay."
+                ],
+                "answer": 1,
+                "explain": "Split payments are on the roadmap. Do not pitch as live."
+              },
+              {
+                "q": "A prospect asks whether a unified sales ledger view exists. What should you say?",
+                "options": [
+                  "Yes, we have a full sales ledger with subtotal, tax, tip, deposits, paid vs due, and full audit trail exposed on the dashboard.",
+                  "Yes, it comes as a downloadable CSV nightly.",
+                  "It's on the roadmap. Underlying data exists but not exposed as a unified ledger yet.",
+                  "Yes, once Stripe is connected."
+                ],
+                "answer": 2,
+                "explain": "Sales ledger is on the roadmap. Underlying data exists but no unified ledger view today."
+              },
+              {
+                "q": "A HOLD is placed on a slot during checkout. What happens next?",
+                "options": [
+                  "It's held for 30 minutes then released.",
+                  "It's held forever until the owner manually releases it from the calendar management dashboard.",
+                  "It expires at midnight.",
+                  "10-minute HOLD, auto-promoted to BOOKED on payment success."
+                ],
+                "answer": 3,
+                "explain": "HOLD is a 10-minute reservation during checkout that auto-promotes to BOOKED on payment success."
+              },
+              {
+                "q": "An owner changes their cancellation policy today. Does the new policy apply to yesterday's bookings?",
+                "options": [
+                  "Yes, all bookings inherit the latest policy automatically as soon as the owner clicks Save in the policy config panel.",
+                  "Only if the owner runs a bulk sync.",
+                  "No — policies are snapshot at booking time; retroactive changes do not apply.",
+                  "Yes, if the change happens within 24 hours."
+                ],
+                "answer": 2,
+                "explain": "Policy snapshots: the cancellation/no-show/deposit policy captured at booking time is what applies. Tomorrow's change does not retroactively apply."
+              },
+              {
+                "q": "What is the default booking mode when Stripe is NOT connected?",
+                "options": [
+                  "Card-on-file required, with the owner manually verifying the card at each visit before the booking is confirmed.",
+                  "No-payment-required policy — booking without entering payment details.",
+                  "Deposit required.",
+                  "Cash-only mode."
+                ],
+                "answer": 1,
+                "explain": "No-payment-required policy is the default mode when Stripe is not connected. Card-on-file, deposits, and Tap to Pay only unlock by connecting Stripe."
+              }
+            ]
+          }
         }
       ],
       "final": {
@@ -1675,23 +1856,13 @@
           },
           {
             "q": "After Zoca's AI books a lead outbound, the lead is marked as what?",
-            "options": [
-              "Pending",
-              "Archived",
-              "Converted",
-              "Declined"
-            ],
+            "options": ["Pending", "Archived", "Converted", "Declined"],
             "answer": 2,
             "explain": "When the AI reaches out and books a lead, the lead is marked converted."
           },
           {
             "q": "What is the default grace period before a no-show is flagged?",
-            "options": [
-              "15 minutes",
-              "30 minutes",
-              "10 minutes",
-              "5 minutes"
-            ],
+            "options": ["15 minutes", "30 minutes", "10 minutes", "5 minutes"],
             "answer": 0,
             "explain": "No-shows are detected after a default 15-minute grace period the salon can change."
           },
@@ -1708,12 +1879,7 @@
           },
           {
             "q": "Every booking automatically gets a linked record where deposit, balance, tips, and refunds roll up. What is it called?",
-            "options": [
-              "A ledger",
-              "A cart",
-              "A sale",
-              "A receipt"
-            ],
+            "options": ["A ledger", "A cart", "A sale", "A receipt"],
             "answer": 2,
             "explain": "Each booking auto-creates a linked sale where all the financial pieces roll up in one place."
           },
@@ -1730,12 +1896,7 @@
           },
           {
             "q": "For in-person card acceptance, which account must the salon connect?",
-            "options": [
-              "PayPal",
-              "Stripe",
-              "Square",
-              "Clover"
-            ],
+            "options": ["PayPal", "Stripe", "Square", "Clover"],
             "answer": 1,
             "explain": "Card readers and tap-to-pay run on the salon's connected Stripe account."
           },
@@ -1827,12 +1988,7 @@
             "questions": [
               {
                 "q": "Which tab is the visual topic map of every confirmed fact and the demo's 'wow shot'?",
-                "options": [
-                  "Canvas",
-                  "Validate",
-                  "Preview",
-                  "Memory History"
-                ],
+                "options": ["Canvas", "Validate", "Preview", "Memory History"],
                 "answer": 0,
                 "explain": "Canvas is the visual topic map of all confirmed facts and is opened first as the wow shot."
               },
@@ -2001,12 +2157,7 @@
           },
           {
             "q": "How many Zoca AIs does the Brain power?",
-            "options": [
-              "Three",
-              "Four",
-              "Five",
-              "Seven"
-            ],
+            "options": ["Three", "Four", "Five", "Seven"],
             "answer": 2,
             "explain": "The Brain powers five Zoca AIs: Front Desk, Website, Content, Google Profile, and Command Center."
           },
@@ -2023,12 +2174,7 @@
           },
           {
             "q": "Which tab lets an owner test the AI's answer the way a customer would, with citations?",
-            "options": [
-              "Canvas",
-              "Question Bank",
-              "Preview",
-              "Memory History"
-            ],
+            "options": ["Canvas", "Question Bank", "Preview", "Memory History"],
             "answer": 2,
             "explain": "Preview lets you ask a customer-style question and see the exact grounded answer with citations."
           },
@@ -2108,12 +2254,7 @@
               },
               {
                 "q": "Which keyboard shortcut opens Command Center from any page?",
-                "options": [
-                  "Cmd+K",
-                  "Cmd+J",
-                  "Ctrl+Space",
-                  "Cmd+Enter"
-                ],
+                "options": ["Cmd+K", "Cmd+J", "Ctrl+Space", "Cmd+Enter"],
                 "answer": 0,
                 "explain": "The lesson states Cmd+K is the shortcut to open Command Center instantly from anywhere."
               },
@@ -2250,6 +2391,73 @@
                 ],
                 "answer": 2,
                 "explain": "Saving a conflicting fact surfaces the existing value and asks which to keep, via save-structured-memory returning conflict: true."
+              }
+            ]
+          }
+        },
+        {
+          "id": "04-scope-source-of-truth",
+          "title": "Scope: Source of Truth — 137 actions across 14 areas",
+          "sub": "",
+          "minutes": 7,
+          "file": "content/command-center/04-scope-source-of-truth.html",
+          "quiz": {
+            "passScore": 70,
+            "questions": [
+              {
+                "q": "How many total actions are exposed through Command Centre, split across how many areas?",
+                "options": [
+                  "230+ actions across 12 areas.",
+                  "137 actions across 14 areas.",
+                  "100 actions across 10 areas.",
+                  "200 actions across 15 areas."
+                ],
+                "answer": 1,
+                "explain": "The correct number is 137 actions across 14 areas. Do not say '230+' — that's the stale number."
+              },
+              {
+                "q": "A prospect asks to run a single-tap 'cancel all 10 appointments' via Command Centre. What actually happens?",
+                "options": [
+                  "Command Centre executes it in one tap and posts the cancellation summary to the owner's Slack digest at end of day.",
+                  "Command Centre refuses entirely.",
+                  "Walks through each item with a per-item confirmation, not a blanket approval.",
+                  "Command Centre requires an admin password."
+                ],
+                "answer": 2,
+                "explain": "Destructive bulk actions require per-item confirmation. By design — pitch it as a safety feature, not friction."
+              },
+              {
+                "q": "A prospect asks whether Command Centre can query data across two different owner accounts simultaneously. Answer?",
+                "options": [
+                  "Yes with enterprise plans that include cross-tenant lookups for approved partners after a security review.",
+                  "Yes for reads, no for writes.",
+                  "Yes if both owners are in the same chain.",
+                  "No — cross-tenant isolation is enforced; only the owner's own data on the active location."
+                ],
+                "answer": 3,
+                "explain": "Cross-tenant isolation is a tested security surface with 0 data shared across owners."
+              },
+              {
+                "q": "The multi-location owner wants simultaneous fan-out writes across all their locations. What does Command Centre support?",
+                "options": [
+                  "Fan-out writes across every location in one command using the multi-location broadcast mode from the top-right chat.",
+                  "Location switching by name — multi-location is context switch, not fan-out.",
+                  "Fan-out reads but per-location writes.",
+                  "Automatic replication of every write."
+                ],
+                "answer": 1,
+                "explain": "Multi-location is supported by switching active location by name, not by simultaneous cross-location fan-out."
+              },
+              {
+                "q": "What happens before Command Centre pushes a WRITE (like updating GBP hours)?",
+                "options": [
+                  "The write executes immediately with a post-hoc confirmation email to the owner and a follow-up dashboard notice.",
+                  "The write requires a two-factor code.",
+                  "A consent card opens with current + new values before the push.",
+                  "The write is queued for owner approval by email."
+                ],
+                "answer": 2,
+                "explain": "Every WRITE opens a consent card showing current -> new values before pushing. Nothing goes through without owner confirmation."
               }
             ]
           }
@@ -2816,12 +3024,7 @@
               },
               {
                 "q": "What is the default operating mode for the agents?",
-                "options": [
-                  "Approve",
-                  "Auto",
-                  "Supervised",
-                  "Manual"
-                ],
+                "options": ["Approve", "Auto", "Supervised", "Manual"],
                 "answer": 2,
                 "explain": "Supervised is the default: the agent acts on its own and surfaces the important decisions in the Content Queue; most customers stay there."
               },

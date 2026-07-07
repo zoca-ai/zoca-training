@@ -1,47 +1,316 @@
-<div class="callout tldr"><div class="callout-title">TL;DR</div><p>The Calendar is the home screen of Zoca Scheduling — one live view where the owner and front desk run the whole day. They see every appointment across every stylist, book and move appointments by dragging, block out time, approve incoming requests, check clients in, and take payment — all without leaving the screen. <strong>Pitch it as: &quot;This is where you run your day.&quot;</strong></p></div>
+<div class="callout tldr">
+  <div class="callout-title">TL;DR</div>
+  <p>
+    The Calendar is the home screen of Zoca Scheduling — one live view where the
+    owner and front desk run the whole day. They see every appointment across
+    every stylist, book and move appointments, block out time, approve incoming
+    requests, and take payment — all without leaving the screen.
+    <strong>Pitch it as: &quot;This is where you run your day.&quot;</strong>
+  </p>
+</div>
 <hr />
 <h2>1. What it is</h2>
-<p>The Calendar is the merchant-facing scheduling screen at <strong><code>/dashboard/calendar</code></strong>. It shows the business's appointments on a time grid and is the central hub for daily operations: viewing the schedule, booking and editing appointments, managing time off, approving requests, checking clients in, and collecting payment.</p>
-<p>It's a real, interactive calendar engine — drag-to-move, multi-staff columns, live availability — and offers <strong>Day, 3-Day, Week, and Month</strong> views, plus a sidebar with a mini-calendar for jumping around dates, staff filtering, and quick lists for pending approvals and the waitlist.</p>
-<div class="callout "><div class="callout-title">SAY IT SIMPLY</div><p>&quot;Think of it like the appointment book at the front desk — except it's live, it's shared across all your staff, and you can take payment right from it.&quot;</p></div>
+<p>
+  The Calendar is the merchant-facing scheduling screen at
+  <strong><code>/dashboard/calendar</code></strong
+  >. It shows the business's appointments on a time grid and is the central hub
+  for daily operations: viewing the schedule, booking and editing appointments,
+  managing time off, approving requests, and collecting payment.
+</p>
+<p>
+  It's a real, interactive calendar engine — multi-staff columns, live
+  availability — and offers
+  <strong>Day, Compact Day, Week, and Compact Week</strong> views, plus a
+  sidebar with a mini-calendar for jumping around dates, staff filtering, and
+  quick lists for pending approvals.
+</p>
+<div class="callout">
+  <div class="callout-title">SAY IT SIMPLY</div>
+  <p>
+    &quot;Think of it like the appointment book at the front desk — except it's
+    live, it's shared across all your staff, and you can take payment right from
+    it.&quot;
+  </p>
+</div>
 <hr />
 <h2>2. Why it matters (the salon owner's view)</h2>
-<p>Most small salons still run on a paper book, a wall calendar, or a patchwork of texts and DMs. That creates three expensive problems the Calendar solves:</p>
-<ul><li><strong>Double-bookings and gaps.</strong> The grid shows every stylist's day side by side, and the system blocks a slot the moment it's taken — so two clients don't land on the same chair, and empty gaps are obvious at a glance.</li><li><strong>Front-desk busywork.</strong> Booking, moving, confirming, and checking out a client are usually separate steps in separate tools. Here they're all one screen, so the front desk does more with less.</li><li><strong>No single source of truth.</strong> When the owner, the stylists, and the online booking page all read from the same calendar, nobody is working off a stale copy.</li></ul>
-<div class="callout "><div class="callout-title">VALUE LINE</div><p>&quot;Every no-show, every gap, every double-booking is lost revenue. The calendar's job is to make your day full, accurate, and easy to run.&quot;</p></div>
+<p>
+  Most small salons still run on a paper book, a wall calendar, or a patchwork
+  of texts and DMs. That creates three expensive problems the Calendar solves:
+</p>
+<ul>
+  <li>
+    <strong>Double-bookings and gaps.</strong> The grid shows every stylist's
+    day side by side, and the system blocks a slot the moment it's taken — so
+    two clients don't land on the same chair, and empty gaps are obvious at a
+    glance.
+  </li>
+  <li>
+    <strong>Front-desk busywork.</strong> Booking, moving, confirming, and
+    checking out a client are usually separate steps in separate tools. Here
+    they're all one screen, so the front desk does more with less.
+  </li>
+  <li>
+    <strong>No single source of truth.</strong> When the owner, the stylists,
+    and the online booking page all read from the same calendar, nobody is
+    working off a stale copy.
+  </li>
+</ul>
+<div class="callout">
+  <div class="callout-title">VALUE LINE</div>
+  <p>
+    &quot;Every no-show, every gap, every double-booking is lost revenue. The
+    calendar's job is to make your day full, accurate, and easy to run.&quot;
+  </p>
+</div>
 <hr />
 <h2>3. How it works</h2>
 <p><strong>Views and layout</strong></p>
-<ul><li><strong>Day / 3-Day / Week / Month</strong> views — pick the planning horizon. Day view is the front-desk workhorse; Week is for planning; Month is for a high-level look.</li><li><strong>Staff filtering</strong> — show one stylist's column or the whole team. Multi-staff businesses see each provider's day next to each other.</li><li><strong>Sidebar</strong> — a mini-calendar to jump to any date, plus quick lists for <strong>pending approvals</strong> and the <strong>waitlist</strong>.</li></ul>
-<p><strong>Everything opens in a side sheet, not a new page.</strong> When you click into an appointment to edit it, check out, or block time, it slides open over the calendar so you never lose your place. Close it and you're right back where you were.</p>
-<p><strong>Availability is calculated, not guessed.</strong> When you (or a client online) pick a service and stylist, the system builds the list of open slots by combining:</p>
-<ul><li>the stylist's <strong>working hours</strong> (and any special/holiday hours),</li><li>their <strong>breaks</strong> (lunch, vacation, personal blocks),</li><li>appointments already on the books,</li><li>temporary <strong>holds</strong> placed during someone else's checkout (a slot is held for ~10 minutes while a client finishes paying, so it can't be grabbed twice),</li><li>and the business's booking rules — how far in advance a client must book (minimum notice) and how far into the future booking is allowed.</li></ul>
-<div class="callout "><div class="callout-title">GOOD TO KNOW</div><p>Times are always anchored to the <strong>location's time zone</strong>, so a Los-Angeles salon's 2 PM is 2 PM on the calendar regardless of where the client or staff member happens to be.</p></div>
-<p><strong>Appointment statuses</strong> an appointment moves through (useful when a prospect asks &quot;how do you track where a client is at?&quot;): <em>pending payment → confirmed → completed</em> (the front desk can mark a client arrived/checked-in along the way — that's a front-desk action, not a separate tracked status), with branches for <em>cancelled</em>, <em>rescheduled</em>, and <em>no-show</em> (which splits into fee-collected vs fee-waived). Some flows can also start as <em>pending approval</em> when the owner approves requests before they're locked in. (A refund is a payment outcome driven by your cancellation/no-show policy — not a separate appointment status. See <strong>Booking lifecycle</strong> for the full set.)</p>
+<ul>
+  <li>
+    <strong>Day, Compact Day, Week, and Compact Week</strong> views — pick the
+    planning horizon. Day view is the front-desk workhorse; Week is for
+    planning; Compact views offer a streamlined look.
+  </li>
+  <li>
+    <strong>Staff filtering</strong> — show one stylist's column or the whole
+    team. Multi-staff businesses see each provider's day next to each other.
+  </li>
+  <li>
+    <strong>Sidebar</strong> — a mini-calendar to jump to any date, plus quick
+    lists for <strong>pending approvals</strong>.
+  </li>
+</ul>
+<p>
+  <strong>Everything opens in a side sheet, not a new page.</strong> When you
+  click into an appointment to edit it, check out, or block time, it slides open
+  over the calendar so you never lose your place. Close it and you're right back
+  where you were.
+</p>
+<p>
+  <strong>Availability is calculated, not guessed.</strong> When you (or a
+  client online) pick a service and stylist, the system builds the list of open
+  slots by combining:
+</p>
+<ul>
+  <li>
+    the stylist's <strong>working hours</strong> (and any special/holiday
+    hours),
+  </li>
+  <li>their <strong>breaks</strong> (lunch, vacation, personal blocks),</li>
+  <li>appointments already on the books,</li>
+  <li>
+    temporary <strong>holds</strong> placed during someone else's checkout (a
+    slot is held for ~10 minutes while a client finishes paying, so it can't be
+    grabbed twice),
+  </li>
+  <li>
+    and the business's booking rules — how far in advance a client must book
+    (minimum notice) and how far into the future booking is allowed.
+  </li>
+</ul>
+<div class="callout">
+  <div class="callout-title">GOOD TO KNOW</div>
+  <p>
+    Times are always anchored to the <strong>location's time zone</strong>, so a
+    Los-Angeles salon's 2 PM is 2 PM on the calendar regardless of where the
+    client or staff member happens to be.
+  </p>
+</div>
+<p>
+  <strong>Appointment statuses</strong> an appointment moves through (useful
+  when a prospect asks &quot;how do you track where a client is at?&quot;):
+  <em>pending payment → confirmed → completed</em>, with branches for
+  <em>cancelled</em>, <em>rescheduled</em>, and <em>no-show</em> (which splits
+  into fee-collected vs fee-waived). Some flows can also start as
+  <em>pending approval</em> when the owner approves requests before they're
+  locked in. (A refund is a payment outcome driven by your cancellation/no-show
+  policy — not a separate appointment status. See
+  <strong>Booking lifecycle</strong> for the full set.)
+</p>
 <hr />
 <h2>4. What you can do from the Calendar</h2>
-<table><thead><tr><th>Action</th><th>What it does</th></tr></thead><tbody><tr><td><strong>New Appointment</strong></td><td>Create a booking — pick the client, service(s), stylist, time slot, and configure a deposit if required.</td></tr><tr><td><strong>Drag to reschedule</strong></td><td>Move an appointment to a new time or stylist by dragging it on the grid.</td></tr><tr><td><strong>Booking details</strong></td><td>Open any appointment to see the summary, pricing, and notes, and take actions: <strong>No-show, Cancel, Refund, Resend Receipt</strong>.</td></tr><tr><td><strong>Checkout</strong></td><td>Take payment right from the appointment — cash, card, saved card-on-file, in-person card reader/tap, or a payment link — and add a tip. (See <strong>Checkout / POS</strong>.)</td></tr><tr><td><strong>Add / Edit Time-Off</strong></td><td>Block out a stylist's time (lunch, errands, vacation) so it stops showing as bookable.</td></tr><tr><td><strong>Pending Approvals</strong></td><td>Review incoming booking requests and <strong>Approve</strong> or <strong>Decline</strong> them.</td></tr><tr><td><strong>Check-in</strong></td><td>Mark a client as arrived when they show up.</td></tr></tbody></table>
-<div class="callout "><div class="callout-title">ON CHECK-IN</div><p>Client self-check-in via <strong>QR code</strong> is the supported method today; SMS-reply and kiosk check-in are on the roadmap, and the front desk can always check a client in manually. Don't promise SMS/kiosk check-in as available — say &quot;QR check-in today, more options coming.&quot;</p></div>
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>What it does</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>New Appointment</strong></td>
+      <td>
+        Create a booking — pick the client, service(s), stylist, time slot, and
+        configure a deposit if required.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Booking details</strong></td>
+      <td>
+        Open any appointment to see the summary, pricing, and notes, and take
+        actions: <strong>No-show, Cancel, Refund, Resend Receipt</strong>.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Checkout</strong></td>
+      <td>
+        Take payment right from the appointment — cash, card, saved
+        card-on-file, in-person card reader/tap, or a payment link — and add a
+        tip. (See <strong>Checkout / POS</strong>.)
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Add / Edit Time-Off</strong></td>
+      <td>
+        Block out a stylist's time (lunch, errands, vacation) so it stops
+        showing as bookable.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Pending Approvals</strong></td>
+      <td>
+        Review incoming booking requests and <strong>Approve</strong> or
+        <strong>Decline</strong> them.
+      </td>
+    </tr>
+  </tbody>
+</table>
 <hr />
 <h2>5. Where it lives + demo path</h2>
-<ol><li>Log into the dashboard → click <strong>Calendar</strong> in the left navigation (<strong><code>/dashboard/calendar</code></strong>).</li><li>Toggle <strong>Day / Week / Month</strong> at the top to show the different views.</li><li>Use the <strong>staff filter</strong> in the sidebar to show one stylist, then the whole team — this lands well for multi-chair salons.</li><li>Click an empty slot → <strong>New Appointment</strong> → walk through picking a client, service, and time.</li><li><strong>Drag</strong> an existing appointment to a new time to show how easy rescheduling is.</li><li>Click an appointment → show <strong>Booking details</strong> and the action buttons (Checkout, No-show, Cancel).</li><li>Point out the <strong>Pending Approvals</strong> and <strong>Waitlist</strong> lists in the sidebar.</li></ol>
-<div class="callout "><div class="callout-title">DEMO TIP</div><p>The most powerful single moment is the <strong>drag-to-reschedule</strong> plus <strong>one-click checkout</strong> — it makes the &quot;run your whole day from one screen&quot; story land. Always confirm exact button labels in your own demo account before a live call, since labels can vary slightly by version.</p></div>
+<ol>
+  <li>
+    Log into the dashboard → click <strong>Calendar</strong> in the left
+    navigation (<strong><code>/dashboard/calendar</code></strong
+    >).
+  </li>
+  <li>
+    Toggle <strong>Day / Compact Day / Week / Compact Week</strong> at the top
+    to show the different views.
+  </li>
+  <li>
+    Use the <strong>staff filter</strong> in the sidebar to show one stylist,
+    then the whole team — this lands well for multi-chair salons.
+  </li>
+  <li>
+    Click an empty slot → <strong>New Appointment</strong> → walk through
+    picking a client, service, and time.
+  </li>
+  <li>
+    Click an appointment → show <strong>Booking details</strong> and the action
+    buttons (Checkout, No-show, Cancel).
+  </li>
+  <li>Point out the <strong>Pending Approvals</strong> list in the sidebar.</li>
+</ol>
+<div class="callout">
+  <div class="callout-title">DEMO TIP</div>
+  <p>
+    The most powerful single moment is the
+    <strong>one-click checkout</strong> — it makes the &quot;run your whole day
+    from one screen&quot; story land. Always confirm exact button labels in your
+    own demo account before a live call, since labels can vary slightly by
+    version.
+  </p>
+</div>
 <hr />
 <h2>6. Demo talk track</h2>
-<div class="callout "><div class="callout-title">TALK TRACK</div><p>&quot;This is your Calendar — the home base for your whole salon. Up here you flip between day, week, and month. Down the side you see each of your stylists, so you always know who's free and who's slammed.</p>
-<p>Say a regular calls wanting to come in. I click the open slot, pick her, pick the service and stylist — booked. If something changes, I just grab the appointment and drag it to a new time. No eraser, no double-booking.</p>
-<p>When she arrives, I check her in. When she's done, I hit checkout right here — cash, card, tip, done. And these requests on the side? Those came in from your online booking page overnight; you approve them with one tap. That's your whole day, on one screen.&quot;</p></div>
+<div class="callout">
+  <div class="callout-title">TALK TRACK</div>
+  <p>
+    &quot;This is your Calendar — the home base for your whole salon. Up here
+    you flip between day, compact day, week, and compact week. Down the side you
+    see each of your stylists, so you always know who's free and who's slammed.
+  </p>
+  <p>
+    Say a regular calls wanting to come in. I click the open slot, pick her,
+    pick the service and stylist — booked. No double-booking.
+  </p>
+  <p>
+    When she's done, I hit checkout right here — cash, card, tip, done. And
+    these requests on the side? Those came in from your online booking page
+    overnight; you approve them with one tap. That's your whole day, on one
+    screen.&quot;
+  </p>
+</div>
 <hr />
 <h2>7. FAQ &amp; objection handling</h2>
-<p><strong>&quot;We already have a calendar / we use Google Calendar.&quot;</strong> Google Calendar can't take a deposit, enforce your cancellation policy, hold a slot during checkout, run your online booking page, or check a client out. This is a calendar <em>and</em> a front desk <em>and</em> a register in one.</p>
-<p><strong>&quot;What if two people try to book the same slot?&quot;</strong> The system places a short hold (~10 minutes) on a slot while a client is checking out, and a confirmed appointment blocks the slot outright — so you don't get two clients on one chair.</p>
-<p><strong>&quot;Can each stylist see only their own schedule?&quot;</strong> Yes — staff filtering lets you view one provider or the whole team.</p>
-<p><strong>&quot;What about no-shows showing up on the calendar?&quot;</strong> You can mark an appointment as a no-show directly from its detail panel; see the <strong>No-shows</strong> doc for how fees work.</p>
-<p><strong>&quot;Does it handle different time zones?&quot;</strong> Appointments are pinned to the location's time zone, so the schedule reads correctly no matter where you're logged in.</p>
-<p><strong>&quot;Can I block off time when a stylist is out?&quot;</strong> Yes — Add/Edit Time-Off blocks a stylist's hours so those times stop being bookable.</p>
+<p>
+  <strong
+    >&quot;We already have a calendar / we use Google Calendar.&quot;</strong
+  >
+  Google Calendar can't take a deposit, enforce your cancellation policy, hold a
+  slot during checkout, run your online booking page, or check a client out.
+  This is a calendar <em>and</em> a front desk <em>and</em> a register in one.
+</p>
+<p>
+  <strong>&quot;What if two people try to book the same slot?&quot;</strong> The
+  system places a short hold (~10 minutes) on a slot while a client is checking
+  out, and a confirmed appointment blocks the slot outright — so you don't get
+  two clients on one chair.
+</p>
+<p>
+  <strong>&quot;Can each stylist see only their own schedule?&quot;</strong> Yes
+  — staff filtering lets you view one provider or the whole team.
+</p>
+<p>
+  <strong>&quot;What about no-shows showing up on the calendar?&quot;</strong>
+  You can mark an appointment as a no-show directly from its detail panel; see
+  the <strong>No-shows</strong> doc for how fees work.
+</p>
+<p>
+  <strong>&quot;Does it handle different time zones?&quot;</strong> Appointments
+  are pinned to the location's time zone, so the schedule reads correctly no
+  matter where you're logged in.
+</p>
+<p>
+  <strong>&quot;Can I block off time when a stylist is out?&quot;</strong> Yes —
+  Add/Edit Time-Off blocks a stylist's hours so those times stop being bookable.
+</p>
 <hr />
 <h2>8. Key terms</h2>
-<ul><li><strong>Slot</strong> — a bookable start/end window for a service with a given stylist; calculated live from hours, breaks, and existing bookings.</li><li><strong>Hold</strong> — a temporary (~10-minute) reservation on a slot while a client completes checkout, so it can't be double-booked.</li><li><strong>Break / Time-off</strong> — a stylist's blocked time (lunch, vacation, personal). Not bookable.</li><li><strong>Pending approval</strong> — an incoming booking request awaiting the owner's Approve/Decline.</li><li><strong>Check-in</strong> — marking a client as physically arrived.</li><li><strong>Minimum notice / booking window</strong> — rules for how soon and how far ahead clients can book.</li></ul>
+<ul>
+  <li>
+    <strong>Slot</strong> — a bookable start/end window for a service with a
+    given stylist; calculated live from hours, breaks, and existing bookings.
+  </li>
+  <li>
+    <strong>Hold</strong> — a temporary (~10-minute) reservation on a slot while
+    a client completes checkout, so it can't be double-booked.
+  </li>
+  <li>
+    <strong>Break / Time-off</strong> — a stylist's blocked time (lunch,
+    vacation, personal). Not bookable.
+  </li>
+  <li>
+    <strong>Pending approval</strong> — an incoming booking request awaiting the
+    owner's Approve/Decline.
+  </li>
+  <li>
+    <strong>Minimum notice / booking window</strong> — rules for how soon and
+    how far ahead clients can book.
+  </li>
+</ul>
 <hr />
 <h2>9. Related docs</h2>
-<ul><li><strong>Booking lifecycle</strong> — how appointments get created, edited, rescheduled, and cancelled.</li><li><strong>No-shows</strong> — marking no-shows and protecting revenue with fees.</li><li><strong>Deposits &amp; payments</strong> — what's collected at booking and how.</li><li><strong>Checkout / POS &amp; quick-sale</strong> — taking payment from the calendar and for walk-ins.</li><li><strong>Offers &amp; discounts</strong> — promotions that auto-apply to bookings.</li></ul>
+<ul>
+  <li>
+    <strong>Booking lifecycle</strong> — how appointments get created, edited,
+    rescheduled, and cancelled.
+  </li>
+  <li>
+    <strong>No-shows</strong> — marking no-shows and protecting revenue with
+    fees.
+  </li>
+  <li>
+    <strong>Deposits &amp; payments</strong> — what's collected at booking and
+    how.
+  </li>
+  <li>
+    <strong>Checkout / POS &amp; quick-sale</strong> — taking payment from the
+    calendar and for walk-ins.
+  </li>
+  <li>
+    <strong>Offers &amp; discounts</strong> — promotions that auto-apply to
+    bookings.
+  </li>
+</ul>
