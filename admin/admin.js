@@ -98,6 +98,20 @@ function load() {
     });
 }
 
+/* Apps Script intermittently returns transient 500s; retry before
+   falling back to the seed roster. */
+function jsonpRetry(url, attempts, delayMs) {
+  return jsonp(url).catch(function (err) {
+    if (attempts <= 1) throw err;
+    banner("Progress backend hiccup (" + esc(err.message) + ") — retrying…");
+    return new Promise(function (resolve) {
+      setTimeout(resolve, delayMs);
+    }).then(function () {
+      return jsonpRetry(url, attempts - 1, delayMs * 2);
+    });
+  });
+}
+
 function fetchLearners() {
   if (!SCRIPT_URL) {
     banner(
@@ -107,7 +121,7 @@ function fetchLearners() {
     );
     return Promise.resolve([]);
   }
-  return jsonp(SCRIPT_URL)
+  return jsonpRetry(SCRIPT_URL, 3, 800)
     .then(function (data) {
       banner("");
       return (data && data.learners) || [];
